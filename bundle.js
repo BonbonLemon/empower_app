@@ -9645,36 +9645,6 @@ var Widget = function (_React$Component) {
   }
 
   _createClass(Widget, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      google.charts.load('current', { 'packages': ['line'] });
-      google.charts.setOnLoadCallback(this.drawChart);
-    }
-  }, {
-    key: 'drawChart',
-    value: function drawChart() {
-      var data = new google.visualization.DataTable();
-      data.addColumn('number', 'Day');
-      data.addColumn('number', 'Guardians of the Galaxy');
-      data.addColumn('number', 'The Avengers');
-      data.addColumn('number', 'Transformers: Age of Extinction');
-
-      data.addRows([[1, 37.8, 80.8, 41.8], [2, 30.9, 69.5, 32.4], [3, 25.4, 57, 25.7], [4, 11.7, 18.8, 10.5], [5, 11.9, 17.6, 10.4], [6, 8.8, 13.6, 7.7], [7, 7.6, 12.3, 9.6], [8, 12.3, 29.2, 10.6], [9, 16.9, 42.9, 14.8], [10, 12.8, 30.9, 11.6], [11, 5.3, 7.9, 4.7], [12, 6.6, 8.4, 5.2], [13, 4.8, 6.3, 3.6], [14, 4.2, 6.2, 3.4]]);
-
-      var options = {
-        chart: {
-          title: 'Box Office Earnings in First Two Weeks of Opening',
-          subtitle: 'in millions of dollars (USD)'
-        },
-        width: 900,
-        height: 500
-      };
-
-      var chart = new google.charts.Line(document.getElementById('linechart_material'));
-
-      chart.draw(data, google.charts.Line.convertOptions(options));
-    }
-  }, {
     key: 'selectTab',
     value: function selectTab(e) {
       var $tabs = void 0;
@@ -22304,6 +22274,8 @@ var _react = __webpack_require__(49);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _forecast = __webpack_require__(188);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22324,19 +22296,38 @@ var Forecast = function (_React$Component) {
   _createClass(Forecast, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
+      this.fetchData();
+    }
+  }, {
+    key: 'fetchData',
+    value: function fetchData() {
+      var dataRows = [];
+      _forecast.ForecastData.data.forEach(function (dataPoint) {
+        dataRows.push([dataPoint.date, dataPoint.baseline, dataPoint.error]);
+      });
+
+      // Above would be replaced with HTTP request and promise calls lines below
+      this.initializeChart(dataRows);
+    }
+  }, {
+    key: 'initializeChart',
+    value: function initializeChart(dataRows) {
+      var _this2 = this;
+
       google.charts.load('current', { 'packages': ['line'] });
-      google.charts.setOnLoadCallback(this.drawChart);
+      google.charts.setOnLoadCallback(function () {
+        return _this2.drawChart(dataRows);
+      });
     }
   }, {
     key: 'drawChart',
-    value: function drawChart() {
+    value: function drawChart(dataRows) {
       var data = new google.visualization.DataTable();
       data.addColumn('number', 'Day');
-      data.addColumn('number', 'Guardians of the Galaxy');
-      data.addColumn('number', 'The Avengers');
-      data.addColumn('number', 'Transformers: Age of Extinction');
+      data.addColumn('number', 'Baseline');
+      data.addColumn('number', 'Error');
 
-      data.addRows([[1, 37.8, 80.8, 41.8], [2, 30.9, 69.5, 32.4], [3, 25.4, 57, 25.7], [4, 11.7, 18.8, 10.5], [5, 11.9, 17.6, 10.4], [6, 8.8, 13.6, 7.7], [7, 7.6, 12.3, 9.6], [8, 12.3, 29.2, 10.6], [9, 16.9, 42.9, 14.8], [10, 12.8, 30.9, 11.6], [11, 5.3, 7.9, 4.7], [12, 6.6, 8.4, 5.2], [13, 4.8, 6.3, 3.6], [14, 4.2, 6.2, 3.4]]);
+      data.addRows(dataRows);
 
       var options = {
         chart: {
@@ -22344,7 +22335,8 @@ var Forecast = function (_React$Component) {
           subtitle: 'in some unit of measure...'
         },
         width: 900,
-        height: 500
+        height: 500,
+        padding: 10
       };
 
       var chart = new google.charts.Line(document.getElementById('linechart_material'));
@@ -22382,6 +22374,8 @@ var _react = __webpack_require__(49);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _history = __webpack_require__(189);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22402,19 +22396,39 @@ var Forecast = function (_React$Component) {
   _createClass(Forecast, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
+      this.fetchData();
+    }
+  }, {
+    key: 'fetchData',
+    value: function fetchData() {
+      var dataRows = [];
+      _history.HistoryData.data.forEach(function (dataPoint) {
+        dataRows.push([dataPoint.date, dataPoint.baseline, dataPoint.error, dataPoint.actualEnergy]);
+      });
+
+      // Above would be replaced with HTTP request and promise calls lines below
+      this.initializeChart(dataRows);
+    }
+  }, {
+    key: 'initializeChart',
+    value: function initializeChart(dataRows) {
+      var _this2 = this;
+
       google.charts.load('current', { 'packages': ['line'] });
-      google.charts.setOnLoadCallback(this.drawChart);
+      google.charts.setOnLoadCallback(function () {
+        return _this2.drawChart(dataRows);
+      });
     }
   }, {
     key: 'drawChart',
-    value: function drawChart() {
+    value: function drawChart(dataRows) {
       var data = new google.visualization.DataTable();
-      data.addColumn('number', 'Day');
-      data.addColumn('number', 'Guardians of the Galaxy');
-      data.addColumn('number', 'The Avengers');
-      data.addColumn('number', 'Transformers: Age of Extinction');
+      data.addColumn('date', 'Date');
+      data.addColumn('number', 'Baseline');
+      data.addColumn('number', 'Error');
+      data.addColumn('number', 'Actual Energy');
 
-      data.addRows([[1, 37.8, 80.8, 41.8], [2, 30.9, 69.5, 32.4], [3, 25.4, 57, 25.7], [4, 11.7, 18.8, 10.5], [5, 11.9, 17.6, 10.4], [6, 8.8, 13.6, 7.7], [7, 7.6, 12.3, 9.6], [8, 12.3, 29.2, 10.6], [9, 16.9, 42.9, 14.8], [10, 12.8, 30.9, 11.6], [11, 5.3, 7.9, 4.7], [12, 6.6, 8.4, 5.2], [13, 4.8, 6.3, 3.6], [14, 4.2, 6.2, 3.4]]);
+      data.addRows(dataRows);
 
       var options = {
         chart: {
@@ -22422,7 +22436,10 @@ var Forecast = function (_React$Component) {
           subtitle: 'in some unit of measure...'
         },
         width: 900,
-        height: 500
+        height: 500,
+        hAxis: {
+          format: 'MMM d, y'
+        }
       };
 
       var chart = new google.charts.Line(document.getElementById('linechart_material'));
@@ -22442,6 +22459,244 @@ var Forecast = function (_React$Component) {
 ;
 
 exports.default = Forecast;
+
+/***/ }),
+/* 188 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var ForecastData = exports.ForecastData = {
+  data: [{
+    date: 1,
+    baseline: 23,
+    error: 28
+  }, {
+    date: 2,
+    baseline: 45,
+    error: 39
+  }, {
+    date: 3,
+    baseline: 48,
+    error: 44
+  }, {
+    date: 4,
+    baseline: 83,
+    error: 76
+  }, {
+    date: 5,
+    baseline: 19,
+    error: 24
+  }]
+};
+
+/***/ }),
+/* 189 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var HistoryData = exports.HistoryData = {
+  data: [{
+    date: new Date(2018, 4, 3),
+    baseline: 83,
+    error: 78,
+    actualEnergy: 67
+  }, {
+    date: new Date(2018, 4, 4),
+    baseline: 40,
+    error: 45,
+    actualEnergy: 67
+  }, {
+    date: new Date(2018, 4, 5),
+    baseline: 19,
+    error: 30,
+    actualEnergy: 34
+  }, {
+    date: new Date(2018, 4, 6),
+    baseline: 38,
+    error: 41,
+    actualEnergy: 35
+  }, {
+    date: new Date(2018, 4, 7),
+    baseline: 24,
+    error: 20,
+    actualEnergy: 47
+  }, {
+    date: new Date(2018, 4, 8),
+    baseline: 83,
+    error: 78,
+    actualEnergy: 67
+  }, {
+    date: new Date(2018, 4, 9),
+    baseline: 40,
+    error: 45,
+    actualEnergy: 67
+  }, {
+    date: new Date(2018, 4, 10),
+    baseline: 19,
+    error: 30,
+    actualEnergy: 34
+  }, {
+    date: new Date(2018, 4, 11),
+    baseline: 38,
+    error: 41,
+    actualEnergy: 35
+  }, {
+    date: new Date(2018, 4, 12),
+    baseline: 24,
+    error: 20,
+    actualEnergy: 47
+  }, {
+    date: new Date(2018, 4, 13),
+    baseline: 83,
+    error: 78,
+    actualEnergy: 67
+  }, {
+    date: new Date(2018, 4, 14),
+    baseline: 40,
+    error: 45,
+    actualEnergy: 67
+  }, {
+    date: new Date(2018, 4, 15),
+    baseline: 19,
+    error: 30,
+    actualEnergy: 34
+  }, {
+    date: new Date(2018, 4, 16),
+    baseline: 38,
+    error: 41,
+    actualEnergy: 35
+  }, {
+    date: new Date(2018, 4, 17),
+    baseline: 24,
+    error: 20,
+    actualEnergy: 47
+  }, {
+    date: new Date(2018, 4, 18),
+    baseline: 83,
+    error: 78,
+    actualEnergy: 67
+  }, {
+    date: new Date(2018, 4, 19),
+    baseline: 40,
+    error: 45,
+    actualEnergy: 67
+  }, {
+    date: new Date(2018, 4, 20),
+    baseline: 19,
+    error: 30,
+    actualEnergy: 34
+  }, {
+    date: new Date(2018, 4, 21),
+    baseline: 38,
+    error: 41,
+    actualEnergy: 35
+  }, {
+    date: new Date(2018, 4, 22),
+    baseline: 24,
+    error: 20,
+    actualEnergy: 47
+  }, {
+    date: new Date(2018, 4, 23),
+    baseline: 83,
+    error: 78,
+    actualEnergy: 67
+  }, {
+    date: new Date(2018, 4, 24),
+    baseline: 40,
+    error: 45,
+    actualEnergy: 67
+  }, {
+    date: new Date(2018, 4, 25),
+    baseline: 19,
+    error: 30,
+    actualEnergy: 34
+  }, {
+    date: new Date(2018, 4, 26),
+    baseline: 38,
+    error: 41,
+    actualEnergy: 35
+  }, {
+    date: new Date(2018, 4, 27),
+    baseline: 24,
+    error: 20,
+    actualEnergy: 47
+  }, {
+    date: new Date(2018, 4, 28),
+    baseline: 83,
+    error: 78,
+    actualEnergy: 67
+  }, {
+    date: new Date(2018, 4, 29),
+    baseline: 40,
+    error: 45,
+    actualEnergy: 67
+  }, {
+    date: new Date(2018, 4, 30),
+    baseline: 19,
+    error: 30,
+    actualEnergy: 34
+  }, {
+    date: new Date(2018, 5, 1),
+    baseline: 19,
+    error: 30,
+    actualEnergy: 34
+  }, {
+    date: new Date(2018, 5, 2),
+    baseline: 19,
+    error: 30,
+    actualEnergy: 34
+  }, {
+    date: new Date(2018, 5, 3),
+    baseline: 19,
+    error: 30,
+    actualEnergy: 34
+  }, {
+    date: new Date(2018, 5, 4),
+    baseline: 19,
+    error: 30,
+    actualEnergy: 34
+  }, {
+    date: new Date(2018, 5, 5),
+    baseline: 19,
+    error: 30,
+    actualEnergy: 34
+  }, {
+    date: new Date(2018, 5, 6),
+    baseline: 19,
+    error: 30,
+    actualEnergy: 34
+  }, {
+    date: new Date(2018, 5, 7),
+    baseline: 19,
+    error: 30,
+    actualEnergy: 34
+  }, {
+    date: new Date(2018, 5, 8),
+    baseline: 19,
+    error: 30,
+    actualEnergy: 34
+  }, {
+    date: new Date(2018, 5, 9),
+    baseline: 19,
+    error: 30,
+    actualEnergy: 34
+  }, {
+    date: new Date(2018, 5, 10),
+    baseline: 19,
+    error: 30,
+    actualEnergy: 34
+  }]
+};
 
 /***/ })
 /******/ ]);

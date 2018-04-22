@@ -3,6 +3,10 @@ html {
   background-color: #99da99;
 }
 
+.widget-container {
+  width: 900px;
+}
+
 .graph-bar {
   color: #000 !important;
   background-color: #f1f1f1 !important;
