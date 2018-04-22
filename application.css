@@ -1,0 +1,26 @@
+html {
+  min-height: 100%;
+  background-color: #99da99;
+}
+
+.graph-bar {
+  color: #000 !important;
+  background-color: #f1f1f1 !important;
+  border-bottom: 1px solid #ccc !important;
+  width: 100%;
+  overflow: hidden;
+}
+
+.graph-bar .graph-bar-item {
+  white-space: normal;
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+}
+
+#linechart_material {
+  display: inline-block;
+}
