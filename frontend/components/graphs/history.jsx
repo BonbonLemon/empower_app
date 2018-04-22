@@ -14,7 +14,7 @@ class Forecast extends React.Component {
   fetchData() {
     const dataRows = [];
     HistoryData.data.forEach(dataPoint => {
-      dataRows.push([dataPoint.date, dataPoint.baseline, dataPoint.error, dataPoint.actualEnergy]);
+      dataRows.push([dataPoint.date, dataPoint.baseline, dataPoint.error, dataPoint.actual]);
     });
 
     // Above would be replaced with HTTP request and promise calls lines below
@@ -31,7 +31,7 @@ class Forecast extends React.Component {
     data.addColumn('date', 'Date');
     data.addColumn('number', 'Baseline');
     data.addColumn('number', 'Error');
-    data.addColumn('number', 'Actual Energy');
+    data.addColumn('number', 'Actual');
 
     data.addRows(dataRows);
 
