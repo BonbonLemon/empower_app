@@ -1,16 +1,9 @@
 import React from 'react';
 
-import Forecast from './graphs/forecast';
-import History from './graphs/history';
-
-class Widget extends React.Component {
+class Forecast extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      selectedTab: "forecast"
-    };
-    this.selectTab = this.selectTab.bind(this);
   }
 
   componentDidMount() {
@@ -44,8 +37,8 @@ class Widget extends React.Component {
 
     const options = {
       chart: {
-        title: 'Box Office Earnings in First Two Weeks of Opening',
-        subtitle: 'in millions of dollars (USD)'
+        title: 'Forecast',
+        subtitle: 'in some unit of measure...'
       },
       width: 900,
       height: 500
@@ -56,45 +49,13 @@ class Widget extends React.Component {
     chart.draw(data, google.charts.Line.convertOptions(options));
   }
 
-  selectTab(e) {
-    let $tabs;
-    $tabs = $('.graph-bar-item');
-    $tabs.each( (index, tab) => {
-      $(tab).removeClass("dark-gray");
-    });
-    const $target = $(e.target);
-    $target.addClass("dark-gray");
-    this.setState({
-      selectedTab: $target.attr("id")
-    });
-  }
-
-  graph() {
-    switch (this.state.selectedTab) {
-      case 'forecast':
-        return <Forecast />;
-      case 'history':
-        return <History />;
-      default:
-        return "";
-    }
-  }
-
   render() {
     return (
-      <div className="widget-container">
-        <div className="graph-bar">
-          <button id="forecast" className="graph-bar-item dark-gray" onClick={this.selectTab}>
-            Forecast
-          </button>
-          <button id="history" className="graph-bar-item" onClick={this.selectTab}>
-            History
-          </button>
-        </div>
-        { this.graph() }
+      <div id="linechart_material">
+
       </div>
     )
   }
 };
 
-export default Widget;
+export default Forecast;

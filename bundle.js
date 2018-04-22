@@ -9613,6 +9613,14 @@ var _react = __webpack_require__(49);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _forecast = __webpack_require__(186);
+
+var _forecast2 = _interopRequireDefault(_forecast);
+
+var _history = __webpack_require__(187);
+
+var _history2 = _interopRequireDefault(_history);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -9630,8 +9638,9 @@ var Widget = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Widget.__proto__ || Object.getPrototypeOf(Widget)).call(this, props));
 
     _this.state = {
-      selectedTab: "forcast"
+      selectedTab: "forecast"
     };
+    _this.selectTab = _this.selectTab.bind(_this);
     return _this;
   }
 
@@ -9666,6 +9675,32 @@ var Widget = function (_React$Component) {
       chart.draw(data, google.charts.Line.convertOptions(options));
     }
   }, {
+    key: 'selectTab',
+    value: function selectTab(e) {
+      var $tabs = void 0;
+      $tabs = $('.graph-bar-item');
+      $tabs.each(function (index, tab) {
+        $(tab).removeClass("dark-gray");
+      });
+      var $target = $(e.target);
+      $target.addClass("dark-gray");
+      this.setState({
+        selectedTab: $target.attr("id")
+      });
+    }
+  }, {
+    key: 'graph',
+    value: function graph() {
+      switch (this.state.selectedTab) {
+        case 'forecast':
+          return _react2.default.createElement(_forecast2.default, null);
+        case 'history':
+          return _react2.default.createElement(_history2.default, null);
+        default:
+          return "";
+      }
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -9676,16 +9711,16 @@ var Widget = function (_React$Component) {
           { className: 'graph-bar' },
           _react2.default.createElement(
             'button',
-            { className: 'graph-bar-item' },
+            { id: 'forecast', className: 'graph-bar-item dark-gray', onClick: this.selectTab },
             'Forecast'
           ),
           _react2.default.createElement(
             'button',
-            { className: 'graph-bar-item' },
+            { id: 'history', className: 'graph-bar-item', onClick: this.selectTab },
             'History'
           )
         ),
-        _react2.default.createElement('div', { id: 'linechart_material' })
+        this.graph()
       );
     }
   }]);
@@ -22251,6 +22286,162 @@ function traverseAllChildren(children, callback, traverseContext) {
 
 module.exports = traverseAllChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 186 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(49);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Forecast = function (_React$Component) {
+  _inherits(Forecast, _React$Component);
+
+  function Forecast(props) {
+    _classCallCheck(this, Forecast);
+
+    return _possibleConstructorReturn(this, (Forecast.__proto__ || Object.getPrototypeOf(Forecast)).call(this, props));
+  }
+
+  _createClass(Forecast, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      google.charts.load('current', { 'packages': ['line'] });
+      google.charts.setOnLoadCallback(this.drawChart);
+    }
+  }, {
+    key: 'drawChart',
+    value: function drawChart() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Day');
+      data.addColumn('number', 'Guardians of the Galaxy');
+      data.addColumn('number', 'The Avengers');
+      data.addColumn('number', 'Transformers: Age of Extinction');
+
+      data.addRows([[1, 37.8, 80.8, 41.8], [2, 30.9, 69.5, 32.4], [3, 25.4, 57, 25.7], [4, 11.7, 18.8, 10.5], [5, 11.9, 17.6, 10.4], [6, 8.8, 13.6, 7.7], [7, 7.6, 12.3, 9.6], [8, 12.3, 29.2, 10.6], [9, 16.9, 42.9, 14.8], [10, 12.8, 30.9, 11.6], [11, 5.3, 7.9, 4.7], [12, 6.6, 8.4, 5.2], [13, 4.8, 6.3, 3.6], [14, 4.2, 6.2, 3.4]]);
+
+      var options = {
+        chart: {
+          title: 'Forecast',
+          subtitle: 'in some unit of measure...'
+        },
+        width: 900,
+        height: 500
+      };
+
+      var chart = new google.charts.Line(document.getElementById('linechart_material'));
+
+      chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement('div', { id: 'linechart_material' });
+    }
+  }]);
+
+  return Forecast;
+}(_react2.default.Component);
+
+;
+
+exports.default = Forecast;
+
+/***/ }),
+/* 187 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(49);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Forecast = function (_React$Component) {
+  _inherits(Forecast, _React$Component);
+
+  function Forecast(props) {
+    _classCallCheck(this, Forecast);
+
+    return _possibleConstructorReturn(this, (Forecast.__proto__ || Object.getPrototypeOf(Forecast)).call(this, props));
+  }
+
+  _createClass(Forecast, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      google.charts.load('current', { 'packages': ['line'] });
+      google.charts.setOnLoadCallback(this.drawChart);
+    }
+  }, {
+    key: 'drawChart',
+    value: function drawChart() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Day');
+      data.addColumn('number', 'Guardians of the Galaxy');
+      data.addColumn('number', 'The Avengers');
+      data.addColumn('number', 'Transformers: Age of Extinction');
+
+      data.addRows([[1, 37.8, 80.8, 41.8], [2, 30.9, 69.5, 32.4], [3, 25.4, 57, 25.7], [4, 11.7, 18.8, 10.5], [5, 11.9, 17.6, 10.4], [6, 8.8, 13.6, 7.7], [7, 7.6, 12.3, 9.6], [8, 12.3, 29.2, 10.6], [9, 16.9, 42.9, 14.8], [10, 12.8, 30.9, 11.6], [11, 5.3, 7.9, 4.7], [12, 6.6, 8.4, 5.2], [13, 4.8, 6.3, 3.6], [14, 4.2, 6.2, 3.4]]);
+
+      var options = {
+        chart: {
+          title: 'History',
+          subtitle: 'in some unit of measure...'
+        },
+        width: 900,
+        height: 500
+      };
+
+      var chart = new google.charts.Line(document.getElementById('linechart_material'));
+
+      chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement('div', { id: 'linechart_material' });
+    }
+  }]);
+
+  return Forecast;
+}(_react2.default.Component);
+
+;
+
+exports.default = Forecast;
 
 /***/ })
 /******/ ]);
