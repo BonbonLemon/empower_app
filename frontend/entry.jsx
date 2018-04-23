@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Widget from './components/widget';
+import App from './app';
 import store from './store';
 
 document.addEventListener("DOMContentLoaded", function(){
-  ReactDOM.render(<Widget store={store} />, document.getElementById('root'));
+  ReactDOM.render(<App store={store} />, document.getElementById('root'));
 });

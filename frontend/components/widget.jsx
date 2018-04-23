@@ -4,7 +4,6 @@ import Forecast from './graphs/forecast';
 import History from './graphs/history';
 
 class Widget extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
