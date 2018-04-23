@@ -9626,6 +9626,7 @@ var App = function App() {
     'div',
     null,
     _react2.default.createElement(_header2.default, null),
+    _react2.default.createElement(Instructions, null),
     _react2.default.createElement(_widget2.default, null)
   );
 };
@@ -22884,7 +22885,12 @@ var App = function App() {
     _react2.default.createElement(
       "li",
       { id: "header-logo" },
-      "Empower"
+      _react2.default.createElement(
+        "span",
+        null,
+        _react2.default.createElement("img", { id: "logo-image", src: "logo.png" }),
+        "Empower"
+      )
     ),
     _react2.default.createElement(
       "li",
