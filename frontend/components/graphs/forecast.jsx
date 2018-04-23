@@ -82,7 +82,7 @@ class Forecast extends React.Component {
     return (
       <div>
         <div id="linechart_material" />
-        <label>Display: </label>
+        <label>Display energy for the </label>
         <select
           value={display}
           onChange={this.updateGraph}

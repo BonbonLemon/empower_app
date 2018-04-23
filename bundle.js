@@ -9615,6 +9615,10 @@ var _header = __webpack_require__(191);
 
 var _header2 = _interopRequireDefault(_header);
 
+var _instructions = __webpack_require__(192);
+
+var _instructions2 = _interopRequireDefault(_instructions);
+
 var _widget = __webpack_require__(89);
 
 var _widget2 = _interopRequireDefault(_widget);
@@ -9626,7 +9630,7 @@ var App = function App() {
     'div',
     null,
     _react2.default.createElement(_header2.default, null),
-    _react2.default.createElement(Instructions, null),
+    _react2.default.createElement(_instructions2.default, null),
     _react2.default.createElement(_widget2.default, null)
   );
 };
@@ -9778,7 +9782,7 @@ var Forecast = function (_React$Component) {
         _react2.default.createElement(
           'label',
           null,
-          'Display: '
+          'Display energy for the '
         ),
         _react2.default.createElement(
           'select',
@@ -9948,7 +9952,7 @@ var Forecast = function (_React$Component) {
         _react2.default.createElement(
           'label',
           null,
-          'Display: '
+          'Display energy from the '
         ),
         _react2.default.createElement(
           'select',
@@ -22878,7 +22882,7 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var App = function App() {
+var Header = function Header() {
   return _react2.default.createElement(
     "ul",
     { id: "header" },
@@ -22900,7 +22904,34 @@ var App = function App() {
   );
 };
 
-exports.default = App;
+exports.default = Header;
+
+/***/ }),
+/* 192 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(20);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Instructions = function Instructions() {
+  return _react2.default.createElement(
+    'p',
+    null,
+    'Instructions... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+  );
+};
+
+exports.default = Instructions;
 
 /***/ })
 /******/ ]);

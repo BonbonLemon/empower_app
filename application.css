@@ -21,6 +21,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 40px;
 }
 
 #header-logo {
@@ -28,7 +29,7 @@ body {
 }
 
 #logo-image {
-  height: 24px;
+  height: 80px;
 }
 
 #greetings {
