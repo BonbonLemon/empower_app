@@ -5,6 +5,12 @@ import { HistoryData } from './json/history';
 class Forecast extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      display: 5
+    };
+
+    this.updateGraph = this.updateGraph.bind(this);
   }
 
   componentDidMount() {
@@ -17,7 +23,7 @@ class Forecast extends React.Component {
       dataRows.push([dataPoint.date, dataPoint.baseline, dataPoint.error, dataPoint.actual]);
     });
 
-    // Above would be replaced with HTTP request and promise calls lines below
+    // Above would be replaced with HTTP request and promise which calls lines below
     this.initializeChart(dataRows);
   }
 
@@ -40,8 +46,8 @@ class Forecast extends React.Component {
         title: 'History',
         subtitle: 'in some unit of measure...'
       },
-      width: 900,
-      height: 500,
+      width: 800,
+      height: 450,
       hAxis: {
         format: 'MMM d, y'
       }
@@ -52,10 +58,42 @@ class Forecast extends React.Component {
     chart.draw(data, google.charts.Line.convertOptions(options));
   }
 
-  render() {
-    return (
-      <div id="linechart_material">
+  updateGraph(e) {
+    e.preventDefault();
+    const display = parseInt(e.target.value);
 
+    const dataRows = [];
+    const startDate = new Date(2018, 5, 10, 11); // Assumes today is 5/10/2018
+    startDate.setDate(startDate.getDate() - display - 1);
+    const yesterday = new Date(2018, 5, 10, 11);
+    yesterday.setDate(yesterday.getDate() - 1);
+
+    HistoryData.data.forEach((dataPoint) => {
+      if (dataPoint.date > startDate && dataPoint.date < yesterday) {
+        dataRows.push([dataPoint.date, dataPoint.baseline, dataPoint.error, dataPoint.actual]);
+      }
+    });
+
+    this.drawChart(dataRows);
+    this.setState({display: display});
+  }
+
+  render() {
+    const { display } = this.state;
+
+    return (
+      <div>
+        <div id="linechart_material" />
+        <label>Display: </label>
+        <select
+          value={display}
+          onChange={this.updateGraph}
+        >
+          <option value={5}>Past 5 days</option>
+          <option value={7}>Past week</option>
+          <option value={14}>Past 2 weeks</option>
+          <option value={30}>Past month</option>
+        </select>
       </div>
     )
   }

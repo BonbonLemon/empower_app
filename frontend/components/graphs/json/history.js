@@ -214,11 +214,6 @@ export const HistoryData = {
       baseline: 19,
       error: 30,
       actual: 34
-    },{
-      date: new Date(2018, 5, 10),
-      baseline: 19,
-      error: 30,
-      actual: 34
     }
   ]
 };

@@ -5,6 +5,7 @@ html {
 
 .widget-container {
   width: 900px;
+  margin: 0 auto;
 }
 
 .graph-bar {
@@ -50,4 +51,8 @@ html {
 
 #linechart_material {
   display: inline-block;
+  background-color: white;
+  height: 450px;
+  width: 800px;
+  padding: 25px 50px;
 }

@@ -22290,7 +22290,14 @@ var Forecast = function (_React$Component) {
   function Forecast(props) {
     _classCallCheck(this, Forecast);
 
-    return _possibleConstructorReturn(this, (Forecast.__proto__ || Object.getPrototypeOf(Forecast)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Forecast.__proto__ || Object.getPrototypeOf(Forecast)).call(this, props));
+
+    _this.state = {
+      display: 14
+    };
+
+    _this.updateGraph = _this.updateGraph.bind(_this);
+    return _this;
   }
 
   _createClass(Forecast, [{
@@ -22302,7 +22309,10 @@ var Forecast = function (_React$Component) {
     key: 'fetchData',
     value: function fetchData() {
       var dataRows = [];
-      _forecast.ForecastData.data.forEach(function (dataPoint) {
+      var forecastData = (0, _forecast.generateForecastData)(new Date(2018, 5, 10, 11));
+      this.setState({ forecastjson: forecastData });
+
+      forecastData.data.forEach(function (dataPoint) {
         dataRows.push([dataPoint.date, dataPoint.baseline, dataPoint.error]);
       });
 
@@ -22323,7 +22333,7 @@ var Forecast = function (_React$Component) {
     key: 'drawChart',
     value: function drawChart(dataRows) {
       var data = new google.visualization.DataTable();
-      data.addColumn('number', 'Day');
+      data.addColumn('date', 'Day');
       data.addColumn('number', 'Baseline');
       data.addColumn('number', 'Error');
 
@@ -22334,9 +22344,8 @@ var Forecast = function (_React$Component) {
           title: 'Forecast',
           subtitle: 'in some unit of measure...'
         },
-        width: 900,
-        height: 500,
-        padding: 10
+        width: 800,
+        height: 450
       };
 
       var chart = new google.charts.Line(document.getElementById('linechart_material'));
@@ -22344,9 +22353,68 @@ var Forecast = function (_React$Component) {
       chart.draw(data, google.charts.Line.convertOptions(options));
     }
   }, {
+    key: 'updateGraph',
+    value: function updateGraph(e) {
+      e.preventDefault();
+      var display = parseInt(e.target.value);
+
+      var dataRows = [];
+      var currentDate = new Date(2018, 5, 10, 11); // Assumes today is 5/10/2018
+      var endDay = new Date(2018, 5, 10, 11);
+      endDay.setDate(endDay.getDate() + display);
+
+      this.state.forecastjson.data.forEach(function (dataPoint) {
+        if (dataPoint.date >= currentDate && dataPoint.date < endDay) {
+          dataRows.push([dataPoint.date, dataPoint.baseline, dataPoint.error]);
+        }
+      });
+
+      this.drawChart(dataRows);
+      this.setState({ display: display });
+    }
+  }, {
     key: 'render',
     value: function render() {
-      return _react2.default.createElement('div', { id: 'linechart_material' });
+      var display = this.state.display;
+
+
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement('div', { id: 'linechart_material' }),
+        _react2.default.createElement(
+          'label',
+          null,
+          'Display: '
+        ),
+        _react2.default.createElement(
+          'select',
+          {
+            value: display,
+            onChange: this.updateGraph
+          },
+          _react2.default.createElement(
+            'option',
+            { value: 1 },
+            'Next 24 hours'
+          ),
+          _react2.default.createElement(
+            'option',
+            { value: 3 },
+            'Next 3 days'
+          ),
+          _react2.default.createElement(
+            'option',
+            { value: 7 },
+            'Next 1 week'
+          ),
+          _react2.default.createElement(
+            'option',
+            { value: 14 },
+            'Next 2 weeks'
+          )
+        )
+      );
     }
   }]);
 
@@ -22390,7 +22458,14 @@ var Forecast = function (_React$Component) {
   function Forecast(props) {
     _classCallCheck(this, Forecast);
 
-    return _possibleConstructorReturn(this, (Forecast.__proto__ || Object.getPrototypeOf(Forecast)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Forecast.__proto__ || Object.getPrototypeOf(Forecast)).call(this, props));
+
+    _this.state = {
+      display: 5
+    };
+
+    _this.updateGraph = _this.updateGraph.bind(_this);
+    return _this;
   }
 
   _createClass(Forecast, [{
@@ -22406,7 +22481,7 @@ var Forecast = function (_React$Component) {
         dataRows.push([dataPoint.date, dataPoint.baseline, dataPoint.error, dataPoint.actual]);
       });
 
-      // Above would be replaced with HTTP request and promise calls lines below
+      // Above would be replaced with HTTP request and promise which calls lines below
       this.initializeChart(dataRows);
     }
   }, {
@@ -22435,8 +22510,8 @@ var Forecast = function (_React$Component) {
           title: 'History',
           subtitle: 'in some unit of measure...'
         },
-        width: 900,
-        height: 500,
+        width: 800,
+        height: 450,
         hAxis: {
           format: 'MMM d, y'
         }
@@ -22447,9 +22522,69 @@ var Forecast = function (_React$Component) {
       chart.draw(data, google.charts.Line.convertOptions(options));
     }
   }, {
+    key: 'updateGraph',
+    value: function updateGraph(e) {
+      e.preventDefault();
+      var display = parseInt(e.target.value);
+
+      var dataRows = [];
+      var startDate = new Date(2018, 5, 10, 11); // Assumes today is 5/10/2018
+      startDate.setDate(startDate.getDate() - display - 1);
+      var yesterday = new Date(2018, 5, 10, 11);
+      yesterday.setDate(yesterday.getDate() - 1);
+
+      _history.HistoryData.data.forEach(function (dataPoint) {
+        if (dataPoint.date > startDate && dataPoint.date < yesterday) {
+          dataRows.push([dataPoint.date, dataPoint.baseline, dataPoint.error, dataPoint.actual]);
+        }
+      });
+
+      this.drawChart(dataRows);
+      this.setState({ display: display });
+    }
+  }, {
     key: 'render',
     value: function render() {
-      return _react2.default.createElement('div', { id: 'linechart_material' });
+      var display = this.state.display;
+
+
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement('div', { id: 'linechart_material' }),
+        _react2.default.createElement(
+          'label',
+          null,
+          'Display: '
+        ),
+        _react2.default.createElement(
+          'select',
+          {
+            value: display,
+            onChange: this.updateGraph
+          },
+          _react2.default.createElement(
+            'option',
+            { value: 5 },
+            'Past 5 days'
+          ),
+          _react2.default.createElement(
+            'option',
+            { value: 7 },
+            'Past week'
+          ),
+          _react2.default.createElement(
+            'option',
+            { value: 14 },
+            'Past 2 weeks'
+          ),
+          _react2.default.createElement(
+            'option',
+            { value: 30 },
+            'Past month'
+          )
+        )
+      );
     }
   }]);
 
@@ -22470,28 +22605,24 @@ exports.default = Forecast;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var ForecastData = exports.ForecastData = {
-  data: [{
-    date: 1,
-    baseline: 23,
-    error: 28
-  }, {
-    date: 2,
-    baseline: 45,
-    error: 39
-  }, {
-    date: 3,
-    baseline: 48,
-    error: 44
-  }, {
-    date: 4,
-    baseline: 83,
-    error: 76
-  }, {
-    date: 5,
-    baseline: 19,
-    error: 24
-  }]
+var generateForecastData = exports.generateForecastData = function generateForecastData() {
+  var data = [];
+  for (var i = 0; i < 14 * 24 / 4; i++) {
+    data.push(createRandomDataPoint(i));
+  }
+
+  return { data: data };
+};
+
+var createRandomDataPoint = function createRandomDataPoint(i) {
+  var baseline = Math.floor(Math.random() * 80);
+  var date = new Date(2018, 5, 10, 12);
+  date.setHours(date.getHours() + i * 4);
+  return {
+    date: date,
+    baseline: baseline,
+    error: Math.floor(baseline * (Math.random() * 0.4 + 0.8))
+  };
 };
 
 /***/ }),
@@ -22687,11 +22818,6 @@ var HistoryData = exports.HistoryData = {
     actual: 34
   }, {
     date: new Date(2018, 5, 9),
-    baseline: 19,
-    error: 30,
-    actual: 34
-  }, {
-    date: new Date(2018, 5, 10),
     baseline: 19,
     error: 30,
     actual: 34
