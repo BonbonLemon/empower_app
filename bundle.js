@@ -9638,13 +9638,7 @@ var App = function App() {
 exports.default = App;
 
 /***/ }),
-/* 83 */
-/***/ (function(module, exports) {
-
-"use strict";
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/home/roosterlegs/Desktop/Empower_App/frontend/store.js'\n    at Error (native)");
-
-/***/ }),
+/* 83 */,
 /* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10048,9 +10042,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Instructions = function Instructions() {
   return _react2.default.createElement(
-    'p',
+    'div',
     null,
-    'Instructions... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+    _react2.default.createElement(
+      'p',
+      null,
+      'Today is December 26, 2017.'
+    ),
+    _react2.default.createElement(
+      'p',
+      null,
+      'Instructions... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+    )
   );
 };
 
@@ -10181,14 +10184,10 @@ var _app = __webpack_require__(82);
 
 var _app2 = _interopRequireDefault(_app);
 
-var _store = __webpack_require__(83);
-
-var _store2 = _interopRequireDefault(_store);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 document.addEventListener("DOMContentLoaded", function () {
-  _reactDom2.default.render(_react2.default.createElement(_app2.default, { store: _store2.default }), document.getElementById('root'));
+  _reactDom2.default.render(_react2.default.createElement(_app2.default, null), document.getElementById('root'));
 });
 
 /***/ }),
