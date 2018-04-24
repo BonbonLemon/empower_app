@@ -1,7 +1,6 @@
 import React from 'react';
 
 import forecastData from './json/forecast.json';
-import { generateForecastData } from './json/forecast';
 
 class Forecast extends React.Component {
   constructor(props) {
@@ -28,6 +27,7 @@ class Forecast extends React.Component {
     data.addColumn('date', 'Day');
     data.addColumn('number', 'Baseline');
     data.addColumn('number', 'Error');
+    data.addColumn('number', 'Baseline + Error');
 
     data.addRows(dataRows);
 
@@ -62,7 +62,7 @@ class Forecast extends React.Component {
     forecastData.data.forEach((dataPoint) => {
       const date = new Date(dataPoint.date);
       if (date >= currentDate && date < endDate) {
-        dataRows.push([date, dataPoint.baseline, dataPoint.error]);
+        dataRows.push([date, dataPoint.baseline, dataPoint.error, dataPoint.baseline + dataPoint.error]);
       }
     });
 
