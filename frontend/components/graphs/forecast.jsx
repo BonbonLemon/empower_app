@@ -1,5 +1,6 @@
 import React from 'react';
 
+import forecastData from './json/forecast.json';
 import { generateForecastData } from './json/forecast';
 
 class Forecast extends React.Component {
@@ -7,32 +8,19 @@ class Forecast extends React.Component {
     super(props);
 
     this.state = {
-      display: 14
+      display: 1
     };
 
-    this.updateGraph = this.updateGraph.bind(this);
+    this.setRange = this.setRange.bind(this);
   }
 
   componentDidMount() {
-    this.fetchData();
+    this.initializeChart();
   }
 
-  fetchData() {
-    const dataRows = [];
-    const forecastData = generateForecastData(new Date(2018, 5, 10, 11));
-    this.setState({forecastjson: forecastData});
-
-    forecastData.data.forEach(dataPoint => {
-      dataRows.push([dataPoint.date, dataPoint.baseline, dataPoint.error]);
-    });
-
-    // Above would be replaced with HTTP request and promise calls lines below
-    this.initializeChart(dataRows);
-  }
-
-  initializeChart(dataRows) {
+  initializeChart() {
     google.charts.load('current', {'packages':['line']});
-    google.charts.setOnLoadCallback(() => this.drawChart(dataRows));
+    google.charts.setOnLoadCallback(this.setRange);
   }
 
   drawChart(dataRows) {
@@ -57,18 +45,24 @@ class Forecast extends React.Component {
     chart.draw(data, google.charts.Line.convertOptions(options));
   }
 
-  updateGraph(e) {
-    e.preventDefault();
-    const display = parseInt(e.target.value);
+  setRange(e) {
+    let display;
+    if (e) {
+      e.preventDefault();
+      display = parseInt(e.target.value);
+    } else {
+      display = this.state.display;
+    }
 
     const dataRows = [];
-    const currentDate = new Date(2018, 5, 10, 11); // Assumes today is 5/10/2018
-    const endDay = new Date(2018, 5, 10, 11);
-    endDay.setDate(endDay.getDate() + display);
+    const currentDate = new Date('Tue Dec 26 2017 13:30:00 GMT-0800 (PST)'); // Assumes today is 5/10/2018
+    const endDate = new Date(currentDate);
+    endDate.setDate(endDate.getDate() + display);
 
-    this.state.forecastjson.data.forEach((dataPoint) => {
-      if (dataPoint.date >= currentDate && dataPoint.date < endDay) {
-        dataRows.push([dataPoint.date, dataPoint.baseline, dataPoint.error]);
+    forecastData.data.forEach((dataPoint) => {
+      const date = new Date(dataPoint.date);
+      if (date >= currentDate && date < endDate) {
+        dataRows.push([date, dataPoint.baseline, dataPoint.error]);
       }
     });
 
@@ -85,7 +79,7 @@ class Forecast extends React.Component {
         <label>Display energy for the </label>
         <select
           value={display}
-          onChange={this.updateGraph}
+          onChange={this.setRange}
         >
           <option value={1}>Next 24 hours</option>
           <option value={3}>Next 3 days</option>

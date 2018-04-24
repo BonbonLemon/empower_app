@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 90);
+/******/ 	return __webpack_require__(__webpack_require__.s = 93);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -778,7 +778,7 @@ module.exports = ExecutionEnvironment;
 
 
 
-var _prodInvariant = __webpack_require__(19);
+var _prodInvariant = __webpack_require__(20);
 
 var ReactCurrentOwner = __webpack_require__(11);
 
@@ -1166,7 +1166,7 @@ module.exports = ReactComponentTreeHook;
 var debugTool = null;
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactDebugTool = __webpack_require__(136);
+  var ReactDebugTool = __webpack_require__(139);
   debugTool = ReactDebugTool;
 }
 
@@ -1234,9 +1234,9 @@ var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
 var CallbackQueue = __webpack_require__(56);
-var PooledClass = __webpack_require__(14);
+var PooledClass = __webpack_require__(15);
 var ReactFeatureFlags = __webpack_require__(61);
-var ReactReconciler = __webpack_require__(17);
+var ReactReconciler = __webpack_require__(18);
 var Transaction = __webpack_require__(29);
 
 var invariant = __webpack_require__(1);
@@ -1519,7 +1519,7 @@ module.exports = ReactCurrentOwner;
 
 var _assign = __webpack_require__(4);
 
-var PooledClass = __webpack_require__(14);
+var PooledClass = __webpack_require__(15);
 
 var emptyFunction = __webpack_require__(9);
 var warning = __webpack_require__(2);
@@ -1995,6 +1995,16 @@ module.exports = DOMProperty;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+module.exports = __webpack_require__(19);
+
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2107,7 +2117,7 @@ module.exports = PooledClass;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2452,7 +2462,7 @@ module.exports = ReactElement;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2573,7 +2583,7 @@ DOMLazyTree.queueText = queueText;
 module.exports = DOMLazyTree;
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2587,7 +2597,7 @@ module.exports = DOMLazyTree;
 
 
 
-var ReactRef = __webpack_require__(150);
+var ReactRef = __webpack_require__(153);
 var ReactInstrumentation = __webpack_require__(8);
 
 var warning = __webpack_require__(2);
@@ -2743,7 +2753,7 @@ module.exports = ReactReconciler;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2760,14 +2770,14 @@ module.exports = ReactReconciler;
 var _assign = __webpack_require__(4);
 
 var ReactBaseClasses = __webpack_require__(77);
-var ReactChildren = __webpack_require__(180);
-var ReactDOMFactories = __webpack_require__(181);
-var ReactElement = __webpack_require__(15);
-var ReactPropTypes = __webpack_require__(183);
-var ReactVersion = __webpack_require__(185);
+var ReactChildren = __webpack_require__(183);
+var ReactDOMFactories = __webpack_require__(184);
+var ReactElement = __webpack_require__(16);
+var ReactPropTypes = __webpack_require__(186);
+var ReactVersion = __webpack_require__(188);
 
-var createReactClass = __webpack_require__(187);
-var onlyChild = __webpack_require__(189);
+var createReactClass = __webpack_require__(190);
+var onlyChild = __webpack_require__(192);
 
 var createElement = ReactElement.createElement;
 var createFactory = ReactElement.createFactory;
@@ -2879,7 +2889,7 @@ module.exports = React;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2919,16 +2929,6 @@ function reactProdInvariant(code) {
 }
 
 module.exports = reactProdInvariant;
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = __webpack_require__(18);
-
 
 /***/ }),
 /* 21 */
@@ -3756,10 +3756,10 @@ module.exports = EventPluginRegistry;
 var _assign = __webpack_require__(4);
 
 var EventPluginRegistry = __webpack_require__(26);
-var ReactEventEmitterMixin = __webpack_require__(140);
+var ReactEventEmitterMixin = __webpack_require__(143);
 var ViewportMetrics = __webpack_require__(67);
 
-var getVendorPrefixedEventName = __webpack_require__(175);
+var getVendorPrefixedEventName = __webpack_require__(178);
 var isEventSupported = __webpack_require__(46);
 
 /**
@@ -4714,8 +4714,8 @@ module.exports = shallowEqual;
 
 
 
-var DOMLazyTree = __webpack_require__(16);
-var Danger = __webpack_require__(113);
+var DOMLazyTree = __webpack_require__(17);
+var Danger = __webpack_require__(116);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactInstrumentation = __webpack_require__(8);
 
@@ -5264,7 +5264,7 @@ var _prodInvariant = __webpack_require__(3);
 var ReactPropTypesSecret = __webpack_require__(66);
 var propTypesFactory = __webpack_require__(53);
 
-var React = __webpack_require__(18);
+var React = __webpack_require__(19);
 var PropTypes = propTypesFactory(React.isValidElement);
 
 var invariant = __webpack_require__(1);
@@ -6649,7 +6649,7 @@ module.exports = getActiveElement;
 // Therefore we re-export development-only version with all the PropTypes checks here.
 // However if one is migrating to the `prop-types` npm library, they will go through the
 // `index.js` entry point, and it will branch depending on the environment.
-var factory = __webpack_require__(107);
+var factory = __webpack_require__(110);
 module.exports = function(isValidElement) {
   // It is still allowed in 15.5.
   var throwOnDirectAccess = false;
@@ -6854,7 +6854,7 @@ var _prodInvariant = __webpack_require__(3);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var PooledClass = __webpack_require__(14);
+var PooledClass = __webpack_require__(15);
 
 var invariant = __webpack_require__(1);
 
@@ -6976,7 +6976,7 @@ var DOMProperty = __webpack_require__(13);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactInstrumentation = __webpack_require__(8);
 
-var quoteAttributeValueForBrowser = __webpack_require__(176);
+var quoteAttributeValueForBrowser = __webpack_require__(179);
 var warning = __webpack_require__(2);
 
 var VALID_ATTRIBUTE_NAME_REGEX = new RegExp('^[' + DOMProperty.ATTRIBUTE_NAME_START_CHAR + '][' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$');
@@ -7566,9 +7566,9 @@ module.exports = ReactHostComponent;
 
 
 
-var ReactDOMSelection = __webpack_require__(131);
+var ReactDOMSelection = __webpack_require__(134);
 
-var containsNode = __webpack_require__(94);
+var containsNode = __webpack_require__(97);
 var focusNode = __webpack_require__(51);
 var getActiveElement = __webpack_require__(52);
 
@@ -7694,19 +7694,19 @@ module.exports = ReactInputSelection;
 
 var _prodInvariant = __webpack_require__(3);
 
-var DOMLazyTree = __webpack_require__(16);
+var DOMLazyTree = __webpack_require__(17);
 var DOMProperty = __webpack_require__(13);
-var React = __webpack_require__(18);
+var React = __webpack_require__(19);
 var ReactBrowserEventEmitter = __webpack_require__(27);
 var ReactCurrentOwner = __webpack_require__(11);
 var ReactDOMComponentTree = __webpack_require__(5);
-var ReactDOMContainerInfo = __webpack_require__(123);
-var ReactDOMFeatureFlags = __webpack_require__(125);
+var ReactDOMContainerInfo = __webpack_require__(126);
+var ReactDOMFeatureFlags = __webpack_require__(128);
 var ReactFeatureFlags = __webpack_require__(61);
 var ReactInstanceMap = __webpack_require__(23);
 var ReactInstrumentation = __webpack_require__(8);
-var ReactMarkupChecksum = __webpack_require__(145);
-var ReactReconciler = __webpack_require__(17);
+var ReactMarkupChecksum = __webpack_require__(148);
+var ReactReconciler = __webpack_require__(18);
 var ReactUpdateQueue = __webpack_require__(41);
 var ReactUpdates = __webpack_require__(10);
 
@@ -8237,7 +8237,7 @@ module.exports = ReactMount;
 
 var _prodInvariant = __webpack_require__(3);
 
-var React = __webpack_require__(18);
+var React = __webpack_require__(19);
 
 var invariant = __webpack_require__(1);
 
@@ -8620,11 +8620,11 @@ module.exports = inputValueTracking;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var ReactCompositeComponent = __webpack_require__(120);
+var ReactCompositeComponent = __webpack_require__(123);
 var ReactEmptyComponent = __webpack_require__(60);
 var ReactHostComponent = __webpack_require__(62);
 
-var getNextDebugID = __webpack_require__(188);
+var getNextDebugID = __webpack_require__(191);
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
 
@@ -8862,9 +8862,9 @@ module.exports = setTextContent;
 var _prodInvariant = __webpack_require__(3);
 
 var ReactCurrentOwner = __webpack_require__(11);
-var REACT_ELEMENT_TYPE = __webpack_require__(139);
+var REACT_ELEMENT_TYPE = __webpack_require__(142);
 
-var getIteratorFn = __webpack_require__(173);
+var getIteratorFn = __webpack_require__(176);
 var invariant = __webpack_require__(1);
 var KeyEscapeUtils = __webpack_require__(37);
 var warning = __webpack_require__(2);
@@ -9039,7 +9039,7 @@ module.exports = traverseAllChildren;
 
 
 
-var _prodInvariant = __webpack_require__(19),
+var _prodInvariant = __webpack_require__(20),
     _assign = __webpack_require__(4);
 
 var ReactNoopUpdateQueue = __webpack_require__(80);
@@ -9218,9 +9218,9 @@ module.exports = REACT_ELEMENT_TYPE;
 
 var ReactCurrentOwner = __webpack_require__(11);
 var ReactComponentTreeHook = __webpack_require__(7);
-var ReactElement = __webpack_require__(15);
+var ReactElement = __webpack_require__(16);
 
-var checkReactTypeSpec = __webpack_require__(186);
+var checkReactTypeSpec = __webpack_require__(189);
 
 var canDefineProperty = __webpack_require__(32);
 var getIteratorFn = __webpack_require__(81);
@@ -9607,19 +9607,19 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(20);
+var _react = __webpack_require__(14);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _header = __webpack_require__(191);
+var _header = __webpack_require__(90);
 
 var _header2 = _interopRequireDefault(_header);
 
-var _instructions = __webpack_require__(192);
+var _instructions = __webpack_require__(91);
 
 var _instructions2 = _interopRequireDefault(_instructions);
 
-var _widget = __webpack_require__(89);
+var _widget = __webpack_require__(92);
 
 var _widget2 = _interopRequireDefault(_widget);
 
@@ -9651,11 +9651,17 @@ exports.default = App;
 "use strict";
 
 
-module.exports = __webpack_require__(121);
+module.exports = __webpack_require__(124);
 
 
 /***/ }),
 /* 85 */
+/***/ (function(module, exports) {
+
+module.exports = {"schema":{"fields":[{"name":"index","type":"integer"},{"name":"date","type":"datetime","tz":"US/Pacific"},{"name":"baseline","type":"number"},{"name":"error","type":"number"}],"primaryKey":["index"],"pandas_version":"0.20.0"},"data":[{"index":0,"date":"2017-12-26T21:30:00.000Z","baseline":0.908605573,"error":-0.771605573},{"index":1,"date":"2017-12-26T21:45:00.000Z","baseline":0.859722206,"error":-0.726722206},{"index":2,"date":"2017-12-26T22:00:00.000Z","baseline":0.8030505295,"error":-0.6700505295},{"index":3,"date":"2017-12-26T22:15:00.000Z","baseline":0.7391038161,"error":-0.6071038161},{"index":4,"date":"2017-12-26T22:30:00.000Z","baseline":0.6682237236,"error":-0.5362237236},{"index":5,"date":"2017-12-26T22:45:00.000Z","baseline":0.5913122493,"error":-0.4583122493},{"index":6,"date":"2017-12-26T23:00:00.000Z","baseline":0.5097214782,"error":-0.3777214782},{"index":7,"date":"2017-12-26T23:15:00.000Z","baseline":0.4259159812,"error":-0.2949159812},{"index":8,"date":"2017-12-26T23:30:00.000Z","baseline":0.3418679562,"error":-0.2098679562},{"index":9,"date":"2017-12-26T23:45:00.000Z","baseline":0.2610089692,"error":-0.1300089692},{"index":10,"date":"2017-12-27T00:00:00.000Z","baseline":0.1873714404,"error":-0.0583714404},{"index":11,"date":"2017-12-27T00:15:00.000Z","baseline":0.1251027755,"error":0.0018972245},{"index":12,"date":"2017-12-27T00:30:00.000Z","baseline":0.0770951299,"error":0.0119048701},{"index":13,"date":"2017-12-27T00:45:00.000Z","baseline":0.0286943624,"error":0.0593056376},{"index":14,"date":"2017-12-27T01:00:00.000Z","baseline":-0.00575,"error":0.09375},{"index":15,"date":"2017-12-27T01:15:00.000Z","baseline":-0.00575,"error":0.09375},{"index":16,"date":"2017-12-27T01:30:00.000Z","baseline":-0.00575,"error":0.09375},{"index":17,"date":"2017-12-27T01:45:00.000Z","baseline":-0.00575,"error":0.09375},{"index":18,"date":"2017-12-27T02:00:00.000Z","baseline":-0.00575,"error":0.09375},{"index":19,"date":"2017-12-27T02:15:00.000Z","baseline":-0.00575,"error":0.09375},{"index":20,"date":"2017-12-27T02:30:00.000Z","baseline":-0.00575,"error":0.09575},{"index":21,"date":"2017-12-27T02:45:00.000Z","baseline":-0.00575,"error":0.09475},{"index":22,"date":"2017-12-27T03:00:00.000Z","baseline":-0.00575,"error":0.09475},{"index":23,"date":"2017-12-27T03:00:00.000Z","baseline":-0.00575,"error":0.09475},{"index":24,"date":"2017-12-27T03:15:00.000Z","baseline":-0.00575,"error":0.09475},{"index":25,"date":"2017-12-27T03:30:00.000Z","baseline":-0.00575,"error":0.09375},{"index":26,"date":"2017-12-27T03:45:00.000Z","baseline":-0.00575,"error":0.09475},{"index":27,"date":"2017-12-27T04:00:00.000Z","baseline":-0.00575,"error":0.09375},{"index":28,"date":"2017-12-27T04:15:00.000Z","baseline":-0.00575,"error":0.14075},{"index":29,"date":"2017-12-27T04:30:00.000Z","baseline":-0.00575,"error":0.13775},{"index":30,"date":"2017-12-27T04:45:00.000Z","baseline":-0.00575,"error":0.13575},{"index":31,"date":"2017-12-27T05:00:00.000Z","baseline":-0.00575,"error":0.13475},{"index":32,"date":"2017-12-27T05:15:00.000Z","baseline":-0.00575,"error":0.13375},{"index":33,"date":"2017-12-27T05:30:00.000Z","baseline":-0.00575,"error":0.13375},{"index":34,"date":"2017-12-27T05:45:00.000Z","baseline":-0.00575,"error":0.13375},{"index":35,"date":"2017-12-27T06:00:00.000Z","baseline":-0.00575,"error":0.09475},{"index":36,"date":"2017-12-27T06:15:00.000Z","baseline":-0.00575,"error":0.09475},{"index":37,"date":"2017-12-27T06:30:00.000Z","baseline":-0.00575,"error":0.09475},{"index":38,"date":"2017-12-27T06:45:00.000Z","baseline":-0.00575,"error":0.09375},{"index":39,"date":"2017-12-27T07:00:00.000Z","baseline":-0.00575,"error":0.09475},{"index":40,"date":"2017-12-27T07:15:00.000Z","baseline":-0.00575,"error":0.09475},{"index":41,"date":"2017-12-27T07:30:00.000Z","baseline":-0.00575,"error":0.09575},{"index":42,"date":"2017-12-27T07:45:00.000Z","baseline":-0.00575,"error":0.09375},{"index":43,"date":"2017-12-27T08:00:00.000Z","baseline":-0.00575,"error":0.09475},{"index":44,"date":"2017-12-27T08:15:00.000Z","baseline":-0.00575,"error":0.09475},{"index":45,"date":"2017-12-27T08:30:00.000Z","baseline":-0.00575,"error":0.09475},{"index":46,"date":"2017-12-27T08:45:00.000Z","baseline":-0.00575,"error":0.09575},{"index":47,"date":"2017-12-27T09:00:00.000Z","baseline":-0.00575,"error":0.09375},{"index":48,"date":"2017-12-27T09:15:00.000Z","baseline":-0.00575,"error":0.09475},{"index":49,"date":"2017-12-27T09:30:00.000Z","baseline":-0.00575,"error":0.09475},{"index":50,"date":"2017-12-27T09:45:00.000Z","baseline":-0.00575,"error":0.09475},{"index":51,"date":"2017-12-27T10:00:00.000Z","baseline":-0.00575,"error":0.15175},{"index":52,"date":"2017-12-27T10:15:00.000Z","baseline":-0.00575,"error":0.13975},{"index":53,"date":"2017-12-27T10:30:00.000Z","baseline":-0.00575,"error":0.13775},{"index":54,"date":"2017-12-27T10:45:00.000Z","baseline":-0.00575,"error":0.13675},{"index":55,"date":"2017-12-27T11:00:00.000Z","baseline":-0.00575,"error":0.13575},{"index":56,"date":"2017-12-27T11:15:00.000Z","baseline":-0.00575,"error":0.13575},{"index":57,"date":"2017-12-27T11:30:00.000Z","baseline":-0.00575,"error":0.09575},{"index":58,"date":"2017-12-27T11:45:00.000Z","baseline":-0.00575,"error":0.09575},{"index":59,"date":"2017-12-27T12:00:00.000Z","baseline":-0.00575,"error":0.09575},{"index":60,"date":"2017-12-27T12:15:00.000Z","baseline":-0.00575,"error":0.09575},{"index":61,"date":"2017-12-27T12:30:00.000Z","baseline":-0.00575,"error":0.09575},{"index":62,"date":"2017-12-27T12:45:00.000Z","baseline":-0.00575,"error":0.09375},{"index":63,"date":"2017-12-27T13:00:00.000Z","baseline":-0.00575,"error":0.09575},{"index":64,"date":"2017-12-27T13:00:00.000Z","baseline":-0.00575,"error":0.09575},{"index":65,"date":"2017-12-27T13:15:00.000Z","baseline":-0.00575,"error":0.09375},{"index":66,"date":"2017-12-27T13:30:00.000Z","baseline":-0.00575,"error":0.09375},{"index":67,"date":"2017-12-27T13:45:00.000Z","baseline":-0.00575,"error":0.09575},{"index":68,"date":"2017-12-27T14:00:00.000Z","baseline":-0.00575,"error":0.09575},{"index":69,"date":"2017-12-27T14:15:00.000Z","baseline":-0.00575,"error":0.09475},{"index":70,"date":"2017-12-27T14:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":71,"date":"2017-12-27T14:45:00.000Z","baseline":-0.00575,"error":0.09475},{"index":72,"date":"2017-12-27T15:00:00.000Z","baseline":-0.00575,"error":0.09475},{"index":73,"date":"2017-12-27T15:15:00.000Z","baseline":-0.00575,"error":0.09575},{"index":74,"date":"2017-12-27T15:30:00.000Z","baseline":-0.00575,"error":0.09475},{"index":75,"date":"2017-12-27T15:45:00.000Z","baseline":0.0652461728,"error":0.0247538272},{"index":76,"date":"2017-12-27T16:00:00.000Z","baseline":0.1092236806,"error":-0.0202236806},{"index":77,"date":"2017-12-27T16:15:00.000Z","baseline":0.1683389445,"error":-0.0783389445},{"index":78,"date":"2017-12-27T16:30:00.000Z","baseline":0.2402438487,"error":-0.1052438487},{"index":79,"date":"2017-12-27T16:45:00.000Z","baseline":0.3210915443,"error":-0.1880915443},{"index":80,"date":"2017-12-27T17:00:00.000Z","baseline":0.4066555706,"error":-0.2746555706},{"index":81,"date":"2017-12-27T17:15:00.000Z","baseline":0.4932337441,"error":-0.3642337441},{"index":82,"date":"2017-12-27T17:30:00.000Z","baseline":0.5777601647,"error":-0.4507601647},{"index":83,"date":"2017-12-27T17:45:00.000Z","baseline":0.6579988928,"error":-0.5279988928},{"index":84,"date":"2017-12-27T18:00:00.000Z","baseline":0.7323773299,"error":-0.6433773299},{"index":85,"date":"2017-12-27T18:15:00.000Z","baseline":0.7998138126,"error":-0.7108138126},{"index":86,"date":"2017-12-27T18:30:00.000Z","baseline":0.8596684073,"error":-0.7696684073},{"index":87,"date":"2017-12-27T18:45:00.000Z","baseline":0.9115287292,"error":-0.8215287292},{"index":88,"date":"2017-12-27T19:00:00.000Z","baseline":0.9551577199,"error":-0.8651577199},{"index":89,"date":"2017-12-27T19:15:00.000Z","baseline":0.9898579136,"error":-0.8988579136},{"index":90,"date":"2017-12-27T19:30:00.000Z","baseline":1.0161204872,"error":-0.9261204872},{"index":91,"date":"2017-12-27T19:45:00.000Z","baseline":1.0339283843,"error":-0.9439283843},{"index":92,"date":"2017-12-27T20:00:00.000Z","baseline":1.0432808592,"error":-0.9522808592},{"index":93,"date":"2017-12-27T20:15:00.000Z","baseline":1.043866535,"error":-0.952866535},{"index":94,"date":"2017-12-27T20:30:00.000Z","baseline":1.0360278392,"error":-0.9450278392},{"index":95,"date":"2017-12-27T20:45:00.000Z","baseline":1.0197965538,"error":-0.9287965538},{"index":96,"date":"2017-12-27T21:00:00.000Z","baseline":0.9952080249,"error":-0.9042080249},{"index":97,"date":"2017-12-27T21:15:00.000Z","baseline":0.9603403974,"error":-0.8703403974},{"index":98,"date":"2017-12-27T21:30:00.000Z","baseline":0.917403518,"error":-0.826403518},{"index":99,"date":"2017-12-27T21:45:00.000Z","baseline":0.8665725196,"error":-0.7755725196},{"index":100,"date":"2017-12-27T22:00:00.000Z","baseline":0.8081083499,"error":-0.6711083499},{"index":101,"date":"2017-12-27T22:15:00.000Z","baseline":0.7435426671,"error":-0.6085426671},{"index":102,"date":"2017-12-27T22:30:00.000Z","baseline":0.6721888494,"error":-0.5401888494},{"index":103,"date":"2017-12-27T22:45:00.000Z","baseline":0.5949385282,"error":-0.4619385282},{"index":104,"date":"2017-12-27T23:00:00.000Z","baseline":0.5131163813,"error":-0.3811163813},{"index":105,"date":"2017-12-27T23:15:00.000Z","baseline":0.4292148084,"error":-0.2982148084},{"index":106,"date":"2017-12-27T23:30:00.000Z","baseline":0.344930357,"error":-0.212930357},{"index":107,"date":"2017-12-27T23:45:00.000Z","baseline":0.2636930631,"error":-0.1326930631},{"index":108,"date":"2017-12-28T00:00:00.000Z","baseline":0.1895378892,"error":-0.0595378892},{"index":109,"date":"2017-12-28T00:15:00.000Z","baseline":0.1267382245,"error":0.0022617755},{"index":110,"date":"2017-12-28T00:30:00.000Z","baseline":0.0780562745,"error":0.0499437255},{"index":111,"date":"2017-12-28T00:45:00.000Z","baseline":0.0327431057,"error":0.0552568943},{"index":112,"date":"2017-12-28T01:00:00.000Z","baseline":-0.00575,"error":0.09575},{"index":113,"date":"2017-12-28T01:15:00.000Z","baseline":-0.00575,"error":0.09575},{"index":114,"date":"2017-12-28T01:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":115,"date":"2017-12-28T01:45:00.000Z","baseline":-0.00575,"error":0.09775},{"index":116,"date":"2017-12-28T02:00:00.000Z","baseline":-0.00575,"error":0.09475},{"index":117,"date":"2017-12-28T02:15:00.000Z","baseline":-0.00575,"error":0.09475},{"index":118,"date":"2017-12-28T02:30:00.000Z","baseline":-0.00575,"error":0.09375},{"index":119,"date":"2017-12-28T02:45:00.000Z","baseline":-0.00575,"error":0.09275},{"index":120,"date":"2017-12-28T03:00:00.000Z","baseline":-0.00575,"error":0.09475},{"index":121,"date":"2017-12-28T03:00:00.000Z","baseline":-0.00575,"error":0.09475},{"index":122,"date":"2017-12-28T03:15:00.000Z","baseline":-0.00575,"error":0.09375},{"index":123,"date":"2017-12-28T03:30:00.000Z","baseline":-0.00575,"error":0.09475},{"index":124,"date":"2017-12-28T03:45:00.000Z","baseline":-0.00575,"error":0.09475},{"index":125,"date":"2017-12-28T04:00:00.000Z","baseline":-0.00575,"error":0.09375},{"index":126,"date":"2017-12-28T04:15:00.000Z","baseline":-0.00575,"error":0.15075},{"index":127,"date":"2017-12-28T04:30:00.000Z","baseline":-0.00575,"error":0.13975},{"index":128,"date":"2017-12-28T04:45:00.000Z","baseline":-0.00575,"error":0.13675},{"index":129,"date":"2017-12-28T05:00:00.000Z","baseline":-0.00575,"error":0.13675},{"index":130,"date":"2017-12-28T05:15:00.000Z","baseline":-0.00575,"error":0.13575},{"index":131,"date":"2017-12-28T05:30:00.000Z","baseline":-0.00575,"error":0.13475},{"index":132,"date":"2017-12-28T05:45:00.000Z","baseline":-0.00575,"error":0.13575},{"index":133,"date":"2017-12-28T06:00:00.000Z","baseline":-0.00575,"error":0.09575},{"index":134,"date":"2017-12-28T06:15:00.000Z","baseline":-0.00575,"error":0.09675},{"index":135,"date":"2017-12-28T06:30:00.000Z","baseline":-0.00575,"error":0.09575},{"index":136,"date":"2017-12-28T06:45:00.000Z","baseline":-0.00575,"error":0.09575},{"index":137,"date":"2017-12-28T07:00:00.000Z","baseline":-0.00575,"error":0.09475},{"index":138,"date":"2017-12-28T07:15:00.000Z","baseline":-0.00575,"error":0.14175},{"index":139,"date":"2017-12-28T07:30:00.000Z","baseline":-0.00575,"error":0.12075},{"index":140,"date":"2017-12-28T07:45:00.000Z","baseline":-0.00575,"error":0.12075},{"index":141,"date":"2017-12-28T08:00:00.000Z","baseline":-0.00575,"error":0.11075},{"index":142,"date":"2017-12-28T08:15:00.000Z","baseline":-0.00575,"error":0.10875},{"index":143,"date":"2017-12-28T08:30:00.000Z","baseline":-0.00575,"error":0.10075},{"index":144,"date":"2017-12-28T08:45:00.000Z","baseline":-0.00575,"error":0.10075},{"index":145,"date":"2017-12-28T09:00:00.000Z","baseline":-0.00575,"error":0.10075},{"index":146,"date":"2017-12-28T09:15:00.000Z","baseline":-0.00575,"error":0.10075},{"index":147,"date":"2017-12-28T09:30:00.000Z","baseline":-0.00575,"error":0.10075},{"index":148,"date":"2017-12-28T09:45:00.000Z","baseline":-0.00575,"error":0.15675},{"index":149,"date":"2017-12-28T10:00:00.000Z","baseline":-0.00575,"error":0.14575},{"index":150,"date":"2017-12-28T10:15:00.000Z","baseline":-0.00575,"error":0.14375},{"index":151,"date":"2017-12-28T10:30:00.000Z","baseline":-0.00575,"error":0.14275},{"index":152,"date":"2017-12-28T10:45:00.000Z","baseline":-0.00575,"error":0.14075},{"index":153,"date":"2017-12-28T11:00:00.000Z","baseline":-0.00575,"error":0.13975},{"index":154,"date":"2017-12-28T11:15:00.000Z","baseline":-0.00575,"error":0.09975},{"index":155,"date":"2017-12-28T11:30:00.000Z","baseline":-0.00575,"error":0.09875},{"index":156,"date":"2017-12-28T11:45:00.000Z","baseline":-0.00575,"error":0.09875},{"index":157,"date":"2017-12-28T12:00:00.000Z","baseline":-0.00575,"error":0.09975},{"index":158,"date":"2017-12-28T12:15:00.000Z","baseline":-0.00575,"error":0.09775},{"index":159,"date":"2017-12-28T12:30:00.000Z","baseline":-0.00575,"error":0.09775},{"index":160,"date":"2017-12-28T12:45:00.000Z","baseline":-0.00575,"error":0.09675},{"index":161,"date":"2017-12-28T13:00:00.000Z","baseline":-0.00575,"error":0.09575},{"index":162,"date":"2017-12-28T13:00:00.000Z","baseline":-0.00575,"error":0.09575},{"index":163,"date":"2017-12-28T13:15:00.000Z","baseline":-0.00575,"error":0.09475},{"index":164,"date":"2017-12-28T13:30:00.000Z","baseline":-0.00575,"error":0.09575},{"index":165,"date":"2017-12-28T13:45:00.000Z","baseline":-0.00575,"error":0.09775},{"index":166,"date":"2017-12-28T14:00:00.000Z","baseline":-0.00575,"error":0.09975},{"index":167,"date":"2017-12-28T14:15:00.000Z","baseline":-0.00575,"error":0.09575},{"index":168,"date":"2017-12-28T14:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":169,"date":"2017-12-28T14:45:00.000Z","baseline":-0.00575,"error":0.09675},{"index":170,"date":"2017-12-28T15:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":171,"date":"2017-12-28T15:15:00.000Z","baseline":-0.00575,"error":0.09775},{"index":172,"date":"2017-12-28T15:30:00.000Z","baseline":-0.00575,"error":0.14275},{"index":173,"date":"2017-12-28T15:45:00.000Z","baseline":0.0636803071,"error":1.1523196929},{"index":174,"date":"2017-12-28T16:00:00.000Z","baseline":0.1074226884,"error":0.9995773116},{"index":175,"date":"2017-12-28T16:15:00.000Z","baseline":0.1662149969,"error":-0.0252149969},{"index":176,"date":"2017-12-28T16:30:00.000Z","baseline":0.2378264177,"error":-0.0968264177},{"index":177,"date":"2017-12-28T16:45:00.000Z","baseline":0.3184404668,"error":-0.1794404668},{"index":178,"date":"2017-12-28T17:00:00.000Z","baseline":0.4038271087,"error":-0.2928271087},{"index":179,"date":"2017-12-28T17:15:00.000Z","baseline":0.4903464619,"error":-0.3793464619},{"index":180,"date":"2017-12-28T17:30:00.000Z","baseline":0.5748895798,"error":0.7341104202},{"index":181,"date":"2017-12-28T17:45:00.000Z","baseline":0.6552029073,"error":0.6137970927},{"index":182,"date":"2017-12-28T18:00:00.000Z","baseline":0.7296961043,"error":0.5503038957},{"index":183,"date":"2017-12-28T18:15:00.000Z","baseline":0.7965989952,"error":0.4884010048},{"index":184,"date":"2017-12-28T18:30:00.000Z","baseline":0.855790378,"error":0.333209622},{"index":185,"date":"2017-12-28T18:45:00.000Z","baseline":0.9068655187,"error":0.2811344813},{"index":186,"date":"2017-12-28T19:00:00.000Z","baseline":0.9496030145,"error":0.2283969855},{"index":187,"date":"2017-12-28T19:15:00.000Z","baseline":0.9829507799,"error":0.1860492201},{"index":188,"date":"2017-12-28T19:30:00.000Z","baseline":1.0077272649,"error":0.1912727351},{"index":189,"date":"2017-12-28T19:45:00.000Z","baseline":1.0239777366,"error":0.2550222634},{"index":190,"date":"2017-12-28T20:00:00.000Z","baseline":1.0317718237,"error":-0.9267718237},{"index":191,"date":"2017-12-28T20:15:00.000Z","baseline":1.0332976397,"error":-0.8802976397},{"index":192,"date":"2017-12-28T20:30:00.000Z","baseline":1.0264930122,"error":-0.8774930122},{"index":193,"date":"2017-12-28T20:45:00.000Z","baseline":1.0113555045,"error":-0.8643555045},{"index":194,"date":"2017-12-28T21:00:00.000Z","baseline":0.9878876759,"error":-0.8408876759},{"index":195,"date":"2017-12-28T21:15:00.000Z","baseline":0.9542949733,"error":-0.8062949733},{"index":196,"date":"2017-12-28T21:30:00.000Z","baseline":0.9126446252,"error":-0.7646446252},{"index":197,"date":"2017-12-28T21:45:00.000Z","baseline":0.8630909949,"error":-0.7190909949},{"index":198,"date":"2017-12-28T22:00:00.000Z","baseline":0.8058724505,"error":-0.6628724505},{"index":199,"date":"2017-12-28T22:15:00.000Z","baseline":0.7423702691,"error":-0.5963702691},{"index":200,"date":"2017-12-28T22:30:00.000Z","baseline":0.671992114,"error":-0.526992114},{"index":201,"date":"2017-12-28T22:45:00.000Z","baseline":0.5956035624,"error":-0.4496035624},{"index":202,"date":"2017-12-28T23:00:00.000Z","baseline":0.5145006992,"error":-0.3725006992},{"index":203,"date":"2017-12-28T23:15:00.000Z","baseline":0.431062428,"error":-0.329062428},{"index":204,"date":"2017-12-28T23:30:00.000Z","baseline":0.3471086095,"error":-0.2451086095},{"index":205,"date":"2017-12-28T23:45:00.000Z","baseline":0.266005925,"error":-0.161005925},{"index":206,"date":"2017-12-29T00:00:00.000Z","baseline":0.1917386543,"error":-0.0857386543},{"index":207,"date":"2017-12-29T00:15:00.000Z","baseline":0.1285188302,"error":-0.0245188302},{"index":208,"date":"2017-12-29T00:30:00.000Z","baseline":0.0792044812,"error":0.0227955188},{"index":209,"date":"2017-12-29T00:45:00.000Z","baseline":0.0361752255,"error":0.0638247745},{"index":210,"date":"2017-12-29T01:00:00.000Z","baseline":-0.00575,"error":0.10475},{"index":211,"date":"2017-12-29T01:15:00.000Z","baseline":-0.00575,"error":0.10775},{"index":212,"date":"2017-12-29T01:30:00.000Z","baseline":-0.00575,"error":0.10875},{"index":213,"date":"2017-12-29T01:45:00.000Z","baseline":-0.00575,"error":0.10675},{"index":214,"date":"2017-12-29T02:00:00.000Z","baseline":-0.00575,"error":0.10475},{"index":215,"date":"2017-12-29T02:15:00.000Z","baseline":-0.00575,"error":0.10775},{"index":216,"date":"2017-12-29T02:30:00.000Z","baseline":-0.00575,"error":0.15175},{"index":217,"date":"2017-12-29T02:45:00.000Z","baseline":-0.00575,"error":0.14975},{"index":218,"date":"2017-12-29T03:00:00.000Z","baseline":-0.00575,"error":0.14975},{"index":219,"date":"2017-12-29T03:00:00.000Z","baseline":-0.00575,"error":0.14975},{"index":220,"date":"2017-12-29T03:15:00.000Z","baseline":-0.00575,"error":0.15375},{"index":221,"date":"2017-12-29T03:30:00.000Z","baseline":-0.00575,"error":0.14675},{"index":222,"date":"2017-12-29T03:45:00.000Z","baseline":-0.00575,"error":0.15175},{"index":223,"date":"2017-12-29T04:00:00.000Z","baseline":-0.00575,"error":0.14875},{"index":224,"date":"2017-12-29T04:15:00.000Z","baseline":-0.00575,"error":0.14775},{"index":225,"date":"2017-12-29T04:30:00.000Z","baseline":-0.00575,"error":0.14875},{"index":226,"date":"2017-12-29T04:45:00.000Z","baseline":-0.00575,"error":0.10675},{"index":227,"date":"2017-12-29T05:00:00.000Z","baseline":-0.00575,"error":0.10675},{"index":228,"date":"2017-12-29T05:15:00.000Z","baseline":-0.00575,"error":0.10875},{"index":229,"date":"2017-12-29T05:30:00.000Z","baseline":-0.00575,"error":0.10775},{"index":230,"date":"2017-12-29T05:45:00.000Z","baseline":-0.00575,"error":0.10875},{"index":231,"date":"2017-12-29T06:00:00.000Z","baseline":-0.00575,"error":0.10675},{"index":232,"date":"2017-12-29T06:15:00.000Z","baseline":-0.00575,"error":0.10675},{"index":233,"date":"2017-12-29T06:30:00.000Z","baseline":-0.00575,"error":0.10975},{"index":234,"date":"2017-12-29T06:45:00.000Z","baseline":-0.00575,"error":0.10775},{"index":235,"date":"2017-12-29T07:00:00.000Z","baseline":-0.00575,"error":0.10775},{"index":236,"date":"2017-12-29T07:15:00.000Z","baseline":-0.00575,"error":0.10775},{"index":237,"date":"2017-12-29T07:30:00.000Z","baseline":-0.00575,"error":0.10775},{"index":238,"date":"2017-12-29T07:45:00.000Z","baseline":-0.00575,"error":0.10775},{"index":239,"date":"2017-12-29T08:00:00.000Z","baseline":-0.00575,"error":0.16275},{"index":240,"date":"2017-12-29T08:15:00.000Z","baseline":-0.00575,"error":0.15275},{"index":241,"date":"2017-12-29T08:30:00.000Z","baseline":-0.00575,"error":0.14975},{"index":242,"date":"2017-12-29T08:45:00.000Z","baseline":-0.00575,"error":0.14675},{"index":243,"date":"2017-12-29T09:00:00.000Z","baseline":-0.00575,"error":0.14975},{"index":244,"date":"2017-12-29T09:15:00.000Z","baseline":-0.00575,"error":0.14775},{"index":245,"date":"2017-12-29T09:30:00.000Z","baseline":-0.00575,"error":0.15175},{"index":246,"date":"2017-12-29T09:45:00.000Z","baseline":-0.00575,"error":0.14775},{"index":247,"date":"2017-12-29T10:00:00.000Z","baseline":-0.00575,"error":0.10775},{"index":248,"date":"2017-12-29T10:15:00.000Z","baseline":-0.00575,"error":0.10775},{"index":249,"date":"2017-12-29T10:30:00.000Z","baseline":-0.00575,"error":0.11075},{"index":250,"date":"2017-12-29T10:45:00.000Z","baseline":-0.00575,"error":0.10975},{"index":251,"date":"2017-12-29T11:00:00.000Z","baseline":-0.00575,"error":0.10975},{"index":252,"date":"2017-12-29T11:15:00.000Z","baseline":-0.00575,"error":0.11475},{"index":253,"date":"2017-12-29T11:30:00.000Z","baseline":-0.00575,"error":0.10775},{"index":254,"date":"2017-12-29T11:45:00.000Z","baseline":-0.00575,"error":0.10975},{"index":255,"date":"2017-12-29T12:00:00.000Z","baseline":-0.00575,"error":0.10975},{"index":256,"date":"2017-12-29T12:15:00.000Z","baseline":-0.00575,"error":0.10875},{"index":257,"date":"2017-12-29T12:30:00.000Z","baseline":-0.00575,"error":0.10975},{"index":258,"date":"2017-12-29T12:45:00.000Z","baseline":-0.00575,"error":0.11075},{"index":259,"date":"2017-12-29T13:00:00.000Z","baseline":-0.00575,"error":0.77075},{"index":260,"date":"2017-12-29T13:00:00.000Z","baseline":-0.00575,"error":0.77075},{"index":261,"date":"2017-12-29T13:15:00.000Z","baseline":-0.00575,"error":1.36875},{"index":262,"date":"2017-12-29T13:30:00.000Z","baseline":-0.00575,"error":1.41775},{"index":263,"date":"2017-12-29T13:45:00.000Z","baseline":-0.00575,"error":1.46175},{"index":264,"date":"2017-12-29T14:00:00.000Z","baseline":-0.00575,"error":1.45575},{"index":265,"date":"2017-12-29T14:15:00.000Z","baseline":-0.00575,"error":0.14975},{"index":266,"date":"2017-12-29T14:30:00.000Z","baseline":-0.00575,"error":0.14775},{"index":267,"date":"2017-12-29T14:45:00.000Z","baseline":-0.00575,"error":0.14575},{"index":268,"date":"2017-12-29T15:00:00.000Z","baseline":-0.00575,"error":0.14675},{"index":269,"date":"2017-12-29T15:15:00.000Z","baseline":-0.00575,"error":0.14775},{"index":270,"date":"2017-12-29T15:30:00.000Z","baseline":-0.00575,"error":0.10675},{"index":271,"date":"2017-12-29T15:45:00.000Z","baseline":0.0615467318,"error":0.0384532682},{"index":272,"date":"2017-12-29T16:00:00.000Z","baseline":0.104723968,"error":-0.002723968},{"index":273,"date":"2017-12-29T16:15:00.000Z","baseline":0.1626749551,"error":-0.0596749551},{"index":274,"date":"2017-12-29T16:30:00.000Z","baseline":0.2333097828,"error":-0.1303097828},{"index":275,"date":"2017-12-29T16:45:00.000Z","baseline":0.3128827345,"error":-0.2108827345},{"index":276,"date":"2017-12-29T17:00:00.000Z","baseline":0.3972222146,"error":-0.2942222146},{"index":277,"date":"2017-12-29T17:15:00.000Z","baseline":0.4828220511,"error":-0.3808220511},{"index":278,"date":"2017-12-29T17:30:00.000Z","baseline":0.5665523278,"error":-0.4655523278},{"index":279,"date":"2017-12-29T17:45:00.000Z","baseline":0.6461861223,"error":-0.5421861223},{"index":280,"date":"2017-12-29T18:00:00.000Z","baseline":0.7201512413,"error":-0.6171512413},{"index":281,"date":"2017-12-29T18:15:00.000Z","baseline":0.7866725251,"error":-0.6836725251},{"index":282,"date":"2017-12-29T18:30:00.000Z","baseline":0.8456013989,"error":-0.7436013989},{"index":283,"date":"2017-12-29T18:45:00.000Z","baseline":0.8965331865,"error":-0.7955331865},{"index":284,"date":"2017-12-29T19:00:00.000Z","baseline":0.9392458118,"error":-0.7902458118},{"index":285,"date":"2017-12-29T19:15:00.000Z","baseline":0.9752406189,"error":-0.8312406189},{"index":286,"date":"2017-12-29T19:30:00.000Z","baseline":1.0029983632,"error":-0.8579983632},{"index":287,"date":"2017-12-29T19:45:00.000Z","baseline":1.0224687682,"error":-0.8744687682},{"index":288,"date":"2017-12-29T20:00:00.000Z","baseline":1.0336181119,"error":-0.8876181119},{"index":289,"date":"2017-12-29T20:15:00.000Z","baseline":1.0352627337,"error":-0.8892627337},{"index":290,"date":"2017-12-29T20:30:00.000Z","baseline":1.0285506015,"error":-0.8835506015},{"index":291,"date":"2017-12-29T20:45:00.000Z","baseline":1.0134885277,"error":-0.8674885277},{"index":292,"date":"2017-12-29T21:00:00.000Z","baseline":0.9900887932,"error":-0.8480887932},{"index":293,"date":"2017-12-29T21:15:00.000Z","baseline":0.9575031175,"error":-0.8175031175},{"index":294,"date":"2017-12-29T21:30:00.000Z","baseline":0.916792344,"error":-0.770792344},{"index":295,"date":"2017-12-29T21:45:00.000Z","baseline":0.8680966984,"error":-0.7210966984},{"index":296,"date":"2017-12-29T22:00:00.000Z","baseline":0.8116385287,"error":-0.7086385287},{"index":297,"date":"2017-12-29T22:15:00.000Z","baseline":0.7483549555,"error":-0.6423549555},{"index":298,"date":"2017-12-29T22:30:00.000Z","baseline":0.678097493,"error":-0.571097493},{"index":299,"date":"2017-12-29T22:45:00.000Z","baseline":0.6017203647,"error":-0.4997203647},{"index":300,"date":"2017-12-29T23:00:00.000Z","baseline":0.5205059515,"error":-0.4165059515},{"index":301,"date":"2017-12-29T23:15:00.000Z","baseline":0.4365713774,"error":-0.3315713774},{"index":302,"date":"2017-12-29T23:30:00.000Z","baseline":0.3521174358,"error":-0.2471174358},{"index":303,"date":"2017-12-29T23:45:00.000Z","baseline":0.2704487548,"error":-0.1654487548},{"index":304,"date":"2017-12-30T00:00:00.000Z","baseline":0.1954954845,"error":-0.0934954845},{"index":305,"date":"2017-12-30T00:15:00.000Z","baseline":0.1314594109,"error":-0.0294594109},{"index":306,"date":"2017-12-30T00:30:00.000Z","baseline":0.0811729994,"error":0.0198270006},{"index":307,"date":"2017-12-30T00:45:00.000Z","baseline":0.0394707753,"error":0.1095292247},{"index":308,"date":"2017-12-30T01:00:00.000Z","baseline":-0.00575,"error":0.15375},{"index":309,"date":"2017-12-30T01:15:00.000Z","baseline":-0.00575,"error":0.15175},{"index":310,"date":"2017-12-30T01:30:00.000Z","baseline":-0.00575,"error":0.15175},{"index":311,"date":"2017-12-30T01:45:00.000Z","baseline":-0.00575,"error":0.14975},{"index":312,"date":"2017-12-30T02:00:00.000Z","baseline":-0.00575,"error":0.14775},{"index":313,"date":"2017-12-30T02:15:00.000Z","baseline":-0.00575,"error":0.14875},{"index":314,"date":"2017-12-30T02:30:00.000Z","baseline":-0.00575,"error":0.14675},{"index":315,"date":"2017-12-30T02:45:00.000Z","baseline":-0.00575,"error":0.13675},{"index":316,"date":"2017-12-30T03:00:00.000Z","baseline":-0.00575,"error":1.45775},{"index":317,"date":"2017-12-30T03:15:00.000Z","baseline":-0.00575,"error":0.14775},{"index":318,"date":"2017-12-30T03:30:00.000Z","baseline":-0.00575,"error":0.14775},{"index":319,"date":"2017-12-30T03:45:00.000Z","baseline":-0.00575,"error":0.10875},{"index":320,"date":"2017-12-30T04:00:00.000Z","baseline":-0.00575,"error":0.10875},{"index":321,"date":"2017-12-30T04:15:00.000Z","baseline":-0.00575,"error":0.10675},{"index":322,"date":"2017-12-30T04:30:00.000Z","baseline":-0.00575,"error":0.11175},{"index":323,"date":"2017-12-30T04:45:00.000Z","baseline":-0.00575,"error":0.10975},{"index":324,"date":"2017-12-30T05:00:00.000Z","baseline":-0.00575,"error":0.10975},{"index":325,"date":"2017-12-30T05:15:00.000Z","baseline":-0.00575,"error":0.10875},{"index":326,"date":"2017-12-30T05:30:00.000Z","baseline":-0.00575,"error":0.10775},{"index":327,"date":"2017-12-30T05:45:00.000Z","baseline":-0.00575,"error":0.10675},{"index":328,"date":"2017-12-30T06:00:00.000Z","baseline":-0.00575,"error":0.10875},{"index":329,"date":"2017-12-30T06:15:00.000Z","baseline":-0.00575,"error":0.10675},{"index":330,"date":"2017-12-30T06:30:00.000Z","baseline":-0.00575,"error":0.10875},{"index":331,"date":"2017-12-30T06:45:00.000Z","baseline":-0.00575,"error":0.10775},{"index":332,"date":"2017-12-30T07:00:00.000Z","baseline":-0.00575,"error":0.15975},{"index":333,"date":"2017-12-30T07:15:00.000Z","baseline":-0.00575,"error":0.15175},{"index":334,"date":"2017-12-30T07:30:00.000Z","baseline":-0.00575,"error":0.15075},{"index":335,"date":"2017-12-30T07:45:00.000Z","baseline":-0.00575,"error":0.15175},{"index":336,"date":"2017-12-30T08:00:00.000Z","baseline":-0.00575,"error":0.14875},{"index":337,"date":"2017-12-30T08:15:00.000Z","baseline":-0.00575,"error":0.14875},{"index":338,"date":"2017-12-30T08:30:00.000Z","baseline":-0.00575,"error":0.14775},{"index":339,"date":"2017-12-30T08:45:00.000Z","baseline":-0.00575,"error":0.14875},{"index":340,"date":"2017-12-30T09:00:00.000Z","baseline":-0.00575,"error":0.10875},{"index":341,"date":"2017-12-30T09:15:00.000Z","baseline":-0.00575,"error":0.10875},{"index":342,"date":"2017-12-30T09:30:00.000Z","baseline":-0.00575,"error":0.10875},{"index":343,"date":"2017-12-30T09:45:00.000Z","baseline":-0.00575,"error":0.10875},{"index":344,"date":"2017-12-30T10:00:00.000Z","baseline":-0.00575,"error":0.10975},{"index":345,"date":"2017-12-30T10:15:00.000Z","baseline":-0.00575,"error":0.10875},{"index":346,"date":"2017-12-30T10:30:00.000Z","baseline":-0.00575,"error":0.10875},{"index":347,"date":"2017-12-30T10:45:00.000Z","baseline":-0.00575,"error":0.10875},{"index":348,"date":"2017-12-30T11:00:00.000Z","baseline":-0.00575,"error":0.10975},{"index":349,"date":"2017-12-30T11:15:00.000Z","baseline":-0.00575,"error":0.10975},{"index":350,"date":"2017-12-30T11:30:00.000Z","baseline":-0.00575,"error":0.10775},{"index":351,"date":"2017-12-30T11:45:00.000Z","baseline":-0.00575,"error":0.11075},{"index":352,"date":"2017-12-30T12:00:00.000Z","baseline":-0.00575,"error":0.10875},{"index":353,"date":"2017-12-30T12:15:00.000Z","baseline":-0.00575,"error":0.11075},{"index":354,"date":"2017-12-30T12:30:00.000Z","baseline":-0.00575,"error":0.11175},{"index":355,"date":"2017-12-30T12:45:00.000Z","baseline":-0.00575,"error":0.15875},{"index":356,"date":"2017-12-30T13:00:00.000Z","baseline":-0.00575,"error":0.12975},{"index":357,"date":"2017-12-30T13:15:00.000Z","baseline":-0.00575,"error":1.43275},{"index":358,"date":"2017-12-30T13:30:00.000Z","baseline":-0.00575,"error":1.44475},{"index":359,"date":"2017-12-30T13:45:00.000Z","baseline":-0.00575,"error":1.40575},{"index":360,"date":"2017-12-30T14:00:00.000Z","baseline":-0.00575,"error":1.42375},{"index":361,"date":"2017-12-30T14:15:00.000Z","baseline":-0.00575,"error":1.40275},{"index":362,"date":"2017-12-30T14:30:00.000Z","baseline":-0.00575,"error":0.10775},{"index":363,"date":"2017-12-30T14:45:00.000Z","baseline":-0.00575,"error":0.11075},{"index":364,"date":"2017-12-30T15:00:00.000Z","baseline":-0.00575,"error":0.10775},{"index":365,"date":"2017-12-30T15:15:00.000Z","baseline":-0.00575,"error":0.10875},{"index":366,"date":"2017-12-30T15:30:00.000Z","baseline":-0.00575,"error":0.10775},{"index":367,"date":"2017-12-30T15:45:00.000Z","baseline":0.0616513842,"error":0.0393486158},{"index":368,"date":"2017-12-30T16:00:00.000Z","baseline":0.1053937334,"error":-0.0023937334},{"index":369,"date":"2017-12-30T16:15:00.000Z","baseline":0.1640355043,"error":-0.0600355043},{"index":370,"date":"2017-12-30T16:30:00.000Z","baseline":0.2355945552,"error":-0.1315945552},{"index":371,"date":"2017-12-30T16:45:00.000Z","baseline":0.3163285785,"error":-0.2113285785},{"index":372,"date":"2017-12-30T17:00:00.000Z","baseline":0.4020353275,"error":-0.3000353275},{"index":373,"date":"2017-12-30T17:15:00.000Z","baseline":0.4883586876,"error":-0.3843586876},{"index":374,"date":"2017-12-30T17:30:00.000Z","baseline":0.5724944471,"error":-0.4684944471},{"index":375,"date":"2017-12-30T17:45:00.000Z","baseline":0.6521271737,"error":-0.5471271737},{"index":376,"date":"2017-12-30T18:00:00.000Z","baseline":0.7256286235,"error":-0.6226286235},{"index":377,"date":"2017-12-30T18:15:00.000Z","baseline":0.7924770024,"error":-0.6904770024},{"index":378,"date":"2017-12-30T18:30:00.000Z","baseline":0.8516487737,"error":-0.7036487737},{"index":379,"date":"2017-12-30T18:45:00.000Z","baseline":0.9027409213,"error":-0.7557409213},{"index":380,"date":"2017-12-30T19:00:00.000Z","baseline":0.9455337245,"error":-0.8015337245},{"index":381,"date":"2017-12-30T19:15:00.000Z","baseline":0.9794734927,"error":-0.8364734927},{"index":382,"date":"2017-12-30T19:30:00.000Z","baseline":1.0048905973,"error":-0.8578905973},{"index":383,"date":"2017-12-30T19:45:00.000Z","baseline":1.0218240895,"error":-0.8818240895},{"index":384,"date":"2017-12-30T20:00:00.000Z","baseline":1.0303382457,"error":-0.8843382457},{"index":385,"date":"2017-12-30T20:15:00.000Z","baseline":1.031373885,"error":-0.890373885},{"index":386,"date":"2017-12-30T20:30:00.000Z","baseline":1.0241352153,"error":-0.8811352153},{"index":387,"date":"2017-12-30T20:45:00.000Z","baseline":1.0086803422,"error":-0.9026803422},{"index":388,"date":"2017-12-30T21:00:00.000Z","baseline":0.9850677411,"error":-0.8530677411},{"index":389,"date":"2017-12-30T21:15:00.000Z","baseline":0.9539753707,"error":-0.8479753707},{"index":390,"date":"2017-12-30T21:30:00.000Z","baseline":0.9147020826,"error":-0.8137020826},{"index":391,"date":"2017-12-30T21:45:00.000Z","baseline":0.8673382912,"error":-0.7673382912},{"index":392,"date":"2017-12-30T22:00:00.000Z","baseline":0.812064358,"error":-0.712064358},{"index":393,"date":"2017-12-30T22:15:00.000Z","baseline":0.75007397,"error":-0.64207397},{"index":394,"date":"2017-12-30T22:30:00.000Z","baseline":0.6808955866,"error":-0.5708955866},{"index":395,"date":"2017-12-30T22:45:00.000Z","baseline":0.6053563815,"error":-0.4973563815},{"index":396,"date":"2017-12-30T23:00:00.000Z","baseline":0.524717381,"error":-0.414717381},{"index":397,"date":"2017-12-30T23:15:00.000Z","baseline":0.4410177408,"error":-0.2740177408},{"index":398,"date":"2017-12-30T23:30:00.000Z","baseline":0.3566021234,"error":-0.1946021234},{"index":399,"date":"2017-12-30T23:45:00.000Z","baseline":0.274730934,"error":-0.114730934},{"index":400,"date":"2017-12-31T00:00:00.000Z","baseline":0.1993074586,"error":-0.0423074586},{"index":401,"date":"2017-12-31T00:15:00.000Z","baseline":0.1343618705,"error":0.0186381295},{"index":402,"date":"2017-12-31T00:30:00.000Z","baseline":0.0830926564,"error":0.0949073436},{"index":403,"date":"2017-12-31T00:45:00.000Z","baseline":0.0422168092,"error":0.1597831908},{"index":404,"date":"2017-12-31T01:00:00.000Z","baseline":-0.00575,"error":0.20175},{"index":405,"date":"2017-12-31T01:15:00.000Z","baseline":-0.00575,"error":0.20675},{"index":406,"date":"2017-12-31T01:30:00.000Z","baseline":-0.00575,"error":0.20375},{"index":407,"date":"2017-12-31T01:45:00.000Z","baseline":-0.00575,"error":0.19575},{"index":408,"date":"2017-12-31T02:00:00.000Z","baseline":-0.00575,"error":0.23075},{"index":409,"date":"2017-12-31T02:15:00.000Z","baseline":-0.00575,"error":0.22575},{"index":410,"date":"2017-12-31T02:30:00.000Z","baseline":-0.00575,"error":0.22675},{"index":411,"date":"2017-12-31T02:45:00.000Z","baseline":-0.00575,"error":0.81275},{"index":412,"date":"2017-12-31T03:00:00.000Z","baseline":-0.00575,"error":1.51775},{"index":413,"date":"2017-12-31T03:15:00.000Z","baseline":-0.00575,"error":1.61175},{"index":414,"date":"2017-12-31T03:30:00.000Z","baseline":-0.00575,"error":0.25675},{"index":415,"date":"2017-12-31T03:45:00.000Z","baseline":-0.00575,"error":0.25575},{"index":416,"date":"2017-12-31T04:00:00.000Z","baseline":-0.00575,"error":0.25575},{"index":417,"date":"2017-12-31T04:15:00.000Z","baseline":-0.00575,"error":0.25975},{"index":418,"date":"2017-12-31T04:30:00.000Z","baseline":-0.00575,"error":0.24975},{"index":419,"date":"2017-12-31T04:45:00.000Z","baseline":-0.00575,"error":0.24575},{"index":420,"date":"2017-12-31T05:00:00.000Z","baseline":-0.00575,"error":0.23375},{"index":421,"date":"2017-12-31T05:15:00.000Z","baseline":-0.00575,"error":0.22975},{"index":422,"date":"2017-12-31T05:30:00.000Z","baseline":-0.00575,"error":0.26975},{"index":423,"date":"2017-12-31T05:45:00.000Z","baseline":-0.00575,"error":0.28675},{"index":424,"date":"2017-12-31T06:00:00.000Z","baseline":-0.00575,"error":0.27575},{"index":425,"date":"2017-12-31T06:15:00.000Z","baseline":-0.00575,"error":0.27675},{"index":426,"date":"2017-12-31T06:30:00.000Z","baseline":-0.00575,"error":0.26775},{"index":427,"date":"2017-12-31T06:45:00.000Z","baseline":-0.00575,"error":0.26975},{"index":428,"date":"2017-12-31T07:00:00.000Z","baseline":-0.00575,"error":0.27175},{"index":429,"date":"2017-12-31T07:15:00.000Z","baseline":-0.00575,"error":0.27175},{"index":430,"date":"2017-12-31T07:30:00.000Z","baseline":-0.00575,"error":0.27375},{"index":431,"date":"2017-12-31T07:45:00.000Z","baseline":-0.00575,"error":0.27075},{"index":432,"date":"2017-12-31T08:00:00.000Z","baseline":-0.00575,"error":0.27275},{"index":433,"date":"2017-12-31T08:15:00.000Z","baseline":-0.00575,"error":0.12475},{"index":434,"date":"2017-12-31T08:30:00.000Z","baseline":-0.00575,"error":0.11675},{"index":435,"date":"2017-12-31T08:45:00.000Z","baseline":-0.00575,"error":0.10875},{"index":436,"date":"2017-12-31T09:00:00.000Z","baseline":-0.00575,"error":0.11075},{"index":437,"date":"2017-12-31T09:15:00.000Z","baseline":-0.00575,"error":0.10875},{"index":438,"date":"2017-12-31T09:30:00.000Z","baseline":-0.00575,"error":0.11175},{"index":439,"date":"2017-12-31T09:45:00.000Z","baseline":-0.00575,"error":0.10875},{"index":440,"date":"2017-12-31T10:00:00.000Z","baseline":-0.00575,"error":0.11075},{"index":441,"date":"2017-12-31T10:15:00.000Z","baseline":-0.00575,"error":0.11075},{"index":442,"date":"2017-12-31T10:30:00.000Z","baseline":-0.00575,"error":0.10975},{"index":443,"date":"2017-12-31T10:45:00.000Z","baseline":-0.00575,"error":0.10775},{"index":444,"date":"2017-12-31T11:00:00.000Z","baseline":-0.00575,"error":0.10975},{"index":445,"date":"2017-12-31T11:15:00.000Z","baseline":-0.00575,"error":0.10875},{"index":446,"date":"2017-12-31T11:30:00.000Z","baseline":-0.00575,"error":0.10775},{"index":447,"date":"2017-12-31T11:45:00.000Z","baseline":-0.00575,"error":0.10875},{"index":448,"date":"2017-12-31T12:00:00.000Z","baseline":-0.00575,"error":0.10375},{"index":449,"date":"2017-12-31T12:15:00.000Z","baseline":-0.00575,"error":0.15775},{"index":450,"date":"2017-12-31T12:30:00.000Z","baseline":-0.00575,"error":0.14875},{"index":451,"date":"2017-12-31T12:45:00.000Z","baseline":-0.00575,"error":0.75075},{"index":452,"date":"2017-12-31T13:00:00.000Z","baseline":-0.00575,"error":1.36675},{"index":453,"date":"2017-12-31T13:15:00.000Z","baseline":-0.00575,"error":1.43975},{"index":454,"date":"2017-12-31T13:30:00.000Z","baseline":-0.00575,"error":1.51575},{"index":455,"date":"2017-12-31T13:45:00.000Z","baseline":-0.00575,"error":1.50875},{"index":456,"date":"2017-12-31T14:00:00.000Z","baseline":-0.00575,"error":1.51775},{"index":457,"date":"2017-12-31T14:15:00.000Z","baseline":-0.00575,"error":0.00575},{"index":458,"date":"2017-12-31T17:15:00.000Z","baseline":0.4847242407,"error":-0.3197242407},{"index":459,"date":"2017-12-31T17:30:00.000Z","baseline":0.5682476507,"error":-0.4082476507},{"index":460,"date":"2017-12-31T17:45:00.000Z","baseline":0.6472462741,"error":-0.4822462741},{"index":461,"date":"2017-12-31T18:00:00.000Z","baseline":0.7201100709,"error":-0.5601100709},{"index":462,"date":"2017-12-31T18:15:00.000Z","baseline":0.7874657271,"error":-0.6254657271},{"index":463,"date":"2017-12-31T18:30:00.000Z","baseline":0.8473663282,"error":-0.7263663282},{"index":464,"date":"2017-12-31T18:45:00.000Z","baseline":0.8993995434,"error":-0.7773995434},{"index":465,"date":"2017-12-31T19:00:00.000Z","baseline":0.943331326,"error":-0.823331326},{"index":466,"date":"2017-12-31T19:15:00.000Z","baseline":0.9786568782,"error":-0.8596568782},{"index":467,"date":"2017-12-31T19:30:00.000Z","baseline":1.0056862142,"error":-0.9026862142},{"index":468,"date":"2017-12-31T19:45:00.000Z","baseline":1.0244078784,"error":-0.9034078784},{"index":469,"date":"2017-12-31T20:00:00.000Z","baseline":1.0348263527,"error":-0.9038263527},{"index":470,"date":"2017-12-31T20:15:00.000Z","baseline":1.0367595492,"error":-0.9327595492},{"index":471,"date":"2017-12-31T20:30:00.000Z","baseline":1.0304007499,"error":-0.8964007499},{"index":472,"date":"2017-12-31T20:45:00.000Z","baseline":1.01575498,"error":-0.88375498},{"index":473,"date":"2017-12-31T21:00:00.000Z","baseline":0.9928304796,"error":-0.8598304796},{"index":474,"date":"2017-12-31T21:15:00.000Z","baseline":0.9621712451,"error":-0.7781712451},{"index":475,"date":"2017-12-31T21:30:00.000Z","baseline":0.9233155931,"error":-0.7463155931},{"index":476,"date":"2017-12-31T21:45:00.000Z","baseline":0.8763551745,"error":-0.6613551745},{"index":477,"date":"2017-12-31T22:00:00.000Z","baseline":0.821462462,"error":-0.620462462},{"index":478,"date":"2017-12-31T22:15:00.000Z","baseline":0.7589564723,"error":-0.5809564723},{"index":479,"date":"2017-12-31T22:30:00.000Z","baseline":0.6893313762,"error":-0.5213313762},{"index":480,"date":"2017-12-31T22:45:00.000Z","baseline":0.6133934266,"error":-0.4493934266},{"index":481,"date":"2017-12-31T23:00:00.000Z","baseline":0.5323680395,"error":-0.3703680395},{"index":482,"date":"2017-12-31T23:15:00.000Z","baseline":0.4484688586,"error":-0.3244688586},{"index":483,"date":"2017-12-31T23:30:00.000Z","baseline":0.3636014018,"error":-0.2396014018},{"index":484,"date":"2017-12-31T23:45:00.000Z","baseline":0.2810160435,"error":-0.1580160435},{"index":485,"date":"2018-01-01T00:00:00.000Z","baseline":0.2046279898,"error":-0.0816279898},{"index":486,"date":"2018-01-01T00:15:00.000Z","baseline":0.13841414,"error":-0.01641414},{"index":487,"date":"2018-01-01T00:30:00.000Z","baseline":0.0858137153,"error":0.0361862847},{"index":488,"date":"2018-01-01T00:45:00.000Z","baseline":0.0450453833,"error":0.0779546167},{"index":489,"date":"2018-01-01T01:00:00.000Z","baseline":-0.00575,"error":0.16175},{"index":490,"date":"2018-01-01T01:15:00.000Z","baseline":-0.00575,"error":0.18475},{"index":491,"date":"2018-01-01T01:30:00.000Z","baseline":-0.00575,"error":0.18375},{"index":492,"date":"2018-01-01T01:45:00.000Z","baseline":-0.00575,"error":0.13475},{"index":493,"date":"2018-01-02T03:00:00.000Z","baseline":-0.00575,"error":0.09975},{"index":494,"date":"2018-01-02T03:00:00.000Z","baseline":-0.00575,"error":0.09975},{"index":495,"date":"2018-01-02T03:15:00.000Z","baseline":-0.00575,"error":0.10075},{"index":496,"date":"2018-01-02T03:30:00.000Z","baseline":-0.00575,"error":0.09975},{"index":497,"date":"2018-01-02T03:45:00.000Z","baseline":-0.00575,"error":0.10075},{"index":498,"date":"2018-01-02T04:00:00.000Z","baseline":-0.00575,"error":0.10175},{"index":499,"date":"2018-01-02T04:15:00.000Z","baseline":-0.00575,"error":0.09975},{"index":500,"date":"2018-01-02T04:30:00.000Z","baseline":-0.00575,"error":0.10175},{"index":501,"date":"2018-01-02T04:45:00.000Z","baseline":-0.00575,"error":0.09975},{"index":502,"date":"2018-01-02T05:00:00.000Z","baseline":-0.00575,"error":0.09975},{"index":503,"date":"2018-01-02T05:15:00.000Z","baseline":-0.00575,"error":0.09975},{"index":504,"date":"2018-01-02T05:30:00.000Z","baseline":-0.00575,"error":0.09975},{"index":505,"date":"2018-01-02T05:45:00.000Z","baseline":-0.00575,"error":0.10175},{"index":506,"date":"2018-01-02T06:00:00.000Z","baseline":-0.00575,"error":0.10175},{"index":507,"date":"2018-01-02T06:15:00.000Z","baseline":-0.00575,"error":0.09975},{"index":508,"date":"2018-01-02T06:30:00.000Z","baseline":-0.00575,"error":0.10175},{"index":509,"date":"2018-01-02T06:45:00.000Z","baseline":-0.00575,"error":0.10175},{"index":510,"date":"2018-01-02T07:00:00.000Z","baseline":-0.00575,"error":0.09975},{"index":511,"date":"2018-01-02T07:15:00.000Z","baseline":-0.00575,"error":0.10175},{"index":512,"date":"2018-01-02T07:30:00.000Z","baseline":-0.00575,"error":0.14875},{"index":513,"date":"2018-01-02T07:45:00.000Z","baseline":-0.00575,"error":0.14675},{"index":514,"date":"2018-01-02T08:00:00.000Z","baseline":-0.00575,"error":0.14275},{"index":515,"date":"2018-01-02T08:15:00.000Z","baseline":-0.00575,"error":0.14075},{"index":516,"date":"2018-01-02T08:30:00.000Z","baseline":-0.00575,"error":0.14175},{"index":517,"date":"2018-01-02T08:45:00.000Z","baseline":-0.00575,"error":0.13975},{"index":518,"date":"2018-01-02T09:00:00.000Z","baseline":-0.00575,"error":0.14175},{"index":519,"date":"2018-01-02T09:15:00.000Z","baseline":-0.00575,"error":0.14075},{"index":520,"date":"2018-01-02T09:30:00.000Z","baseline":-0.00575,"error":0.14175},{"index":521,"date":"2018-01-02T09:45:00.000Z","baseline":-0.00575,"error":0.14275},{"index":522,"date":"2018-01-02T10:00:00.000Z","baseline":-0.00575,"error":0.14075},{"index":523,"date":"2018-01-02T10:15:00.000Z","baseline":-0.00575,"error":0.14175},{"index":524,"date":"2018-01-02T10:30:00.000Z","baseline":-0.00575,"error":0.14075},{"index":525,"date":"2018-01-02T10:45:00.000Z","baseline":-0.00575,"error":0.14075},{"index":526,"date":"2018-01-02T11:00:00.000Z","baseline":-0.00575,"error":0.14175},{"index":527,"date":"2018-01-02T11:15:00.000Z","baseline":-0.00575,"error":0.10275},{"index":528,"date":"2018-01-02T11:30:00.000Z","baseline":-0.00575,"error":0.10275},{"index":529,"date":"2018-01-02T11:45:00.000Z","baseline":-0.00575,"error":0.10175},{"index":530,"date":"2018-01-02T12:00:00.000Z","baseline":-0.00575,"error":0.10175},{"index":531,"date":"2018-01-02T12:15:00.000Z","baseline":-0.00575,"error":0.10375},{"index":532,"date":"2018-01-02T12:30:00.000Z","baseline":-0.00575,"error":0.09975},{"index":533,"date":"2018-01-02T12:45:00.000Z","baseline":-0.00575,"error":0.10175},{"index":534,"date":"2018-01-02T13:00:00.000Z","baseline":-0.00575,"error":0.76975},{"index":535,"date":"2018-01-02T13:00:00.000Z","baseline":-0.00575,"error":0.76975},{"index":536,"date":"2018-01-02T13:00:00.000Z","baseline":-0.00575,"error":0.76975},{"index":537,"date":"2018-01-02T13:00:00.000Z","baseline":-0.00575,"error":0.76975},{"index":538,"date":"2018-01-02T13:15:00.000Z","baseline":-0.00575,"error":0.09975},{"index":539,"date":"2018-01-02T13:30:00.000Z","baseline":-0.00575,"error":0.10175},{"index":540,"date":"2018-01-02T13:45:00.000Z","baseline":-0.00575,"error":0.09975},{"index":541,"date":"2018-01-02T14:00:00.000Z","baseline":-0.00575,"error":0.09875},{"index":542,"date":"2018-01-02T14:15:00.000Z","baseline":-0.00575,"error":0.10075},{"index":543,"date":"2018-01-02T14:30:00.000Z","baseline":-0.00575,"error":0.10075},{"index":544,"date":"2018-01-02T14:45:00.000Z","baseline":-0.00575,"error":0.10175},{"index":545,"date":"2018-01-02T15:00:00.000Z","baseline":-0.00575,"error":0.09975},{"index":546,"date":"2018-01-02T15:15:00.000Z","baseline":-0.00575,"error":0.09975},{"index":547,"date":"2018-01-02T15:30:00.000Z","baseline":-0.00575,"error":0.10275},{"index":548,"date":"2018-01-02T15:45:00.000Z","baseline":0.0577471994,"error":0.0382528006},{"index":549,"date":"2018-01-02T16:00:00.000Z","baseline":0.1008121282,"error":-0.0058121282},{"index":550,"date":"2018-01-02T16:15:00.000Z","baseline":0.1586077099,"error":-0.0656077099},{"index":551,"date":"2018-01-02T16:30:00.000Z","baseline":0.2292564409,"error":-0.1322564409},{"index":552,"date":"2018-01-02T16:45:00.000Z","baseline":0.3091387327,"error":-0.2121387327},{"index":553,"date":"2018-01-02T17:00:00.000Z","baseline":0.3941257292,"error":-0.3001257292},{"index":554,"date":"2018-01-02T17:15:00.000Z","baseline":0.4804134466,"error":-0.3844134466},{"index":555,"date":"2018-01-02T17:30:00.000Z","baseline":0.5649026125,"error":-0.4699026125},{"index":556,"date":"2018-01-02T17:45:00.000Z","baseline":0.6452885901,"error":-0.5022885901},{"index":557,"date":"2018-01-02T18:00:00.000Z","baseline":0.7199397567,"error":-0.5819397567},{"index":558,"date":"2018-01-02T18:15:00.000Z","baseline":0.7878477757,"error":-0.6518477757},{"index":559,"date":"2018-01-02T18:30:00.000Z","baseline":0.8483432982,"error":-0.7133432982},{"index":560,"date":"2018-01-02T18:45:00.000Z","baseline":0.9009959691,"error":-0.7649959691},{"index":561,"date":"2018-01-02T19:00:00.000Z","baseline":0.9455531034,"error":-0.8085531034},{"index":562,"date":"2018-01-02T19:15:00.000Z","baseline":0.9805170562,"error":-0.8445170562},{"index":563,"date":"2018-01-02T19:30:00.000Z","baseline":1.007016961,"error":-0.871016961},{"index":564,"date":"2018-01-02T19:45:00.000Z","baseline":1.0250800891,"error":-0.8920800891},{"index":565,"date":"2018-01-02T20:00:00.000Z","baseline":1.0347586443,"error":-0.8997586443},{"index":566,"date":"2018-01-02T20:15:00.000Z","baseline":1.0366061848,"error":-0.9036061848},{"index":567,"date":"2018-01-02T20:30:00.000Z","baseline":1.0301977605,"error":-0.8961977605},{"index":568,"date":"2018-01-02T20:45:00.000Z","baseline":1.0155697024,"error":-0.8795697024},{"index":569,"date":"2018-01-02T21:00:00.000Z","baseline":0.9927592241,"error":-0.8547592241},{"index":570,"date":"2018-01-02T21:15:00.000Z","baseline":0.9633596647,"error":-0.8263596647},{"index":571,"date":"2018-01-02T21:30:00.000Z","baseline":0.9257495609,"error":-0.8307495609},{"index":572,"date":"2018-01-02T21:45:00.000Z","baseline":0.8799968763,"error":-0.7849968763},{"index":573,"date":"2018-01-02T22:00:00.000Z","baseline":0.8262490385,"error":-0.7312490385},{"index":574,"date":"2018-01-02T22:15:00.000Z","baseline":0.7640294086,"error":-0.6670294086},{"index":575,"date":"2018-01-02T22:30:00.000Z","baseline":0.6947415189,"error":-0.5997415189},{"index":576,"date":"2018-01-02T22:45:00.000Z","baseline":0.6191614717,"error":-0.5231614717},{"index":577,"date":"2018-01-02T23:00:00.000Z","baseline":0.5384658886,"error":-0.4424658886},{"index":578,"date":"2018-01-02T23:15:00.000Z","baseline":0.4543414939,"error":-0.3593414939},{"index":579,"date":"2018-01-02T23:30:00.000Z","baseline":0.3692462231,"error":-0.2742462231},{"index":580,"date":"2018-01-02T23:45:00.000Z","baseline":0.2863032871,"error":-0.1923032871},{"index":581,"date":"2018-01-03T00:00:00.000Z","baseline":0.209301411,"error":-0.112301411},{"index":582,"date":"2018-01-03T00:15:00.000Z","baseline":0.1424314384,"error":-0.0444314384},{"index":583,"date":"2018-01-03T00:30:00.000Z","baseline":0.0886708827,"error":0.0053291173},{"index":584,"date":"2018-01-03T00:45:00.000Z","baseline":0.0482731607,"error":0.0487268393},{"index":585,"date":"2018-01-03T01:00:00.000Z","baseline":-0.00575,"error":0.09975},{"index":586,"date":"2018-01-03T01:15:00.000Z","baseline":-0.00575,"error":0.09875},{"index":587,"date":"2018-01-03T01:30:00.000Z","baseline":-0.00575,"error":0.10175},{"index":588,"date":"2018-01-03T01:45:00.000Z","baseline":-0.00575,"error":0.09975},{"index":589,"date":"2018-01-03T02:00:00.000Z","baseline":-0.00575,"error":0.09975},{"index":590,"date":"2018-01-03T02:15:00.000Z","baseline":-0.00575,"error":0.10075},{"index":591,"date":"2018-01-03T02:30:00.000Z","baseline":-0.00575,"error":0.10075},{"index":592,"date":"2018-01-03T02:45:00.000Z","baseline":-0.00575,"error":0.09975},{"index":593,"date":"2018-01-03T03:00:00.000Z","baseline":-0.00575,"error":0.68675},{"index":594,"date":"2018-01-03T03:00:00.000Z","baseline":-0.00575,"error":0.68675},{"index":595,"date":"2018-01-03T03:15:00.000Z","baseline":-0.00575,"error":0.19975},{"index":596,"date":"2018-01-03T03:30:00.000Z","baseline":-0.00575,"error":0.76775},{"index":597,"date":"2018-01-03T03:45:00.000Z","baseline":-0.00575,"error":0.19375},{"index":598,"date":"2018-01-03T04:00:00.000Z","baseline":-0.00575,"error":0.19375},{"index":599,"date":"2018-01-03T04:15:00.000Z","baseline":-0.00575,"error":0.20275},{"index":600,"date":"2018-01-03T04:30:00.000Z","baseline":-0.00575,"error":0.20475},{"index":601,"date":"2018-01-03T04:45:00.000Z","baseline":-0.00575,"error":0.20375},{"index":602,"date":"2018-01-03T05:00:00.000Z","baseline":-0.00575,"error":0.20375},{"index":603,"date":"2018-01-03T05:15:00.000Z","baseline":-0.00575,"error":0.17675},{"index":604,"date":"2018-01-03T05:30:00.000Z","baseline":-0.00575,"error":0.17675},{"index":605,"date":"2018-01-03T05:45:00.000Z","baseline":-0.00575,"error":0.17575},{"index":606,"date":"2018-01-03T06:00:00.000Z","baseline":-0.00575,"error":0.20475},{"index":607,"date":"2018-01-03T06:15:00.000Z","baseline":-0.00575,"error":0.15475},{"index":608,"date":"2018-01-03T06:30:00.000Z","baseline":-0.00575,"error":0.11875},{"index":609,"date":"2018-01-03T06:45:00.000Z","baseline":-0.00575,"error":0.11775},{"index":610,"date":"2018-01-03T07:00:00.000Z","baseline":-0.00575,"error":0.11775},{"index":611,"date":"2018-01-03T07:15:00.000Z","baseline":-0.00575,"error":0.00575},{"index":612,"date":"2018-01-03T20:30:00.000Z","baseline":1.0357895935,"error":-0.9017895935},{"index":613,"date":"2018-01-03T20:45:00.000Z","baseline":1.0222384713,"error":-0.8882384713},{"index":614,"date":"2018-01-03T21:00:00.000Z","baseline":1.0004923463,"error":-0.8704923463},{"index":615,"date":"2018-01-03T21:15:00.000Z","baseline":0.9720477448,"error":-0.8420477448},{"index":616,"date":"2018-01-03T21:30:00.000Z","baseline":0.9353164839,"error":-0.8053164839},{"index":617,"date":"2018-01-03T21:45:00.000Z","baseline":0.8903344273,"error":-0.7623344273},{"index":618,"date":"2018-01-03T22:00:00.000Z","baseline":0.8372169815,"error":-0.8372169815},{"index":619,"date":"2018-01-04T03:15:00.000Z","baseline":-0.00575,"error":0.07375},{"index":620,"date":"2018-01-17T19:15:00.000Z","baseline":1.0447030105,"error":-0.8897030105},{"index":621,"date":"2018-01-18T03:30:00.000Z","baseline":-0.00575,"error":0.13075},{"index":622,"date":"2018-01-18T03:30:00.000Z","baseline":-0.00575,"error":0.13075},{"index":623,"date":"2018-01-23T02:00:00.000Z","baseline":-0.00575,"error":0.20975},{"index":624,"date":"2018-01-23T02:30:00.000Z","baseline":-0.00575,"error":0.20475},{"index":625,"date":"2018-01-23T05:30:00.000Z","baseline":-0.00575,"error":0.18875},{"index":626,"date":"2018-01-23T05:45:00.000Z","baseline":-0.00575,"error":0.15275},{"index":627,"date":"2018-01-23T06:00:00.000Z","baseline":-0.00575,"error":0.23975},{"index":628,"date":"2018-01-23T06:15:00.000Z","baseline":-0.00575,"error":0.23775},{"index":629,"date":"2018-01-23T06:30:00.000Z","baseline":-0.00575,"error":0.23575},{"index":630,"date":"2018-01-23T06:45:00.000Z","baseline":-0.00575,"error":0.23475},{"index":631,"date":"2018-01-23T07:00:00.000Z","baseline":-0.00575,"error":0.23475},{"index":632,"date":"2018-01-23T07:15:00.000Z","baseline":-0.00575,"error":0.11875},{"index":633,"date":"2018-01-23T07:30:00.000Z","baseline":-0.00575,"error":0.10275},{"index":634,"date":"2018-01-23T07:45:00.000Z","baseline":-0.00575,"error":0.10175},{"index":635,"date":"2018-01-23T08:00:00.000Z","baseline":-0.00575,"error":0.10275},{"index":636,"date":"2018-01-23T08:15:00.000Z","baseline":-0.00575,"error":0.10175},{"index":637,"date":"2018-01-23T08:30:00.000Z","baseline":-0.00575,"error":0.15175},{"index":638,"date":"2018-01-23T08:45:00.000Z","baseline":-0.00575,"error":0.14775},{"index":639,"date":"2018-01-23T09:00:00.000Z","baseline":-0.00575,"error":0.14475},{"index":640,"date":"2018-01-23T09:15:00.000Z","baseline":-0.00575,"error":0.14375},{"index":641,"date":"2018-01-23T09:30:00.000Z","baseline":-0.00575,"error":0.13975},{"index":642,"date":"2018-01-23T09:45:00.000Z","baseline":-0.00575,"error":0.14075},{"index":643,"date":"2018-01-23T10:00:00.000Z","baseline":-0.00575,"error":0.13975},{"index":644,"date":"2018-01-23T10:15:00.000Z","baseline":-0.00575,"error":0.14175},{"index":645,"date":"2018-01-23T10:30:00.000Z","baseline":-0.00575,"error":0.13875},{"index":646,"date":"2018-01-23T10:45:00.000Z","baseline":-0.00575,"error":0.13975},{"index":647,"date":"2018-01-23T11:00:00.000Z","baseline":-0.00575,"error":0.13875},{"index":648,"date":"2018-01-23T11:15:00.000Z","baseline":-0.00575,"error":0.13775},{"index":649,"date":"2018-01-23T11:30:00.000Z","baseline":-0.00575,"error":0.13875},{"index":650,"date":"2018-01-23T11:45:00.000Z","baseline":-0.00575,"error":0.13775},{"index":651,"date":"2018-01-23T12:00:00.000Z","baseline":-0.00575,"error":0.13875},{"index":652,"date":"2018-01-23T12:15:00.000Z","baseline":-0.00575,"error":0.13775},{"index":653,"date":"2018-01-23T12:30:00.000Z","baseline":-0.00575,"error":0.09875},{"index":654,"date":"2018-01-23T12:45:00.000Z","baseline":-0.00575,"error":0.09875},{"index":655,"date":"2018-01-23T13:00:00.000Z","baseline":-0.00575,"error":0.09975},{"index":656,"date":"2018-01-23T13:15:00.000Z","baseline":-0.00575,"error":0.09875},{"index":657,"date":"2018-01-23T13:30:00.000Z","baseline":-0.00575,"error":0.09875},{"index":658,"date":"2018-01-23T13:45:00.000Z","baseline":-0.00575,"error":0.09975},{"index":659,"date":"2018-01-23T14:00:00.000Z","baseline":-0.00575,"error":0.09875},{"index":660,"date":"2018-01-23T14:15:00.000Z","baseline":-0.00575,"error":0.10075},{"index":661,"date":"2018-01-23T14:30:00.000Z","baseline":-0.00575,"error":0.09875},{"index":662,"date":"2018-01-23T14:45:00.000Z","baseline":-0.00575,"error":0.10575},{"index":663,"date":"2018-01-23T15:00:00.000Z","baseline":-0.00575,"error":0.10575},{"index":664,"date":"2018-01-23T15:15:00.000Z","baseline":-0.00575,"error":0.10675},{"index":665,"date":"2018-01-23T15:30:00.000Z","baseline":0.0129013943,"error":0.0880986057},{"index":666,"date":"2018-01-23T15:45:00.000Z","baseline":0.0713736003,"error":0.0206263997},{"index":667,"date":"2018-01-23T16:00:00.000Z","baseline":0.1254490808,"error":-0.0324490808},{"index":668,"date":"2018-01-23T16:15:00.000Z","baseline":0.1953190916,"error":-0.1033190916},{"index":669,"date":"2018-01-23T16:30:00.000Z","baseline":0.2780311202,"error":-0.1840311202},{"index":670,"date":"2018-01-23T16:45:00.000Z","baseline":0.3692990675,"error":-0.2772990675},{"index":671,"date":"2018-01-23T17:00:00.000Z","baseline":0.4646283022,"error":-0.3716283022},{"index":672,"date":"2018-01-23T17:15:00.000Z","baseline":0.5598389361,"error":-0.4678389361},{"index":673,"date":"2018-01-23T17:30:00.000Z","baseline":0.6520988392,"error":-0.5600988392},{"index":674,"date":"2018-01-23T17:45:00.000Z","baseline":0.7392326393,"error":-0.6462326393},{"index":675,"date":"2018-01-23T18:00:00.000Z","baseline":0.8197630808,"error":-0.7277630808},{"index":676,"date":"2018-01-23T18:15:00.000Z","baseline":0.8925097853,"error":-0.7535097853},{"index":677,"date":"2018-01-23T18:30:00.000Z","baseline":0.9571174667,"error":-0.8201174667},{"index":678,"date":"2018-01-23T18:45:00.000Z","baseline":1.0132927569,"error":-0.8782927569},{"index":679,"date":"2018-01-23T19:00:00.000Z","baseline":1.0609125318,"error":-0.9279125318},{"index":680,"date":"2018-01-23T19:15:00.000Z","baseline":1.0999470396,"error":-0.9669470396},{"index":681,"date":"2018-01-23T19:30:00.000Z","baseline":1.1304574138,"error":-0.9984574138},{"index":682,"date":"2018-01-23T19:45:00.000Z","baseline":1.1525110582,"error":-1.0195110582},{"index":683,"date":"2018-01-23T20:00:00.000Z","baseline":1.1661854968,"error":0.0988145032},{"index":684,"date":"2018-01-23T20:15:00.000Z","baseline":1.1740053215,"error":0.0659946785},{"index":685,"date":"2018-01-23T20:30:00.000Z","baseline":1.1735818866,"error":0.0674181134},{"index":686,"date":"2018-01-23T20:45:00.000Z","baseline":1.1648913558,"error":0.0761086442},{"index":687,"date":"2018-01-23T21:00:00.000Z","baseline":1.1479014137,"error":0.1010985863},{"index":688,"date":"2018-01-23T21:15:00.000Z","baseline":1.1214857264,"error":0.0775142736},{"index":689,"date":"2018-01-23T21:30:00.000Z","baseline":1.0868087439,"error":0.0451912561},{"index":690,"date":"2018-01-23T21:45:00.000Z","baseline":1.0438801819,"error":0.1501198181},{"index":691,"date":"2018-01-23T22:00:00.000Z","baseline":0.9927382166,"error":0.2732617834},{"index":692,"date":"2018-01-23T22:15:00.000Z","baseline":0.9326509293,"error":-0.8386509293},{"index":693,"date":"2018-01-23T22:30:00.000Z","baseline":0.8648302299,"error":-0.7688302299},{"index":694,"date":"2018-01-23T22:45:00.000Z","baseline":0.7896598465,"error":-0.6956598465},{"index":695,"date":"2018-01-23T23:00:00.000Z","baseline":0.7077766019,"error":-0.6117766019},{"index":696,"date":"2018-01-23T23:15:00.000Z","baseline":0.621415862,"error":-0.527415862},{"index":697,"date":"2018-01-23T23:30:00.000Z","baseline":0.5304273384,"error":-0.4364273384},{"index":698,"date":"2018-01-23T23:45:00.000Z","baseline":0.4370634813,"error":-0.3410634813},{"index":699,"date":"2018-01-24T00:00:00.000Z","baseline":0.3444123542,"error":-0.2504123542},{"index":700,"date":"2018-01-24T00:15:00.000Z","baseline":0.2565389636,"error":-0.1055389636},{"index":701,"date":"2018-01-24T00:30:00.000Z","baseline":0.1777307555,"error":-0.0407307555},{"index":702,"date":"2018-01-24T00:45:00.000Z","baseline":0.1120037375,"error":0.0239962625},{"index":703,"date":"2018-01-24T01:00:00.000Z","baseline":0.0620385597,"error":0.0719614403},{"index":704,"date":"2018-01-24T01:15:00.000Z","baseline":-0.00575,"error":0.13775},{"index":705,"date":"2018-01-24T01:30:00.000Z","baseline":-0.00575,"error":0.13775},{"index":706,"date":"2018-01-24T01:45:00.000Z","baseline":-0.00575,"error":0.13775},{"index":707,"date":"2018-01-24T02:00:00.000Z","baseline":-0.00575,"error":0.13675},{"index":708,"date":"2018-01-24T02:15:00.000Z","baseline":-0.00575,"error":0.13575},{"index":709,"date":"2018-01-24T02:30:00.000Z","baseline":-0.00575,"error":0.13575},{"index":710,"date":"2018-01-24T02:45:00.000Z","baseline":-0.00575,"error":0.13475},{"index":711,"date":"2018-01-24T03:00:00.000Z","baseline":-0.00575,"error":0.13575},{"index":712,"date":"2018-01-24T03:15:00.000Z","baseline":-0.00575,"error":0.13575},{"index":713,"date":"2018-01-24T03:30:00.000Z","baseline":-0.00575,"error":0.13475},{"index":714,"date":"2018-01-24T03:45:00.000Z","baseline":-0.00575,"error":0.13675},{"index":715,"date":"2018-01-24T04:00:00.000Z","baseline":-0.00575,"error":0.13575},{"index":716,"date":"2018-01-24T04:15:00.000Z","baseline":-0.00575,"error":0.13475},{"index":717,"date":"2018-01-24T04:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":718,"date":"2018-01-24T04:45:00.000Z","baseline":-0.00575,"error":0.09575},{"index":719,"date":"2018-01-24T05:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":720,"date":"2018-01-24T05:15:00.000Z","baseline":-0.00575,"error":0.09575},{"index":721,"date":"2018-01-24T05:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":722,"date":"2018-01-24T05:45:00.000Z","baseline":-0.00575,"error":0.09575},{"index":723,"date":"2018-01-24T06:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":724,"date":"2018-01-24T06:15:00.000Z","baseline":-0.00575,"error":0.09675},{"index":725,"date":"2018-01-24T06:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":726,"date":"2018-01-24T06:45:00.000Z","baseline":-0.00575,"error":0.09575},{"index":727,"date":"2018-01-24T07:00:00.000Z","baseline":-0.00575,"error":0.09575},{"index":728,"date":"2018-01-24T07:15:00.000Z","baseline":-0.00575,"error":0.09775},{"index":729,"date":"2018-01-24T07:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":730,"date":"2018-01-24T07:45:00.000Z","baseline":-0.00575,"error":0.09775},{"index":731,"date":"2018-01-24T08:00:00.000Z","baseline":-0.00575,"error":0.09575},{"index":732,"date":"2018-01-24T08:15:00.000Z","baseline":-0.00575,"error":0.09675},{"index":733,"date":"2018-01-24T08:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":734,"date":"2018-01-24T08:45:00.000Z","baseline":-0.00575,"error":0.15475},{"index":735,"date":"2018-01-24T09:00:00.000Z","baseline":-0.00575,"error":0.14175},{"index":736,"date":"2018-01-24T09:15:00.000Z","baseline":-0.00575,"error":0.13875},{"index":737,"date":"2018-01-24T09:30:00.000Z","baseline":-0.00575,"error":0.13875},{"index":738,"date":"2018-01-24T09:45:00.000Z","baseline":-0.00575,"error":0.13875},{"index":739,"date":"2018-01-24T10:00:00.000Z","baseline":-0.00575,"error":0.13675},{"index":740,"date":"2018-01-24T10:15:00.000Z","baseline":-0.00575,"error":0.13775},{"index":741,"date":"2018-01-24T10:30:00.000Z","baseline":-0.00575,"error":0.13775},{"index":742,"date":"2018-01-24T10:45:00.000Z","baseline":-0.00575,"error":0.13675},{"index":743,"date":"2018-01-24T11:00:00.000Z","baseline":-0.00575,"error":0.13575},{"index":744,"date":"2018-01-24T11:15:00.000Z","baseline":-0.00575,"error":0.13675},{"index":745,"date":"2018-01-24T11:30:00.000Z","baseline":-0.00575,"error":0.13475},{"index":746,"date":"2018-01-24T11:45:00.000Z","baseline":-0.00575,"error":0.13375},{"index":747,"date":"2018-01-24T12:00:00.000Z","baseline":-0.00575,"error":0.09775},{"index":748,"date":"2018-01-24T12:15:00.000Z","baseline":-0.00575,"error":0.09875},{"index":749,"date":"2018-01-24T12:30:00.000Z","baseline":-0.00575,"error":0.09875},{"index":750,"date":"2018-01-24T12:45:00.000Z","baseline":-0.00575,"error":0.09875},{"index":751,"date":"2018-01-24T13:00:00.000Z","baseline":-0.00575,"error":0.09775},{"index":752,"date":"2018-01-24T13:15:00.000Z","baseline":-0.00575,"error":0.09675},{"index":753,"date":"2018-01-24T13:30:00.000Z","baseline":-0.00575,"error":0.09775},{"index":754,"date":"2018-01-24T13:45:00.000Z","baseline":-0.00575,"error":0.09575},{"index":755,"date":"2018-01-24T14:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":756,"date":"2018-01-24T14:15:00.000Z","baseline":-0.00575,"error":0.09775},{"index":757,"date":"2018-01-24T14:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":758,"date":"2018-01-24T14:45:00.000Z","baseline":-0.00575,"error":0.09575},{"index":759,"date":"2018-01-24T15:00:00.000Z","baseline":-0.00575,"error":0.09575},{"index":760,"date":"2018-01-24T15:15:00.000Z","baseline":-0.00575,"error":0.09675},{"index":761,"date":"2018-01-24T15:30:00.000Z","baseline":0.0184616255,"error":0.0725383745},{"index":762,"date":"2018-01-24T15:45:00.000Z","baseline":0.0724259061,"error":0.0185740939},{"index":763,"date":"2018-01-24T16:00:00.000Z","baseline":0.1267914138,"error":-0.0357914138},{"index":764,"date":"2018-01-24T16:15:00.000Z","baseline":0.1970322281,"error":-0.1070322281},{"index":765,"date":"2018-01-24T16:30:00.000Z","baseline":0.2800898254,"error":-0.1910898254},{"index":766,"date":"2018-01-24T16:45:00.000Z","baseline":0.3717105693,"error":-0.2807105693},{"index":767,"date":"2018-01-24T17:00:00.000Z","baseline":0.4674779165,"error":-0.3754779165},{"index":768,"date":"2018-01-24T17:15:00.000Z","baseline":0.562677581,"error":-0.470677581},{"index":769,"date":"2018-01-24T17:30:00.000Z","baseline":0.6549391892,"error":-0.5639391892},{"index":770,"date":"2018-01-24T17:45:00.000Z","baseline":0.7421423784,"error":-0.6041423784},{"index":771,"date":"2018-01-24T18:00:00.000Z","baseline":0.82285006,"error":-0.68585006},{"index":772,"date":"2018-01-24T18:15:00.000Z","baseline":0.8958147057,"error":-0.7598147057},{"index":773,"date":"2018-01-24T18:30:00.000Z","baseline":0.9607552149,"error":-0.8277552149},{"index":774,"date":"2018-01-24T18:45:00.000Z","baseline":1.0173755513,"error":-0.8843755513},{"index":775,"date":"2018-01-24T19:00:00.000Z","baseline":1.0655397465,"error":-0.9345397465},{"index":776,"date":"2018-01-24T19:15:00.000Z","baseline":1.1066369486,"error":-0.9746369486},{"index":777,"date":"2018-01-24T19:30:00.000Z","baseline":1.1393681146,"error":-1.0083681146},{"index":778,"date":"2018-01-24T19:45:00.000Z","baseline":1.163725366,"error":-1.033725366},{"index":779,"date":"2018-01-24T20:00:00.000Z","baseline":1.1797072028,"error":0.1252927972},{"index":780,"date":"2018-01-24T20:15:00.000Z","baseline":1.1876310965,"error":0.1093689035},{"index":781,"date":"2018-01-24T20:30:00.000Z","baseline":1.1871573238,"error":0.1258426762},{"index":782,"date":"2018-01-24T20:45:00.000Z","baseline":1.1782598148,"error":0.1297401852},{"index":783,"date":"2018-01-24T21:00:00.000Z","baseline":1.1609105901,"error":0.1170894099},{"index":784,"date":"2018-01-24T21:15:00.000Z","baseline":1.1377204497,"error":0.1502795503},{"index":785,"date":"2018-01-24T21:30:00.000Z","baseline":1.1059417924,"error":-1.0119417924},{"index":786,"date":"2018-01-24T21:45:00.000Z","baseline":1.0655279374,"error":-0.9695279374},{"index":787,"date":"2018-01-24T22:00:00.000Z","baseline":1.0164660353,"error":-0.9194660353},{"index":788,"date":"2018-01-24T22:15:00.000Z","baseline":0.9565243729,"error":-0.8625243729},{"index":789,"date":"2018-01-24T22:30:00.000Z","baseline":0.8886273917,"error":-0.7926273917},{"index":790,"date":"2018-01-24T22:45:00.000Z","baseline":0.8131604817,"error":-0.7161604817},{"index":791,"date":"2018-01-24T23:00:00.000Z","baseline":0.7307469208,"error":-0.6337469208},{"index":792,"date":"2018-01-24T23:15:00.000Z","baseline":0.6418997258,"error":-0.5438997258},{"index":793,"date":"2018-01-24T23:30:00.000Z","baseline":0.5486067091,"error":-0.4546067091},{"index":794,"date":"2018-01-24T23:45:00.000Z","baseline":0.4530510445,"error":-0.3590510445},{"index":795,"date":"2018-01-25T00:00:00.000Z","baseline":0.3582360927,"error":-0.2642360927},{"index":796,"date":"2018-01-25T00:15:00.000Z","baseline":0.2682925517,"error":-0.1762925517},{"index":797,"date":"2018-01-25T00:30:00.000Z","baseline":0.1870937585,"error":-0.0940937585},{"index":798,"date":"2018-01-25T00:45:00.000Z","baseline":0.1189183898,"error":-0.0269183898},{"index":799,"date":"2018-01-25T01:00:00.000Z","baseline":0.066712854,"error":0.024287146},{"index":800,"date":"2018-01-25T01:15:00.000Z","baseline":-0.00575,"error":0.09675},{"index":801,"date":"2018-01-25T01:30:00.000Z","baseline":-0.00575,"error":0.09775},{"index":802,"date":"2018-01-25T01:45:00.000Z","baseline":-0.00575,"error":0.09875},{"index":803,"date":"2018-01-25T02:00:00.000Z","baseline":-0.00575,"error":0.14375},{"index":804,"date":"2018-01-25T02:15:00.000Z","baseline":-0.00575,"error":0.14075},{"index":805,"date":"2018-01-25T02:30:00.000Z","baseline":-0.00575,"error":0.14075},{"index":806,"date":"2018-01-25T02:45:00.000Z","baseline":-0.00575,"error":0.13875},{"index":807,"date":"2018-01-25T03:00:00.000Z","baseline":-0.00575,"error":0.13675},{"index":808,"date":"2018-01-25T03:15:00.000Z","baseline":-0.00575,"error":0.13675},{"index":809,"date":"2018-01-25T03:30:00.000Z","baseline":-0.00575,"error":0.13575},{"index":810,"date":"2018-01-25T03:45:00.000Z","baseline":-0.00575,"error":0.13675},{"index":811,"date":"2018-01-25T04:00:00.000Z","baseline":-0.00575,"error":0.13575},{"index":812,"date":"2018-01-25T04:15:00.000Z","baseline":-0.00575,"error":0.13475},{"index":813,"date":"2018-01-25T04:30:00.000Z","baseline":-0.00575,"error":0.13575},{"index":814,"date":"2018-01-25T04:45:00.000Z","baseline":-0.00575,"error":0.13575},{"index":815,"date":"2018-01-25T05:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":816,"date":"2018-01-25T05:15:00.000Z","baseline":-0.00575,"error":0.09775},{"index":817,"date":"2018-01-25T05:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":818,"date":"2018-01-25T05:45:00.000Z","baseline":-0.00575,"error":0.09775},{"index":819,"date":"2018-01-25T06:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":820,"date":"2018-01-25T06:15:00.000Z","baseline":-0.00575,"error":0.09675},{"index":821,"date":"2018-01-25T06:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":822,"date":"2018-01-25T06:45:00.000Z","baseline":-0.00575,"error":0.09575},{"index":823,"date":"2018-01-25T07:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":824,"date":"2018-01-25T07:15:00.000Z","baseline":-0.00575,"error":0.09675},{"index":825,"date":"2018-01-25T07:30:00.000Z","baseline":-0.00575,"error":0.09775},{"index":826,"date":"2018-01-25T07:45:00.000Z","baseline":-0.00575,"error":0.09675},{"index":827,"date":"2018-01-25T08:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":828,"date":"2018-01-25T08:15:00.000Z","baseline":-0.00575,"error":0.09575},{"index":829,"date":"2018-01-25T08:30:00.000Z","baseline":-0.00575,"error":0.09775},{"index":830,"date":"2018-01-25T08:45:00.000Z","baseline":-0.00575,"error":0.09575},{"index":831,"date":"2018-01-25T09:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":832,"date":"2018-01-25T09:15:00.000Z","baseline":-0.00575,"error":0.09775},{"index":833,"date":"2018-01-25T09:30:00.000Z","baseline":-0.00575,"error":0.09775},{"index":834,"date":"2018-01-25T09:45:00.000Z","baseline":-0.00575,"error":0.09775},{"index":835,"date":"2018-01-25T10:00:00.000Z","baseline":-0.00575,"error":0.09875},{"index":836,"date":"2018-01-25T10:15:00.000Z","baseline":-0.00575,"error":0.09775},{"index":837,"date":"2018-01-25T10:30:00.000Z","baseline":-0.00575,"error":0.09775},{"index":838,"date":"2018-01-25T10:45:00.000Z","baseline":-0.00575,"error":0.09775},{"index":839,"date":"2018-01-25T11:00:00.000Z","baseline":-0.00575,"error":0.14375},{"index":840,"date":"2018-01-25T11:15:00.000Z","baseline":-0.00575,"error":0.14175},{"index":841,"date":"2018-01-25T11:30:00.000Z","baseline":-0.00575,"error":0.13875},{"index":842,"date":"2018-01-25T11:45:00.000Z","baseline":-0.00575,"error":0.13775},{"index":843,"date":"2018-01-25T12:00:00.000Z","baseline":-0.00575,"error":0.13675},{"index":844,"date":"2018-01-25T12:15:00.000Z","baseline":-0.00575,"error":0.13475},{"index":845,"date":"2018-01-25T12:30:00.000Z","baseline":-0.00575,"error":0.13675},{"index":846,"date":"2018-01-25T12:45:00.000Z","baseline":-0.00575,"error":0.13375},{"index":847,"date":"2018-01-25T13:00:00.000Z","baseline":-0.00575,"error":0.13375},{"index":848,"date":"2018-01-25T13:15:00.000Z","baseline":-0.00575,"error":0.13375},{"index":849,"date":"2018-01-25T13:30:00.000Z","baseline":-0.00575,"error":0.13475},{"index":850,"date":"2018-01-25T13:45:00.000Z","baseline":-0.00575,"error":0.13375},{"index":851,"date":"2018-01-25T14:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":852,"date":"2018-01-25T14:15:00.000Z","baseline":-0.00575,"error":0.09775},{"index":853,"date":"2018-01-25T14:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":854,"date":"2018-01-25T14:45:00.000Z","baseline":-0.00575,"error":0.09675},{"index":855,"date":"2018-01-25T15:00:00.000Z","baseline":-0.00575,"error":0.09775},{"index":856,"date":"2018-01-25T15:15:00.000Z","baseline":-0.00575,"error":0.09575},{"index":857,"date":"2018-01-25T15:30:00.000Z","baseline":0.0238137565,"error":0.0671862435},{"index":858,"date":"2018-01-25T15:45:00.000Z","baseline":0.0749130181,"error":0.0150869819},{"index":859,"date":"2018-01-25T16:00:00.000Z","baseline":0.1304804491,"error":-0.0384804491},{"index":860,"date":"2018-01-25T16:15:00.000Z","baseline":0.2018212521,"error":-0.1098212521},{"index":861,"date":"2018-01-25T16:30:00.000Z","baseline":0.2858472653,"error":-0.1948472653},{"index":862,"date":"2018-01-25T16:45:00.000Z","baseline":0.3781889476,"error":-0.2861889476},{"index":863,"date":"2018-01-25T17:00:00.000Z","baseline":0.4743716403,"error":-0.3823716403},{"index":864,"date":"2018-01-25T17:15:00.000Z","baseline":0.5703225195,"error":-0.4793225195},{"index":865,"date":"2018-01-25T17:30:00.000Z","baseline":0.6632530522,"error":-0.5722530522},{"index":866,"date":"2018-01-25T17:45:00.000Z","baseline":0.7510574367,"error":-0.6590574367},{"index":867,"date":"2018-01-25T18:00:00.000Z","baseline":0.8323114411,"error":-0.7403114411},{"index":868,"date":"2018-01-25T18:15:00.000Z","baseline":0.9062540201,"error":-0.8142540201},{"index":869,"date":"2018-01-25T18:30:00.000Z","baseline":0.9722001112,"error":-0.8802001112},{"index":870,"date":"2018-01-25T18:45:00.000Z","baseline":1.0298480847,"error":-0.9378480847},{"index":871,"date":"2018-01-25T19:00:00.000Z","baseline":1.0790547106,"error":-0.9870547106},{"index":872,"date":"2018-01-25T19:15:00.000Z","baseline":1.1191159095,"error":-1.0271159095},{"index":873,"date":"2018-01-25T19:30:00.000Z","baseline":1.1506316766,"error":-1.0576316766},{"index":874,"date":"2018-01-25T19:45:00.000Z","baseline":1.1736515584,"error":-1.0806515584},{"index":875,"date":"2018-01-25T20:00:00.000Z","baseline":1.1882357123,"error":0.1517642877},{"index":876,"date":"2018-01-25T20:15:00.000Z","baseline":1.1967457558,"error":0.1552542442},{"index":877,"date":"2018-01-25T20:30:00.000Z","baseline":1.1969154525,"error":0.1650845475},{"index":878,"date":"2018-01-25T20:45:00.000Z","baseline":1.1887069502,"error":0.1722930498},{"index":879,"date":"2018-01-25T21:00:00.000Z","baseline":1.1720778128,"error":0.1929221872},{"index":880,"date":"2018-01-25T21:15:00.000Z","baseline":1.1480713555,"error":-0.0330713555},{"index":881,"date":"2018-01-25T21:30:00.000Z","baseline":1.1156269103,"error":-0.9806269103},{"index":882,"date":"2018-01-25T21:45:00.000Z","baseline":1.0747293081,"error":-0.9407293081},{"index":883,"date":"2018-01-25T22:00:00.000Z","baseline":1.0253843956,"error":-0.8883843956},{"index":884,"date":"2018-01-25T22:15:00.000Z","baseline":0.9654397069,"error":-0.8324397069},{"index":885,"date":"2018-01-25T22:30:00.000Z","baseline":0.8975152113,"error":-0.7645152113},{"index":886,"date":"2018-01-25T22:45:00.000Z","baseline":0.8219562128,"error":-0.6839562128},{"index":887,"date":"2018-01-25T23:00:00.000Z","baseline":0.739350811,"error":-0.608350811},{"index":888,"date":"2018-01-25T23:15:00.000Z","baseline":0.6505635303,"error":-0.5185635303},{"index":889,"date":"2018-01-25T23:30:00.000Z","baseline":0.5570782467,"error":-0.4250782467},{"index":890,"date":"2018-01-25T23:45:00.000Z","baseline":0.4610657757,"error":-0.3610657757},{"index":891,"date":"2018-01-26T00:00:00.000Z","baseline":0.365524577,"error":-0.273524577},{"index":892,"date":"2018-01-26T00:15:00.000Z","baseline":0.2747761704,"error":-0.1827761704},{"index":893,"date":"2018-01-26T00:30:00.000Z","baseline":0.1926068667,"error":-0.0986068667},{"index":894,"date":"2018-01-26T00:45:00.000Z","baseline":0.123296836,"error":-0.031296836},{"index":895,"date":"2018-01-26T01:00:00.000Z","baseline":0.069868561,"error":0.023131439},{"index":896,"date":"2018-01-26T01:15:00.000Z","baseline":0.0132505729,"error":0.0777494271},{"index":897,"date":"2018-01-26T01:30:00.000Z","baseline":-0.00575,"error":0.09775},{"index":898,"date":"2018-01-26T01:45:00.000Z","baseline":-0.00575,"error":0.09675},{"index":899,"date":"2018-01-26T02:00:00.000Z","baseline":-0.00575,"error":0.09775},{"index":900,"date":"2018-01-26T02:15:00.000Z","baseline":-0.00575,"error":0.09675},{"index":901,"date":"2018-01-26T02:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":902,"date":"2018-01-26T02:45:00.000Z","baseline":-0.00575,"error":0.09775},{"index":903,"date":"2018-01-26T03:00:00.000Z","baseline":-0.00575,"error":0.09775},{"index":904,"date":"2018-01-26T03:15:00.000Z","baseline":-0.00575,"error":0.09575},{"index":905,"date":"2018-01-26T03:30:00.000Z","baseline":-0.00575,"error":0.09575},{"index":906,"date":"2018-01-26T03:45:00.000Z","baseline":-0.00575,"error":0.09475},{"index":907,"date":"2018-01-26T04:00:00.000Z","baseline":-0.00575,"error":0.14175},{"index":908,"date":"2018-01-26T04:15:00.000Z","baseline":-0.00575,"error":0.13875},{"index":909,"date":"2018-01-26T04:30:00.000Z","baseline":-0.00575,"error":0.13875},{"index":910,"date":"2018-01-26T04:45:00.000Z","baseline":-0.00575,"error":0.13675},{"index":911,"date":"2018-01-26T05:00:00.000Z","baseline":-0.00575,"error":0.13775},{"index":912,"date":"2018-01-26T05:15:00.000Z","baseline":-0.00575,"error":0.13675},{"index":913,"date":"2018-01-26T05:30:00.000Z","baseline":-0.00575,"error":0.13475},{"index":914,"date":"2018-01-26T05:45:00.000Z","baseline":-0.00575,"error":0.13375},{"index":915,"date":"2018-01-26T06:00:00.000Z","baseline":-0.00575,"error":0.13475},{"index":916,"date":"2018-01-26T06:15:00.000Z","baseline":-0.00575,"error":0.13475},{"index":917,"date":"2018-01-26T06:30:00.000Z","baseline":-0.00575,"error":0.13475},{"index":918,"date":"2018-01-26T06:45:00.000Z","baseline":-0.00575,"error":0.13375},{"index":919,"date":"2018-01-26T07:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":920,"date":"2018-01-26T07:15:00.000Z","baseline":-0.00575,"error":0.09675},{"index":921,"date":"2018-01-26T07:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":922,"date":"2018-01-26T07:45:00.000Z","baseline":-0.00575,"error":0.09575},{"index":923,"date":"2018-01-26T08:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":924,"date":"2018-01-26T08:15:00.000Z","baseline":-0.00575,"error":0.09675},{"index":925,"date":"2018-01-26T08:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":926,"date":"2018-01-26T08:45:00.000Z","baseline":-0.00575,"error":0.09675},{"index":927,"date":"2018-01-26T09:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":928,"date":"2018-01-26T09:15:00.000Z","baseline":-0.00575,"error":0.09675},{"index":929,"date":"2018-01-26T09:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":930,"date":"2018-01-26T09:45:00.000Z","baseline":-0.00575,"error":0.09675},{"index":931,"date":"2018-01-26T10:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":932,"date":"2018-01-26T10:15:00.000Z","baseline":-0.00575,"error":0.09775},{"index":933,"date":"2018-01-26T10:30:00.000Z","baseline":-0.00575,"error":0.09775},{"index":934,"date":"2018-01-26T10:45:00.000Z","baseline":-0.00575,"error":0.09775},{"index":935,"date":"2018-01-26T11:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":936,"date":"2018-01-26T11:15:00.000Z","baseline":-0.00575,"error":0.09875},{"index":937,"date":"2018-01-26T11:30:00.000Z","baseline":-0.00575,"error":0.09875},{"index":938,"date":"2018-01-26T11:45:00.000Z","baseline":-0.00575,"error":0.09875},{"index":939,"date":"2018-01-26T12:00:00.000Z","baseline":-0.00575,"error":0.09775},{"index":940,"date":"2018-01-26T12:15:00.000Z","baseline":-0.00575,"error":0.09875},{"index":941,"date":"2018-01-26T12:30:00.000Z","baseline":-0.00575,"error":0.09875},{"index":942,"date":"2018-01-26T12:45:00.000Z","baseline":-0.00575,"error":0.09775},{"index":943,"date":"2018-01-26T13:00:00.000Z","baseline":-0.00575,"error":0.09775},{"index":944,"date":"2018-01-26T13:15:00.000Z","baseline":-0.00575,"error":0.14375},{"index":945,"date":"2018-01-26T13:30:00.000Z","baseline":-0.00575,"error":0.14175},{"index":946,"date":"2018-01-26T13:45:00.000Z","baseline":-0.00575,"error":0.13975},{"index":947,"date":"2018-01-26T14:00:00.000Z","baseline":-0.00575,"error":0.13675},{"index":948,"date":"2018-01-26T14:15:00.000Z","baseline":-0.00575,"error":0.13675},{"index":949,"date":"2018-01-26T14:30:00.000Z","baseline":-0.00575,"error":0.13575},{"index":950,"date":"2018-01-26T14:45:00.000Z","baseline":-0.00575,"error":0.13475},{"index":951,"date":"2018-01-26T15:00:00.000Z","baseline":-0.00575,"error":0.13575},{"index":952,"date":"2018-01-26T15:15:00.000Z","baseline":-0.00575,"error":0.13375},{"index":953,"date":"2018-01-26T15:30:00.000Z","baseline":0.0290622665,"error":0.0999377335},{"index":954,"date":"2018-01-26T15:45:00.000Z","baseline":0.07845204,"error":0.01354796},{"index":955,"date":"2018-01-26T16:00:00.000Z","baseline":0.1355504939,"error":-0.0445504939},{"index":956,"date":"2018-01-26T16:15:00.000Z","baseline":0.2085752184,"error":-0.1175752184},{"index":957,"date":"2018-01-26T16:30:00.000Z","baseline":0.2942612696,"error":-0.2022612696},{"index":958,"date":"2018-01-26T16:45:00.000Z","baseline":0.3881299328,"error":-0.2961299328},{"index":959,"date":"2018-01-26T17:00:00.000Z","baseline":0.4856584209,"error":-0.3936584209},{"index":960,"date":"2018-01-26T17:15:00.000Z","baseline":0.5828142919,"error":-0.4918142919},{"index":961,"date":"2018-01-26T17:30:00.000Z","baseline":0.6767967731,"error":-0.5847967731},{"index":962,"date":"2018-01-26T17:45:00.000Z","baseline":0.7655251595,"error":-0.6735251595},{"index":963,"date":"2018-01-26T18:00:00.000Z","baseline":0.8476027475,"error":-0.7546027475},{"index":964,"date":"2018-01-26T18:15:00.000Z","baseline":0.922220078,"error":-0.831220078},{"index":965,"date":"2018-01-26T18:30:00.000Z","baseline":0.9887733566,"error":-0.8967733566},{"index":966,"date":"2018-01-26T18:45:00.000Z","baseline":1.0469826762,"error":-0.9559826762},{"index":967,"date":"2018-01-26T19:00:00.000Z","baseline":1.0967231488,"error":-1.0037231488},{"index":968,"date":"2018-01-26T19:15:00.000Z","baseline":1.137774275,"error":-1.045774275},{"index":969,"date":"2018-01-26T19:30:00.000Z","baseline":1.1703052882,"error":-1.0783052882},{"index":970,"date":"2018-01-26T19:45:00.000Z","baseline":1.1943630719,"error":-1.1013630719},{"index":971,"date":"2018-01-26T20:00:00.000Z","baseline":1.2100015656,"error":0.1129984344},{"index":972,"date":"2018-01-26T20:15:00.000Z","baseline":1.2181634182,"error":0.1068365818},{"index":973,"date":"2018-01-26T20:30:00.000Z","baseline":1.2179952336,"error":0.1090047664},{"index":974,"date":"2018-01-26T20:45:00.000Z","baseline":1.2094779117,"error":0.1195220883},{"index":975,"date":"2018-01-26T21:00:00.000Z","baseline":1.1925821682,"error":0.1404178318},{"index":976,"date":"2018-01-26T21:15:00.000Z","baseline":1.1638429365,"error":-1.0608429365},{"index":977,"date":"2018-01-26T21:30:00.000Z","baseline":1.1269291184,"error":-0.9799291184},{"index":978,"date":"2018-01-26T21:45:00.000Z","baseline":1.081902273,"error":-0.941902273},{"index":979,"date":"2018-01-26T22:00:00.000Z","baseline":1.0288394658,"error":-0.8878394658},{"index":980,"date":"2018-01-26T22:15:00.000Z","baseline":0.9699722097,"error":-0.8339722097},{"index":981,"date":"2018-01-26T22:30:00.000Z","baseline":0.9030209917,"error":-0.7650209917},{"index":982,"date":"2018-01-26T22:45:00.000Z","baseline":0.8282912622,"error":-0.6892912622},{"index":983,"date":"2018-01-26T23:00:00.000Z","baseline":0.7463338494,"error":-0.6093338494},{"index":984,"date":"2018-01-26T23:15:00.000Z","baseline":0.6586188067,"error":-0.5246188067},{"index":985,"date":"2018-01-26T23:30:00.000Z","baseline":0.5659061029,"error":-0.4299061029},{"index":986,"date":"2018-01-26T23:45:00.000Z","baseline":0.4702809087,"error":-0.3302809087},{"index":987,"date":"2018-01-27T00:00:00.000Z","baseline":0.3746626598,"error":-0.2446626598},{"index":988,"date":"2018-01-27T00:15:00.000Z","baseline":0.2828408173,"error":-0.1508408173},{"index":989,"date":"2018-01-27T00:30:00.000Z","baseline":0.1992820582,"error":-0.0672820582},{"index":990,"date":"2018-01-27T00:45:00.000Z","baseline":0.1284060533,"error":0.0005939467},{"index":991,"date":"2018-01-27T01:00:00.000Z","baseline":0.0734052105,"error":0.0165947895},{"index":992,"date":"2018-01-27T01:15:00.000Z","baseline":0.0227441212,"error":0.0682558788},{"index":993,"date":"2018-01-27T01:30:00.000Z","baseline":-0.00575,"error":0.09575},{"index":994,"date":"2018-01-27T01:45:00.000Z","baseline":-0.00575,"error":0.15975},{"index":995,"date":"2018-01-27T02:00:00.000Z","baseline":-0.00575,"error":0.15875},{"index":996,"date":"2018-01-27T02:15:00.000Z","baseline":-0.00575,"error":0.09675},{"index":997,"date":"2018-01-27T02:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":998,"date":"2018-01-27T02:45:00.000Z","baseline":-0.00575,"error":0.09575},{"index":999,"date":"2018-01-27T03:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1000,"date":"2018-01-27T03:15:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1001,"date":"2018-01-27T03:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1002,"date":"2018-01-27T03:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1003,"date":"2018-01-27T03:45:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1004,"date":"2018-01-27T04:00:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1005,"date":"2018-01-27T04:15:00.000Z","baseline":-0.00575,"error":0.14375},{"index":1006,"date":"2018-01-27T04:30:00.000Z","baseline":-0.00575,"error":0.13875},{"index":1007,"date":"2018-01-27T04:45:00.000Z","baseline":-0.00575,"error":0.13775},{"index":1008,"date":"2018-01-27T05:00:00.000Z","baseline":-0.00575,"error":0.13675},{"index":1009,"date":"2018-01-27T05:15:00.000Z","baseline":-0.00575,"error":0.13575},{"index":1010,"date":"2018-01-27T05:30:00.000Z","baseline":-0.00575,"error":0.13475},{"index":1011,"date":"2018-01-27T05:45:00.000Z","baseline":-0.00575,"error":0.13475},{"index":1012,"date":"2018-01-27T06:00:00.000Z","baseline":-0.00575,"error":0.13275},{"index":1013,"date":"2018-01-27T06:15:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1014,"date":"2018-01-27T06:30:00.000Z","baseline":-0.00575,"error":0.09575},{"index":1015,"date":"2018-01-27T06:45:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1016,"date":"2018-01-27T07:00:00.000Z","baseline":-0.00575,"error":0.09575},{"index":1017,"date":"2018-01-27T07:15:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1018,"date":"2018-01-27T07:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1019,"date":"2018-01-27T07:45:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1020,"date":"2018-01-27T08:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1021,"date":"2018-01-27T08:15:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1022,"date":"2018-01-27T08:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1023,"date":"2018-01-27T08:45:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1024,"date":"2018-01-27T09:00:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1025,"date":"2018-01-27T09:15:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1026,"date":"2018-01-27T09:30:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1027,"date":"2018-01-27T09:45:00.000Z","baseline":-0.00575,"error":0.15375},{"index":1028,"date":"2018-01-27T10:00:00.000Z","baseline":-0.00575,"error":0.14075},{"index":1029,"date":"2018-01-27T10:15:00.000Z","baseline":-0.00575,"error":0.13975},{"index":1030,"date":"2018-01-27T10:30:00.000Z","baseline":-0.00575,"error":0.13675},{"index":1031,"date":"2018-01-27T10:45:00.000Z","baseline":-0.00575,"error":0.13675},{"index":1032,"date":"2018-01-27T11:00:00.000Z","baseline":-0.00575,"error":0.13675},{"index":1033,"date":"2018-01-27T11:15:00.000Z","baseline":-0.00575,"error":0.13675},{"index":1034,"date":"2018-01-27T11:30:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1035,"date":"2018-01-27T11:45:00.000Z","baseline":-0.00575,"error":0.09875},{"index":1036,"date":"2018-01-27T12:00:00.000Z","baseline":-0.00575,"error":0.09875},{"index":1037,"date":"2018-01-27T12:15:00.000Z","baseline":-0.00575,"error":0.09875},{"index":1038,"date":"2018-01-27T12:30:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1039,"date":"2018-01-27T12:45:00.000Z","baseline":-0.00575,"error":0.09875},{"index":1040,"date":"2018-01-27T13:00:00.000Z","baseline":-0.00575,"error":0.09875},{"index":1041,"date":"2018-01-27T13:15:00.000Z","baseline":-0.00575,"error":0.09875},{"index":1042,"date":"2018-01-27T13:30:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1043,"date":"2018-01-27T13:30:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1044,"date":"2018-01-27T13:45:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1045,"date":"2018-01-27T14:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1046,"date":"2018-01-27T14:15:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1047,"date":"2018-01-27T14:30:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1048,"date":"2018-01-27T14:45:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1049,"date":"2018-01-27T15:00:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1050,"date":"2018-01-27T15:15:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1051,"date":"2018-01-27T15:30:00.000Z","baseline":0.0328767568,"error":0.0581232432},{"index":1052,"date":"2018-01-27T15:45:00.000Z","baseline":0.080366447,"error":0.011633553},{"index":1053,"date":"2018-01-27T16:00:00.000Z","baseline":0.1381426021,"error":-0.0481426021},{"index":1054,"date":"2018-01-27T16:15:00.000Z","baseline":0.2116501465,"error":-0.0746501465},{"index":1055,"date":"2018-01-27T16:30:00.000Z","baseline":0.2975024044,"error":-0.1625024044},{"index":1056,"date":"2018-01-27T16:45:00.000Z","baseline":0.3911196238,"error":-0.2591196238},{"index":1057,"date":"2018-01-27T17:00:00.000Z","baseline":0.4879452231,"error":-0.3579452231},{"index":1058,"date":"2018-01-27T17:15:00.000Z","baseline":0.5839593352,"error":-0.4539593352},{"index":1059,"date":"2018-01-27T17:30:00.000Z","baseline":0.6764770658,"error":-0.5464770658},{"index":1060,"date":"2018-01-27T17:45:00.000Z","baseline":0.763484542,"error":-0.633484542},{"index":1061,"date":"2018-01-27T18:00:00.000Z","baseline":0.8436504475,"error":-0.7506504475},{"index":1062,"date":"2018-01-27T18:15:00.000Z","baseline":0.9176684419,"error":-0.8246684419},{"index":1063,"date":"2018-01-27T18:30:00.000Z","baseline":0.983828343,"error":-0.891828343},{"index":1064,"date":"2018-01-27T18:45:00.000Z","baseline":1.0418649364,"error":-0.9488649364},{"index":1065,"date":"2018-01-27T19:00:00.000Z","baseline":1.0916542094,"error":-0.9976542094},{"index":1066,"date":"2018-01-27T19:15:00.000Z","baseline":1.1311741624,"error":-1.0371741624},{"index":1067,"date":"2018-01-27T19:30:00.000Z","baseline":1.1622427385,"error":-1.0682427385},{"index":1068,"date":"2018-01-27T19:45:00.000Z","baseline":1.1849277085,"error":-1.0919277085},{"index":1069,"date":"2018-01-27T20:00:00.000Z","baseline":1.1993007662,"error":0.0816992338},{"index":1070,"date":"2018-01-27T20:15:00.000Z","baseline":1.206358368,"error":0.090641632},{"index":1071,"date":"2018-01-27T20:30:00.000Z","baseline":1.2052279634,"error":0.1117720366},{"index":1072,"date":"2018-01-27T20:45:00.000Z","baseline":1.1959337597,"error":0.1050662403},{"index":1073,"date":"2018-01-27T21:00:00.000Z","baseline":1.1784875196,"error":0.1815124804},{"index":1074,"date":"2018-01-27T21:15:00.000Z","baseline":1.153120938,"error":-1.010120938},{"index":1075,"date":"2018-01-27T21:30:00.000Z","baseline":1.1194487553,"error":-0.9804487553},{"index":1076,"date":"2018-01-27T21:45:00.000Z","baseline":1.0774447234,"error":-0.9384447234},{"index":1077,"date":"2018-01-27T22:00:00.000Z","baseline":1.0271126935,"error":-0.8911126935},{"index":1078,"date":"2018-01-27T22:15:00.000Z","baseline":0.9691661211,"error":-0.8321661211},{"index":1079,"date":"2018-01-27T22:30:00.000Z","baseline":0.9030957844,"error":-0.7670957844},{"index":1080,"date":"2018-01-27T22:45:00.000Z","baseline":0.8291971753,"error":-0.6951971753},{"index":1081,"date":"2018-01-27T23:00:00.000Z","baseline":0.7480078431,"error":-0.6490078431},{"index":1082,"date":"2018-01-27T23:15:00.000Z","baseline":0.66034676,"error":-0.56434676},{"index":1083,"date":"2018-01-27T23:30:00.000Z","baseline":0.5678220267,"error":-0.4688220267},{"index":1084,"date":"2018-01-27T23:45:00.000Z","baseline":0.4724513988,"error":-0.3754513988},{"index":1085,"date":"2018-01-28T00:00:00.000Z","baseline":0.3770622765,"error":-0.2830622765},{"index":1086,"date":"2018-01-28T00:15:00.000Z","baseline":0.2856367626,"error":-0.1906367626},{"index":1087,"date":"2018-01-28T00:30:00.000Z","baseline":0.2021375867,"error":-0.0601375867},{"index":1088,"date":"2018-01-28T00:45:00.000Z","baseline":0.1309750227,"error":0.0050249773},{"index":1089,"date":"2018-01-28T01:00:00.000Z","baseline":0.0754094285,"error":0.0585905715},{"index":1090,"date":"2018-01-28T01:15:00.000Z","baseline":0.028940035,"error":0.104059965},{"index":1091,"date":"2018-01-28T01:30:00.000Z","baseline":-0.00575,"error":0.13875},{"index":1092,"date":"2018-01-28T01:45:00.000Z","baseline":-0.00575,"error":0.13675},{"index":1093,"date":"2018-01-28T02:00:00.000Z","baseline":-0.00575,"error":0.13675},{"index":1094,"date":"2018-01-28T02:15:00.000Z","baseline":-0.00575,"error":0.13475},{"index":1095,"date":"2018-01-28T02:30:00.000Z","baseline":-0.00575,"error":0.13475},{"index":1096,"date":"2018-01-28T02:45:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1097,"date":"2018-01-28T03:00:00.000Z","baseline":-0.00575,"error":0.09575},{"index":1098,"date":"2018-01-28T03:15:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1099,"date":"2018-01-28T03:30:00.000Z","baseline":-0.00575,"error":0.09575},{"index":1100,"date":"2018-01-28T03:30:00.000Z","baseline":-0.00575,"error":0.09575},{"index":1101,"date":"2018-01-28T03:45:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1102,"date":"2018-01-28T04:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1103,"date":"2018-01-28T04:15:00.000Z","baseline":-0.00575,"error":0.09575},{"index":1104,"date":"2018-01-28T04:30:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1105,"date":"2018-01-28T04:45:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1106,"date":"2018-01-28T05:00:00.000Z","baseline":-0.00575,"error":0.14175},{"index":1107,"date":"2018-01-28T05:15:00.000Z","baseline":-0.00575,"error":0.13975},{"index":1108,"date":"2018-01-28T05:30:00.000Z","baseline":-0.00575,"error":0.13675},{"index":1109,"date":"2018-01-28T05:45:00.000Z","baseline":-0.00575,"error":0.13775},{"index":1110,"date":"2018-01-28T06:00:00.000Z","baseline":-0.00575,"error":0.13575},{"index":1111,"date":"2018-01-28T06:15:00.000Z","baseline":-0.00575,"error":0.13675},{"index":1112,"date":"2018-01-28T06:30:00.000Z","baseline":-0.00575,"error":0.13475},{"index":1113,"date":"2018-01-28T06:45:00.000Z","baseline":-0.00575,"error":0.13475},{"index":1114,"date":"2018-01-28T07:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1115,"date":"2018-01-28T07:15:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1116,"date":"2018-01-28T07:30:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1117,"date":"2018-01-28T07:45:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1118,"date":"2018-01-28T08:00:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1119,"date":"2018-01-28T08:15:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1120,"date":"2018-01-28T08:30:00.000Z","baseline":-0.00575,"error":0.09575},{"index":1121,"date":"2018-01-28T08:45:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1122,"date":"2018-01-28T09:00:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1123,"date":"2018-01-28T09:15:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1124,"date":"2018-01-28T09:30:00.000Z","baseline":-0.00575,"error":0.14275},{"index":1125,"date":"2018-01-28T09:45:00.000Z","baseline":-0.00575,"error":0.13875},{"index":1126,"date":"2018-01-28T10:00:00.000Z","baseline":-0.00575,"error":0.13775},{"index":1127,"date":"2018-01-28T10:15:00.000Z","baseline":-0.00575,"error":0.13775},{"index":1128,"date":"2018-01-28T10:30:00.000Z","baseline":-0.00575,"error":0.13775},{"index":1129,"date":"2018-01-28T10:45:00.000Z","baseline":-0.00575,"error":0.13675},{"index":1130,"date":"2018-01-28T11:00:00.000Z","baseline":-0.00575,"error":0.13475},{"index":1131,"date":"2018-01-28T11:15:00.000Z","baseline":-0.00575,"error":0.13675},{"index":1132,"date":"2018-01-28T11:30:00.000Z","baseline":-0.00575,"error":0.09875},{"index":1133,"date":"2018-01-28T11:45:00.000Z","baseline":-0.00575,"error":0.09875},{"index":1134,"date":"2018-01-28T12:00:00.000Z","baseline":-0.00575,"error":0.09875},{"index":1135,"date":"2018-01-28T12:15:00.000Z","baseline":-0.00575,"error":0.09875},{"index":1136,"date":"2018-01-28T12:30:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1137,"date":"2018-01-28T12:45:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1138,"date":"2018-01-28T13:00:00.000Z","baseline":-0.00575,"error":0.09875},{"index":1139,"date":"2018-01-28T13:15:00.000Z","baseline":-0.00575,"error":0.09875},{"index":1140,"date":"2018-01-28T13:30:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1141,"date":"2018-01-28T13:30:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1142,"date":"2018-01-28T13:45:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1143,"date":"2018-01-28T14:00:00.000Z","baseline":-0.00575,"error":0.09675},{"index":1144,"date":"2018-01-28T14:15:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1145,"date":"2018-01-28T14:30:00.000Z","baseline":-0.00575,"error":0.14475},{"index":1146,"date":"2018-01-28T14:45:00.000Z","baseline":-0.00575,"error":0.14075},{"index":1147,"date":"2018-01-28T15:00:00.000Z","baseline":-0.00575,"error":0.13875},{"index":1148,"date":"2018-01-28T15:15:00.000Z","baseline":-0.00575,"error":0.13675},{"index":1149,"date":"2018-01-28T15:30:00.000Z","baseline":0.0360947994,"error":0.0939052006},{"index":1150,"date":"2018-01-28T15:45:00.000Z","baseline":0.0823239168,"error":0.0466760832},{"index":1151,"date":"2018-01-28T16:00:00.000Z","baseline":0.1408988389,"error":-0.0118988389},{"index":1152,"date":"2018-01-28T16:15:00.000Z","baseline":0.2150302328,"error":-0.1240302328},{"index":1153,"date":"2018-01-28T16:30:00.000Z","baseline":0.3013190252,"error":-0.2103190252},{"index":1154,"date":"2018-01-28T16:45:00.000Z","baseline":0.3951479652,"error":-0.3041479652},{"index":1155,"date":"2018-01-28T17:00:00.000Z","baseline":0.491984008,"error":-0.399984008},{"index":1156,"date":"2018-01-28T17:15:00.000Z","baseline":0.5876405364,"error":-0.4966405364},{"index":1157,"date":"2018-01-28T17:30:00.000Z","baseline":0.679594001,"error":-0.586594001},{"index":1158,"date":"2018-01-28T17:45:00.000Z","baseline":0.7658692215,"error":-0.6728692215},{"index":1159,"date":"2018-01-28T18:00:00.000Z","baseline":0.8451696808,"error":-0.7531696808},{"index":1160,"date":"2018-01-28T18:15:00.000Z","baseline":0.9179976425,"error":-0.8259976425},{"index":1161,"date":"2018-01-28T18:30:00.000Z","baseline":0.982880455,"error":-0.890880455},{"index":1162,"date":"2018-01-28T18:45:00.000Z","baseline":1.0395811956,"error":-0.9485811956},{"index":1163,"date":"2018-01-28T19:00:00.000Z","baseline":1.0880004745,"error":-0.9470004745},{"index":1164,"date":"2018-01-28T19:15:00.000Z","baseline":1.1274967813,"error":-0.9904967813},{"index":1165,"date":"2018-01-28T19:30:00.000Z","baseline":1.1586320708,"error":-1.0236320708},{"index":1166,"date":"2018-01-28T19:45:00.000Z","baseline":1.1814649702,"error":-1.0474649702},{"index":1167,"date":"2018-01-28T20:00:00.000Z","baseline":1.1960577478,"error":0.0759422522},{"index":1168,"date":"2018-01-28T20:15:00.000Z","baseline":1.2029007644,"error":0.0680992356},{"index":1169,"date":"2018-01-28T20:30:00.000Z","baseline":1.2016103609,"error":0.0713896391},{"index":1170,"date":"2018-01-28T20:45:00.000Z","baseline":1.1922139226,"error":0.0717860774},{"index":1171,"date":"2018-01-28T21:00:00.000Z","baseline":1.1747277901,"error":0.0522722099},{"index":1172,"date":"2018-01-28T21:15:00.000Z","baseline":1.1478599233,"error":-1.0498599233},{"index":1173,"date":"2018-01-28T21:30:00.000Z","baseline":1.1130169596,"error":-1.0120169596},{"index":1174,"date":"2018-01-28T21:45:00.000Z","baseline":1.0702394175,"error":-0.9742394175},{"index":1175,"date":"2018-01-28T22:00:00.000Z","baseline":1.0195785567,"error":-0.9245785567},{"index":1176,"date":"2018-01-28T22:15:00.000Z","baseline":0.962823603,"error":-0.821823603},{"index":1177,"date":"2018-01-28T22:30:00.000Z","baseline":0.8981013537,"error":-0.7611013537},{"index":1178,"date":"2018-01-28T22:45:00.000Z","baseline":0.8256683594,"error":-0.6856683594},{"index":1179,"date":"2018-01-28T23:00:00.000Z","baseline":0.7460082568,"error":-0.6100082568},{"index":1180,"date":"2018-01-28T23:15:00.000Z","baseline":0.6605334998,"error":-0.5215334998},{"index":1181,"date":"2018-01-28T23:30:00.000Z","baseline":0.5698296164,"error":-0.4328296164},{"index":1182,"date":"2018-01-28T23:45:00.000Z","baseline":0.4758441207,"error":-0.3248441207},{"index":1183,"date":"2018-01-29T00:00:00.000Z","baseline":0.3813397422,"error":-0.2373397422},{"index":1184,"date":"2018-01-29T00:15:00.000Z","baseline":0.2904271695,"error":-0.1464271695},{"index":1185,"date":"2018-01-29T00:30:00.000Z","baseline":0.2068576639,"error":-0.0358576639},{"index":1186,"date":"2018-01-29T00:45:00.000Z","baseline":0.1351127576,"error":0.0448872424},{"index":1187,"date":"2018-01-29T01:00:00.000Z","baseline":0.0786130689,"error":0.1003869311},{"index":1188,"date":"2018-01-29T01:15:00.000Z","baseline":0.0339804651,"error":0.1240195349},{"index":1189,"date":"2018-01-29T01:30:00.000Z","baseline":-0.00575,"error":0.16375},{"index":1190,"date":"2018-01-29T01:45:00.000Z","baseline":-0.00575,"error":0.16175},{"index":1191,"date":"2018-01-29T02:00:00.000Z","baseline":-0.00575,"error":0.16275},{"index":1192,"date":"2018-01-29T02:15:00.000Z","baseline":-0.00575,"error":0.16175},{"index":1193,"date":"2018-01-29T02:30:00.000Z","baseline":-0.00575,"error":0.16175},{"index":1194,"date":"2018-01-29T02:45:00.000Z","baseline":-0.00575,"error":0.16175},{"index":1195,"date":"2018-01-29T03:00:00.000Z","baseline":-0.00575,"error":0.21575},{"index":1196,"date":"2018-01-29T03:15:00.000Z","baseline":-0.00575,"error":0.19175},{"index":1197,"date":"2018-01-29T03:30:00.000Z","baseline":-0.00575,"error":0.21175},{"index":1198,"date":"2018-01-29T03:45:00.000Z","baseline":-0.00575,"error":0.21175},{"index":1199,"date":"2018-01-29T04:00:00.000Z","baseline":-0.00575,"error":0.23475},{"index":1200,"date":"2018-01-29T04:15:00.000Z","baseline":-0.00575,"error":0.23475},{"index":1201,"date":"2018-01-29T04:30:00.000Z","baseline":-0.00575,"error":0.23475},{"index":1202,"date":"2018-01-29T04:45:00.000Z","baseline":-0.00575,"error":0.29575},{"index":1203,"date":"2018-01-29T05:00:00.000Z","baseline":-0.00575,"error":0.34475},{"index":1204,"date":"2018-01-29T05:15:00.000Z","baseline":-0.00575,"error":0.32775},{"index":1205,"date":"2018-01-29T05:30:00.000Z","baseline":-0.00575,"error":0.31075},{"index":1206,"date":"2018-01-29T05:45:00.000Z","baseline":-0.00575,"error":0.28475},{"index":1207,"date":"2018-01-29T06:00:00.000Z","baseline":-0.00575,"error":0.28375},{"index":1208,"date":"2018-01-29T06:15:00.000Z","baseline":-0.00575,"error":0.34975},{"index":1209,"date":"2018-01-29T06:30:00.000Z","baseline":-0.00575,"error":0.34875},{"index":1210,"date":"2018-01-29T06:45:00.000Z","baseline":-0.00575,"error":0.18575},{"index":1211,"date":"2018-01-29T07:00:00.000Z","baseline":-0.00575,"error":0.17075},{"index":1212,"date":"2018-01-29T07:15:00.000Z","baseline":-0.00575,"error":0.16975},{"index":1213,"date":"2018-01-29T07:30:00.000Z","baseline":-0.00575,"error":0.15675},{"index":1214,"date":"2018-01-29T07:45:00.000Z","baseline":-0.00575,"error":0.15675},{"index":1215,"date":"2018-01-29T08:00:00.000Z","baseline":-0.00575,"error":0.14175},{"index":1216,"date":"2018-01-29T08:15:00.000Z","baseline":-0.00575,"error":0.13275},{"index":1217,"date":"2018-01-29T08:30:00.000Z","baseline":-0.00575,"error":0.12875},{"index":1218,"date":"2018-01-29T08:45:00.000Z","baseline":-0.00575,"error":0.12175},{"index":1219,"date":"2018-01-29T09:00:00.000Z","baseline":-0.00575,"error":0.12275},{"index":1220,"date":"2018-01-29T09:15:00.000Z","baseline":-0.00575,"error":0.12075},{"index":1221,"date":"2018-01-29T09:30:00.000Z","baseline":-0.00575,"error":0.12075},{"index":1222,"date":"2018-01-29T09:45:00.000Z","baseline":-0.00575,"error":0.12175},{"index":1223,"date":"2018-01-29T10:00:00.000Z","baseline":-0.00575,"error":0.12175},{"index":1224,"date":"2018-01-29T10:15:00.000Z","baseline":-0.00575,"error":0.12075},{"index":1225,"date":"2018-01-29T10:45:00.000Z","baseline":-0.00575,"error":0.12175},{"index":1226,"date":"2018-01-29T11:30:00.000Z","baseline":-0.00575,"error":0.11575},{"index":1227,"date":"2018-01-29T12:00:00.000Z","baseline":-0.00575,"error":0.11875},{"index":1228,"date":"2018-01-29T12:30:00.000Z","baseline":-0.00575,"error":0.11775},{"index":1229,"date":"2018-01-29T13:00:00.000Z","baseline":-0.00575,"error":0.11775},{"index":1230,"date":"2018-01-29T13:15:00.000Z","baseline":-0.00575,"error":0.11775},{"index":1231,"date":"2018-01-29T13:45:00.000Z","baseline":-0.00575,"error":0.11475},{"index":1232,"date":"2018-01-29T14:15:00.000Z","baseline":-0.00575,"error":0.11475},{"index":1233,"date":"2018-01-29T14:30:00.000Z","baseline":-0.00575,"error":1.21975},{"index":1234,"date":"2018-01-29T15:00:00.000Z","baseline":-0.00575,"error":0.11475},{"index":1235,"date":"2018-01-29T15:30:00.000Z","baseline":0.0388320021,"error":0.0701679979},{"index":1236,"date":"2018-01-29T16:00:00.000Z","baseline":0.1433968451,"error":-0.0363968451},{"index":1237,"date":"2018-01-29T16:30:00.000Z","baseline":0.3053189892,"error":-0.1983189892},{"index":1238,"date":"2018-01-29T17:00:00.000Z","baseline":0.4971129174,"error":-0.4241129174},{"index":1239,"date":"2018-01-29T17:30:00.000Z","baseline":0.687233047,"error":-0.614233047},{"index":1240,"date":"2018-01-29T18:00:00.000Z","baseline":0.8567693469,"error":-0.7817693469},{"index":1241,"date":"2018-01-29T18:30:00.000Z","baseline":0.9963760305,"error":-0.9223760305},{"index":1242,"date":"2018-01-29T19:00:00.000Z","baseline":1.103478527,"error":-1.028478527},{"index":1243,"date":"2018-01-29T19:30:00.000Z","baseline":1.1730470434,"error":-1.0990470434},{"index":1244,"date":"2018-01-29T20:00:00.000Z","baseline":1.2087989724,"error":-0.0647989724},{"index":1245,"date":"2018-01-29T20:30:00.000Z","baseline":1.2153627565,"error":0.0196372435},{"index":1246,"date":"2018-01-29T21:00:00.000Z","baseline":1.1894123378,"error":0.0805876622},{"index":1247,"date":"2018-01-29T21:30:00.000Z","baseline":1.1284967991,"error":0.1575032009},{"index":1248,"date":"2018-01-29T22:00:00.000Z","baseline":1.0356147046,"error":-0.9556147046},{"index":1249,"date":"2018-01-29T22:30:00.000Z","baseline":0.9142268211,"error":-0.8382268211},{"index":1250,"date":"2018-01-29T23:00:00.000Z","baseline":0.7619502381,"error":-0.6869502381},{"index":1251,"date":"2018-01-29T23:30:00.000Z","baseline":0.5839186511,"error":-0.5079186511},{"index":1252,"date":"2018-01-30T00:00:00.000Z","baseline":0.3930381369,"error":-0.3190381369},{"index":1253,"date":"2018-01-30T00:30:00.000Z","baseline":0.2151735936,"error":-0.0941735936},{"index":1254,"date":"2018-01-30T01:00:00.000Z","baseline":0.0831508587,"error":0.0318491413},{"index":1255,"date":"2018-01-30T01:30:00.000Z","baseline":-0.00575,"error":0.11875},{"index":1256,"date":"2018-01-30T02:00:00.000Z","baseline":-0.00575,"error":0.11775},{"index":1257,"date":"2018-01-30T02:30:00.000Z","baseline":-0.00575,"error":0.11575},{"index":1258,"date":"2018-01-30T03:00:00.000Z","baseline":-0.00575,"error":0.11575},{"index":1259,"date":"2018-01-30T03:30:00.000Z","baseline":-0.00575,"error":0.17675},{"index":1260,"date":"2018-01-30T04:00:00.000Z","baseline":-0.00575,"error":0.17975},{"index":1261,"date":"2018-01-30T04:30:00.000Z","baseline":-0.00575,"error":0.22475},{"index":1262,"date":"2018-01-30T05:00:00.000Z","baseline":-0.00575,"error":0.22775},{"index":1263,"date":"2018-01-30T05:30:00.000Z","baseline":-0.00575,"error":0.22575},{"index":1264,"date":"2018-01-30T06:00:00.000Z","baseline":-0.00575,"error":0.16075},{"index":1265,"date":"2018-01-30T06:30:00.000Z","baseline":-0.00575,"error":0.14075},{"index":1266,"date":"2018-01-30T07:00:00.000Z","baseline":-0.00575,"error":0.14075},{"index":1267,"date":"2018-01-30T07:30:00.000Z","baseline":-0.00575,"error":0.13875},{"index":1268,"date":"2018-01-30T08:00:00.000Z","baseline":-0.00575,"error":0.09875},{"index":1269,"date":"2018-01-30T08:30:00.000Z","baseline":-0.00575,"error":0.10175},{"index":1270,"date":"2018-01-30T09:00:00.000Z","baseline":-0.00575,"error":0.10075},{"index":1271,"date":"2018-01-30T09:30:00.000Z","baseline":-0.00575,"error":0.09975},{"index":1272,"date":"2018-01-30T10:00:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1273,"date":"2018-01-30T10:30:00.000Z","baseline":-0.00575,"error":0.09975},{"index":1274,"date":"2018-01-30T11:00:00.000Z","baseline":-0.00575,"error":0.09775},{"index":1275,"date":"2018-01-30T11:30:00.000Z","baseline":-0.00575,"error":0.09975},{"index":1276,"date":"2018-01-30T12:00:00.000Z","baseline":-0.00575,"error":0.09875},{"index":1277,"date":"2018-01-30T12:30:00.000Z","baseline":-0.00575,"error":0.09875},{"index":1278,"date":"2018-01-30T13:00:00.000Z","baseline":-0.00575,"error":0.14575},{"index":1279,"date":"2018-01-30T13:30:00.000Z","baseline":-0.00575,"error":0.14175},{"index":1280,"date":"2018-01-30T14:00:00.000Z","baseline":-0.00575,"error":0.13675},{"index":1281,"date":"2018-01-30T14:30:00.000Z","baseline":-0.00575,"error":0.00575},{"index":1282,"date":"2018-01-30T16:45:00.000Z","baseline":0.4114112125,"error":-0.2374112125},{"index":1283,"date":"2018-01-30T17:00:00.000Z","baseline":0.5096491659,"error":-0.3366491659},{"index":1284,"date":"2018-01-30T17:30:00.000Z","baseline":0.7014353094,"error":-0.5334353094},{"index":1285,"date":"2018-01-30T18:00:00.000Z","baseline":0.8712407502,"error":-0.7042407502},{"index":1286,"date":"2018-01-30T18:30:00.000Z","baseline":1.0125850784,"error":-0.8445850784},{"index":1287,"date":"2018-01-30T19:00:00.000Z","baseline":1.1214758872,"error":-0.9924758872},{"index":1288,"date":"2018-01-30T19:30:00.000Z","baseline":1.1900357542,"error":-1.0610357542},{"index":1289,"date":"2018-01-30T20:00:00.000Z","baseline":1.2245484308,"error":-0.0085484308},{"index":1290,"date":"2018-01-30T20:30:00.000Z","baseline":1.2320574596,"error":0.0729425404},{"index":1291,"date":"2018-01-30T21:00:00.000Z","baseline":1.2067622106,"error":0.0962377894},{"index":1292,"date":"2018-01-30T21:30:00.000Z","baseline":1.1486315105,"error":-1.0176315105},{"index":1293,"date":"2018-01-30T22:00:00.000Z","baseline":1.0574829665,"error":-0.9264829665},{"index":1294,"date":"2018-01-30T22:30:00.000Z","baseline":0.9304218823,"error":-0.7524218823},{"index":1295,"date":"2018-01-30T23:00:00.000Z","baseline":0.7735110495,"error":-0.5955110495},{"index":1296,"date":"2018-01-30T23:30:00.000Z","baseline":0.5925317111,"error":-0.4195317111},{"index":1297,"date":"2018-01-31T00:00:00.000Z","baseline":0.3998051189,"error":-0.2288051189},{"index":1298,"date":"2018-01-31T00:30:00.000Z","baseline":0.2207409706,"error":-0.0507409706},{"index":1299,"date":"2018-01-31T01:00:00.000Z","baseline":0.0864640325,"error":0.0815359675},{"index":1300,"date":"2018-01-31T01:30:00.000Z","baseline":-0.00575,"error":0.17375},{"index":1301,"date":"2018-01-31T02:00:00.000Z","baseline":-0.00575,"error":0.17175},{"index":1302,"date":"2018-01-31T02:30:00.000Z","baseline":-0.00575,"error":0.17275},{"index":1303,"date":"2018-01-31T03:00:00.000Z","baseline":-0.00575,"error":0.17175},{"index":1304,"date":"2018-01-31T03:30:00.000Z","baseline":-0.00575,"error":0.17175},{"index":1305,"date":"2018-01-31T03:30:00.000Z","baseline":-0.00575,"error":0.17175},{"index":1306,"date":"2018-01-31T04:00:00.000Z","baseline":-0.00575,"error":0.17175},{"index":1307,"date":"2018-01-31T04:30:00.000Z","baseline":-0.00575,"error":0.17175},{"index":1308,"date":"2018-01-31T05:00:00.000Z","baseline":-0.00575,"error":0.17175},{"index":1309,"date":"2018-01-31T05:30:00.000Z","baseline":-0.00575,"error":0.13375},{"index":1310,"date":"2018-01-31T06:00:00.000Z","baseline":-0.00575,"error":0.13275},{"index":1311,"date":"2018-01-31T06:30:00.000Z","baseline":-0.00575,"error":0.13375},{"index":1312,"date":"2018-01-31T07:00:00.000Z","baseline":-0.00575,"error":0.13275},{"index":1313,"date":"2018-01-31T07:30:00.000Z","baseline":-0.00575,"error":0.13375},{"index":1314,"date":"2018-01-31T08:00:00.000Z","baseline":-0.00575,"error":0.13475},{"index":1315,"date":"2018-01-31T08:30:00.000Z","baseline":-0.00575,"error":0.13375},{"index":1316,"date":"2018-01-31T09:00:00.000Z","baseline":-0.00575,"error":0.13375},{"index":1317,"date":"2018-01-31T09:30:00.000Z","baseline":-0.00575,"error":0.17975},{"index":1318,"date":"2018-01-31T10:00:00.000Z","baseline":-0.00575,"error":0.17575},{"index":1319,"date":"2018-01-31T10:30:00.000Z","baseline":-0.00575,"error":0.17375},{"index":1320,"date":"2018-01-31T11:00:00.000Z","baseline":-0.00575,"error":0.17375},{"index":1321,"date":"2018-01-31T11:30:00.000Z","baseline":-0.00575,"error":0.17475},{"index":1322,"date":"2018-01-31T12:00:00.000Z","baseline":-0.00575,"error":0.17375},{"index":1323,"date":"2018-01-31T12:30:00.000Z","baseline":-0.00575,"error":0.17275},{"index":1324,"date":"2018-01-31T13:00:00.000Z","baseline":-0.00575,"error":0.13575},{"index":1325,"date":"2018-01-31T13:30:00.000Z","baseline":-0.00575,"error":0.13475},{"index":1326,"date":"2018-01-31T13:30:00.000Z","baseline":-0.00575,"error":0.13475},{"index":1327,"date":"2018-01-31T14:00:00.000Z","baseline":-0.00575,"error":0.13475},{"index":1328,"date":"2018-01-31T14:30:00.000Z","baseline":-0.00575,"error":0.13475},{"index":1329,"date":"2018-01-31T15:00:00.000Z","baseline":-0.00575,"error":0.13475},{"index":1330,"date":"2018-01-31T15:30:00.000Z","baseline":0.0453246571,"error":0.0836753429},{"index":1331,"date":"2018-01-31T16:00:00.000Z","baseline":0.153703287,"error":-0.025703287},{"index":1332,"date":"2018-01-31T16:30:00.000Z","baseline":0.3210646366,"error":-0.1920646366},{"index":1333,"date":"2018-01-31T17:00:00.000Z","baseline":0.5169676171,"error":-0.3869676171},{"index":1334,"date":"2018-01-31T17:30:00.000Z","baseline":0.7089516569,"error":-0.5799516569},{"index":1335,"date":"2018-01-31T18:00:00.000Z","baseline":0.8780918126,"error":-0.7020918126},{"index":1336,"date":"2018-01-31T18:30:00.000Z","baseline":1.0180379682,"error":-0.8480379682},{"index":1337,"date":"2018-01-31T19:00:00.000Z","baseline":1.1252731109,"error":-0.9562731109},{"index":1338,"date":"2018-01-31T19:30:00.000Z","baseline":1.194600332,"error":-1.024600332},{"index":1339,"date":"2018-01-31T20:00:00.000Z","baseline":1.2302485269,"error":0.0027514731},{"index":1340,"date":"2018-01-31T20:30:00.000Z","baseline":1.2370293682,"error":0.0029706318},{"index":1341,"date":"2018-01-31T21:00:00.000Z","baseline":1.2112492778,"error":0.0167507222},{"index":1342,"date":"2018-01-31T21:30:00.000Z","baseline":1.1502803173,"error":-0.9792803173},{"index":1343,"date":"2018-01-31T22:00:00.000Z","baseline":1.0571431015,"error":-0.8841431015},{"index":1344,"date":"2018-01-31T22:30:00.000Z","baseline":0.9314249181,"error":-0.7574249181},{"index":1345,"date":"2018-01-31T23:00:00.000Z","baseline":0.7762049943,"error":-0.6042049943},{"index":1346,"date":"2018-01-31T23:30:00.000Z","baseline":0.6001292066,"error":-0.4221292066},{"index":1347,"date":"2018-02-01T00:00:00.000Z","baseline":0.409188974,"error":-0.239188974},{"index":1348,"date":"2018-02-01T00:30:00.000Z","baseline":0.2277044789,"error":-0.0597044789},{"index":1349,"date":"2018-02-01T01:00:00.000Z","baseline":0.0904819049,"error":0.0775180951}]}
+
+/***/ }),
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9667,11 +9673,15 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(20);
+var _react = __webpack_require__(14);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _forecast = __webpack_require__(87);
+var _forecast = __webpack_require__(85);
+
+var _forecast2 = _interopRequireDefault(_forecast);
+
+var _forecast3 = __webpack_require__(88);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -9690,41 +9700,23 @@ var Forecast = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Forecast.__proto__ || Object.getPrototypeOf(Forecast)).call(this, props));
 
     _this.state = {
-      display: 14
+      display: 1
     };
 
-    _this.updateGraph = _this.updateGraph.bind(_this);
+    _this.setRange = _this.setRange.bind(_this);
     return _this;
   }
 
   _createClass(Forecast, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      this.fetchData();
-    }
-  }, {
-    key: 'fetchData',
-    value: function fetchData() {
-      var dataRows = [];
-      var forecastData = (0, _forecast.generateForecastData)(new Date(2018, 5, 10, 11));
-      this.setState({ forecastjson: forecastData });
-
-      forecastData.data.forEach(function (dataPoint) {
-        dataRows.push([dataPoint.date, dataPoint.baseline, dataPoint.error]);
-      });
-
-      // Above would be replaced with HTTP request and promise calls lines below
-      this.initializeChart(dataRows);
+      this.initializeChart();
     }
   }, {
     key: 'initializeChart',
-    value: function initializeChart(dataRows) {
-      var _this2 = this;
-
+    value: function initializeChart() {
       google.charts.load('current', { 'packages': ['line'] });
-      google.charts.setOnLoadCallback(function () {
-        return _this2.drawChart(dataRows);
-      });
+      google.charts.setOnLoadCallback(this.setRange);
     }
   }, {
     key: 'drawChart',
@@ -9750,19 +9742,25 @@ var Forecast = function (_React$Component) {
       chart.draw(data, google.charts.Line.convertOptions(options));
     }
   }, {
-    key: 'updateGraph',
-    value: function updateGraph(e) {
-      e.preventDefault();
-      var display = parseInt(e.target.value);
+    key: 'setRange',
+    value: function setRange(e) {
+      var display = void 0;
+      if (e) {
+        e.preventDefault();
+        display = parseInt(e.target.value);
+      } else {
+        display = this.state.display;
+      }
 
       var dataRows = [];
-      var currentDate = new Date(2018, 5, 10, 11); // Assumes today is 5/10/2018
-      var endDay = new Date(2018, 5, 10, 11);
-      endDay.setDate(endDay.getDate() + display);
+      var currentDate = new Date('Tue Dec 26 2017 13:30:00 GMT-0800 (PST)'); // Assumes today is 5/10/2018
+      var endDate = new Date(currentDate);
+      endDate.setDate(endDate.getDate() + display);
 
-      this.state.forecastjson.data.forEach(function (dataPoint) {
-        if (dataPoint.date >= currentDate && dataPoint.date < endDay) {
-          dataRows.push([dataPoint.date, dataPoint.baseline, dataPoint.error]);
+      _forecast2.default.data.forEach(function (dataPoint) {
+        var date = new Date(dataPoint.date);
+        if (date >= currentDate && date < endDate) {
+          dataRows.push([date, dataPoint.baseline, dataPoint.error]);
         }
       });
 
@@ -9788,7 +9786,7 @@ var Forecast = function (_React$Component) {
           'select',
           {
             value: display,
-            onChange: this.updateGraph
+            onChange: this.setRange
           },
           _react2.default.createElement(
             'option',
@@ -9823,7 +9821,7 @@ var Forecast = function (_React$Component) {
 exports.default = Forecast;
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9835,11 +9833,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(20);
+var _react = __webpack_require__(14);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _history = __webpack_require__(88);
+var _history = __webpack_require__(89);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -9993,7 +9991,7 @@ var Forecast = function (_React$Component) {
 exports.default = Forecast;
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10023,7 +10021,7 @@ var createRandomDataPoint = function createRandomDataPoint(i) {
 };
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10222,7 +10220,75 @@ var HistoryData = exports.HistoryData = {
 };
 
 /***/ }),
-/* 89 */
+/* 90 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(14);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Header = function Header() {
+  return _react2.default.createElement(
+    "ul",
+    { id: "header" },
+    _react2.default.createElement(
+      "li",
+      { id: "header-logo" },
+      _react2.default.createElement(
+        "span",
+        null,
+        _react2.default.createElement("img", { id: "logo-image", src: "logo.png" }),
+        "Empower"
+      )
+    ),
+    _react2.default.createElement(
+      "li",
+      { id: "greetings" },
+      "Hi Stephen!"
+    )
+  );
+};
+
+exports.default = Header;
+
+/***/ }),
+/* 91 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(14);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Instructions = function Instructions() {
+  return _react2.default.createElement(
+    'p',
+    null,
+    'Instructions... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+  );
+};
+
+exports.default = Instructions;
+
+/***/ }),
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10234,15 +10300,15 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(20);
+var _react = __webpack_require__(14);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _forecast = __webpack_require__(85);
+var _forecast = __webpack_require__(86);
 
 var _forecast2 = _interopRequireDefault(_forecast);
 
-var _history = __webpack_require__(86);
+var _history = __webpack_require__(87);
 
 var _history2 = _interopRequireDefault(_history);
 
@@ -10328,13 +10394,13 @@ var Widget = function (_React$Component) {
 exports.default = Widget;
 
 /***/ }),
-/* 90 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _react = __webpack_require__(20);
+var _react = __webpack_require__(14);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -10357,7 +10423,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /***/ }),
-/* 91 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11291,7 +11357,7 @@ module.exports = factory;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 92 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11326,7 +11392,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 93 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11341,7 +11407,7 @@ module.exports = camelize;
 
 
 
-var camelize = __webpack_require__(92);
+var camelize = __webpack_require__(95);
 
 var msPattern = /^-ms-/;
 
@@ -11369,7 +11435,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 94 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11384,7 +11450,7 @@ module.exports = camelizeStyleName;
  * 
  */
 
-var isTextNode = __webpack_require__(102);
+var isTextNode = __webpack_require__(105);
 
 /*eslint-disable no-bitwise */
 
@@ -11412,7 +11478,7 @@ function containsNode(outerNode, innerNode) {
 module.exports = containsNode;
 
 /***/ }),
-/* 95 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11543,7 +11609,7 @@ module.exports = createArrayFromMixed;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 96 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11562,8 +11628,8 @@ module.exports = createArrayFromMixed;
 
 var ExecutionEnvironment = __webpack_require__(6);
 
-var createArrayFromMixed = __webpack_require__(95);
-var getMarkupWrap = __webpack_require__(97);
+var createArrayFromMixed = __webpack_require__(98);
+var getMarkupWrap = __webpack_require__(100);
 var invariant = __webpack_require__(1);
 
 /**
@@ -11631,7 +11697,7 @@ module.exports = createNodesFromMarkup;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 97 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11730,7 +11796,7 @@ module.exports = getMarkupWrap;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 98 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11772,7 +11838,7 @@ function getUnboundedScrollPosition(scrollable) {
 module.exports = getUnboundedScrollPosition;
 
 /***/ }),
-/* 99 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11808,7 +11874,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 100 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11823,7 +11889,7 @@ module.exports = hyphenate;
 
 
 
-var hyphenate = __webpack_require__(99);
+var hyphenate = __webpack_require__(102);
 
 var msPattern = /^ms-/;
 
@@ -11850,7 +11916,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 101 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11878,7 +11944,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 102 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11893,7 +11959,7 @@ module.exports = isNode;
  * @typechecks
  */
 
-var isNode = __webpack_require__(101);
+var isNode = __webpack_require__(104);
 
 /**
  * @param {*} object The object to check.
@@ -11906,7 +11972,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 103 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11939,7 +12005,7 @@ function memoizeStringOnly(callback) {
 module.exports = memoizeStringOnly;
 
 /***/ }),
-/* 104 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11965,7 +12031,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = performance || {};
 
 /***/ }),
-/* 105 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11980,7 +12046,7 @@ module.exports = performance || {};
  * @typechecks
  */
 
-var performance = __webpack_require__(104);
+var performance = __webpack_require__(107);
 
 var performanceNow;
 
@@ -12002,7 +12068,7 @@ if (performance.now) {
 module.exports = performanceNow;
 
 /***/ }),
-/* 106 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12069,7 +12135,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 107 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12088,7 +12154,7 @@ var warning = __webpack_require__(2);
 var assign = __webpack_require__(4);
 
 var ReactPropTypesSecret = __webpack_require__(54);
-var checkPropTypes = __webpack_require__(106);
+var checkPropTypes = __webpack_require__(109);
 
 module.exports = function(isValidElement, throwOnDirectAccess) {
   /* global Symbol */
@@ -12619,7 +12685,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 108 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12696,7 +12762,7 @@ var ARIADOMPropertyConfig = {
 module.exports = ARIADOMPropertyConfig;
 
 /***/ }),
-/* 109 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12723,7 +12789,7 @@ var AutoFocusUtils = {
 module.exports = AutoFocusUtils;
 
 /***/ }),
-/* 110 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12739,9 +12805,9 @@ module.exports = AutoFocusUtils;
 
 var EventPropagators = __webpack_require__(22);
 var ExecutionEnvironment = __webpack_require__(6);
-var FallbackCompositionState = __webpack_require__(116);
-var SyntheticCompositionEvent = __webpack_require__(159);
-var SyntheticInputEvent = __webpack_require__(162);
+var FallbackCompositionState = __webpack_require__(119);
+var SyntheticCompositionEvent = __webpack_require__(162);
+var SyntheticInputEvent = __webpack_require__(165);
 
 var END_KEYCODES = [9, 13, 27, 32]; // Tab, Return, Esc, Space
 var START_KEYCODE = 229;
@@ -13110,7 +13176,7 @@ var BeforeInputEventPlugin = {
 module.exports = BeforeInputEventPlugin;
 
 /***/ }),
-/* 111 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13128,10 +13194,10 @@ var CSSProperty = __webpack_require__(55);
 var ExecutionEnvironment = __webpack_require__(6);
 var ReactInstrumentation = __webpack_require__(8);
 
-var camelizeStyleName = __webpack_require__(93);
-var dangerousStyleValue = __webpack_require__(169);
-var hyphenateStyleName = __webpack_require__(100);
-var memoizeStringOnly = __webpack_require__(103);
+var camelizeStyleName = __webpack_require__(96);
+var dangerousStyleValue = __webpack_require__(172);
+var hyphenateStyleName = __webpack_require__(103);
+var memoizeStringOnly = __webpack_require__(106);
 var warning = __webpack_require__(2);
 
 var processStyleName = memoizeStringOnly(function (styleName) {
@@ -13329,7 +13395,7 @@ module.exports = CSSPropertyOperations;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 112 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13644,7 +13710,7 @@ var ChangeEventPlugin = {
 module.exports = ChangeEventPlugin;
 
 /***/ }),
-/* 113 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13660,10 +13726,10 @@ module.exports = ChangeEventPlugin;
 
 var _prodInvariant = __webpack_require__(3);
 
-var DOMLazyTree = __webpack_require__(16);
+var DOMLazyTree = __webpack_require__(17);
 var ExecutionEnvironment = __webpack_require__(6);
 
-var createNodesFromMarkup = __webpack_require__(96);
+var createNodesFromMarkup = __webpack_require__(99);
 var emptyFunction = __webpack_require__(9);
 var invariant = __webpack_require__(1);
 
@@ -13694,7 +13760,7 @@ module.exports = Danger;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 114 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13723,7 +13789,7 @@ var DefaultEventPluginOrder = ['ResponderEventPlugin', 'SimpleEventPlugin', 'Tap
 module.exports = DefaultEventPluginOrder;
 
 /***/ }),
-/* 115 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13824,7 +13890,7 @@ var EnterLeaveEventPlugin = {
 module.exports = EnterLeaveEventPlugin;
 
 /***/ }),
-/* 116 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13840,7 +13906,7 @@ module.exports = EnterLeaveEventPlugin;
 
 var _assign = __webpack_require__(4);
 
-var PooledClass = __webpack_require__(14);
+var PooledClass = __webpack_require__(15);
 
 var getTextContentAccessor = __webpack_require__(71);
 
@@ -13922,7 +13988,7 @@ PooledClass.addPoolingTo(FallbackCompositionState);
 module.exports = FallbackCompositionState;
 
 /***/ }),
-/* 117 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14162,7 +14228,7 @@ var HTMLDOMPropertyConfig = {
 module.exports = HTMLDOMPropertyConfig;
 
 /***/ }),
-/* 118 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14176,7 +14242,7 @@ module.exports = HTMLDOMPropertyConfig;
 
 
 
-var ReactReconciler = __webpack_require__(17);
+var ReactReconciler = __webpack_require__(18);
 
 var instantiateReactComponent = __webpack_require__(73);
 var KeyEscapeUtils = __webpack_require__(37);
@@ -14319,7 +14385,7 @@ module.exports = ReactChildReconciler;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 119 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14334,7 +14400,7 @@ module.exports = ReactChildReconciler;
 
 
 var DOMChildrenOperations = __webpack_require__(34);
-var ReactDOMIDOperations = __webpack_require__(126);
+var ReactDOMIDOperations = __webpack_require__(129);
 
 /**
  * Abstracts away all functionality of the reconciler that requires knowledge of
@@ -14350,7 +14416,7 @@ var ReactComponentBrowserEnvironment = {
 module.exports = ReactComponentBrowserEnvironment;
 
 /***/ }),
-/* 120 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14367,17 +14433,17 @@ module.exports = ReactComponentBrowserEnvironment;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var React = __webpack_require__(18);
+var React = __webpack_require__(19);
 var ReactComponentEnvironment = __webpack_require__(39);
 var ReactCurrentOwner = __webpack_require__(11);
 var ReactErrorUtils = __webpack_require__(40);
 var ReactInstanceMap = __webpack_require__(23);
 var ReactInstrumentation = __webpack_require__(8);
 var ReactNodeTypes = __webpack_require__(65);
-var ReactReconciler = __webpack_require__(17);
+var ReactReconciler = __webpack_require__(18);
 
 if (process.env.NODE_ENV !== 'production') {
-  var checkReactTypeSpec = __webpack_require__(168);
+  var checkReactTypeSpec = __webpack_require__(171);
 }
 
 var emptyObject = __webpack_require__(25);
@@ -15254,7 +15320,7 @@ module.exports = ReactCompositeComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 121 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15271,15 +15337,15 @@ module.exports = ReactCompositeComponent;
 
 
 var ReactDOMComponentTree = __webpack_require__(5);
-var ReactDefaultInjection = __webpack_require__(138);
+var ReactDefaultInjection = __webpack_require__(141);
 var ReactMount = __webpack_require__(64);
-var ReactReconciler = __webpack_require__(17);
+var ReactReconciler = __webpack_require__(18);
 var ReactUpdates = __webpack_require__(10);
-var ReactVersion = __webpack_require__(153);
+var ReactVersion = __webpack_require__(156);
 
-var findDOMNode = __webpack_require__(170);
+var findDOMNode = __webpack_require__(173);
 var getHostComponentFromComposite = __webpack_require__(70);
-var renderSubtreeIntoContainer = __webpack_require__(177);
+var renderSubtreeIntoContainer = __webpack_require__(180);
 var warning = __webpack_require__(2);
 
 ReactDefaultInjection.inject();
@@ -15356,9 +15422,9 @@ if (process.env.NODE_ENV !== 'production') {
 
 if (process.env.NODE_ENV !== 'production') {
   var ReactInstrumentation = __webpack_require__(8);
-  var ReactDOMUnknownPropertyHook = __webpack_require__(135);
-  var ReactDOMNullInputValuePropHook = __webpack_require__(129);
-  var ReactDOMInvalidARIAHook = __webpack_require__(128);
+  var ReactDOMUnknownPropertyHook = __webpack_require__(138);
+  var ReactDOMNullInputValuePropHook = __webpack_require__(132);
+  var ReactDOMInvalidARIAHook = __webpack_require__(131);
 
   ReactInstrumentation.debugTool.addHook(ReactDOMUnknownPropertyHook);
   ReactInstrumentation.debugTool.addHook(ReactDOMNullInputValuePropHook);
@@ -15369,7 +15435,7 @@ module.exports = ReactDOM;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 122 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15388,9 +15454,9 @@ module.exports = ReactDOM;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var AutoFocusUtils = __webpack_require__(109);
-var CSSPropertyOperations = __webpack_require__(111);
-var DOMLazyTree = __webpack_require__(16);
+var AutoFocusUtils = __webpack_require__(112);
+var CSSPropertyOperations = __webpack_require__(114);
+var DOMLazyTree = __webpack_require__(17);
 var DOMNamespaces = __webpack_require__(35);
 var DOMProperty = __webpack_require__(13);
 var DOMPropertyOperations = __webpack_require__(57);
@@ -15399,13 +15465,13 @@ var EventPluginRegistry = __webpack_require__(26);
 var ReactBrowserEventEmitter = __webpack_require__(27);
 var ReactDOMComponentFlags = __webpack_require__(58);
 var ReactDOMComponentTree = __webpack_require__(5);
-var ReactDOMInput = __webpack_require__(127);
-var ReactDOMOption = __webpack_require__(130);
+var ReactDOMInput = __webpack_require__(130);
+var ReactDOMOption = __webpack_require__(133);
 var ReactDOMSelect = __webpack_require__(59);
-var ReactDOMTextarea = __webpack_require__(133);
+var ReactDOMTextarea = __webpack_require__(136);
 var ReactInstrumentation = __webpack_require__(8);
-var ReactMultiChild = __webpack_require__(146);
-var ReactServerRenderingTransaction = __webpack_require__(151);
+var ReactMultiChild = __webpack_require__(149);
+var ReactServerRenderingTransaction = __webpack_require__(154);
 
 var emptyFunction = __webpack_require__(9);
 var escapeTextContentForBrowser = __webpack_require__(30);
@@ -16387,7 +16453,7 @@ module.exports = ReactDOMComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 123 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16424,7 +16490,7 @@ module.exports = ReactDOMContainerInfo;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 124 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16440,7 +16506,7 @@ module.exports = ReactDOMContainerInfo;
 
 var _assign = __webpack_require__(4);
 
-var DOMLazyTree = __webpack_require__(16);
+var DOMLazyTree = __webpack_require__(17);
 var ReactDOMComponentTree = __webpack_require__(5);
 
 var ReactDOMEmptyComponent = function (instantiate) {
@@ -16487,7 +16553,7 @@ _assign(ReactDOMEmptyComponent.prototype, {
 module.exports = ReactDOMEmptyComponent;
 
 /***/ }),
-/* 125 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16509,7 +16575,7 @@ var ReactDOMFeatureFlags = {
 module.exports = ReactDOMFeatureFlags;
 
 /***/ }),
-/* 126 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16545,7 +16611,7 @@ var ReactDOMIDOperations = {
 module.exports = ReactDOMIDOperations;
 
 /***/ }),
-/* 127 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16836,7 +16902,7 @@ module.exports = ReactDOMInput;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 128 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16933,7 +16999,7 @@ module.exports = ReactDOMInvalidARIAHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 129 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16980,7 +17046,7 @@ module.exports = ReactDOMNullInputValuePropHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 130 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16996,7 +17062,7 @@ module.exports = ReactDOMNullInputValuePropHook;
 
 var _assign = __webpack_require__(4);
 
-var React = __webpack_require__(18);
+var React = __webpack_require__(19);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactDOMSelect = __webpack_require__(59);
 
@@ -17106,7 +17172,7 @@ module.exports = ReactDOMOption;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 131 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17122,7 +17188,7 @@ module.exports = ReactDOMOption;
 
 var ExecutionEnvironment = __webpack_require__(6);
 
-var getNodeForCharacterOffset = __webpack_require__(174);
+var getNodeForCharacterOffset = __webpack_require__(177);
 var getTextContentAccessor = __webpack_require__(71);
 
 /**
@@ -17321,7 +17387,7 @@ var ReactDOMSelection = {
 module.exports = ReactDOMSelection;
 
 /***/ }),
-/* 132 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17339,7 +17405,7 @@ var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
 var DOMChildrenOperations = __webpack_require__(34);
-var DOMLazyTree = __webpack_require__(16);
+var DOMLazyTree = __webpack_require__(17);
 var ReactDOMComponentTree = __webpack_require__(5);
 
 var escapeTextContentForBrowser = __webpack_require__(30);
@@ -17487,7 +17553,7 @@ module.exports = ReactDOMTextComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 133 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17651,7 +17717,7 @@ module.exports = ReactDOMTextarea;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 134 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17791,7 +17857,7 @@ module.exports = {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 135 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17907,7 +17973,7 @@ module.exports = ReactDOMUnknownPropertyHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 136 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17922,12 +17988,12 @@ module.exports = ReactDOMUnknownPropertyHook;
 
 
 
-var ReactInvalidSetStateWarningHook = __webpack_require__(144);
-var ReactHostOperationHistoryHook = __webpack_require__(142);
+var ReactInvalidSetStateWarningHook = __webpack_require__(147);
+var ReactHostOperationHistoryHook = __webpack_require__(145);
 var ReactComponentTreeHook = __webpack_require__(7);
 var ExecutionEnvironment = __webpack_require__(6);
 
-var performanceNow = __webpack_require__(105);
+var performanceNow = __webpack_require__(108);
 var warning = __webpack_require__(2);
 
 var hooks = [];
@@ -18272,7 +18338,7 @@ module.exports = ReactDebugTool;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 137 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18343,7 +18409,7 @@ var ReactDefaultBatchingStrategy = {
 module.exports = ReactDefaultBatchingStrategy;
 
 /***/ }),
-/* 138 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18357,25 +18423,25 @@ module.exports = ReactDefaultBatchingStrategy;
 
 
 
-var ARIADOMPropertyConfig = __webpack_require__(108);
-var BeforeInputEventPlugin = __webpack_require__(110);
-var ChangeEventPlugin = __webpack_require__(112);
-var DefaultEventPluginOrder = __webpack_require__(114);
-var EnterLeaveEventPlugin = __webpack_require__(115);
-var HTMLDOMPropertyConfig = __webpack_require__(117);
-var ReactComponentBrowserEnvironment = __webpack_require__(119);
-var ReactDOMComponent = __webpack_require__(122);
+var ARIADOMPropertyConfig = __webpack_require__(111);
+var BeforeInputEventPlugin = __webpack_require__(113);
+var ChangeEventPlugin = __webpack_require__(115);
+var DefaultEventPluginOrder = __webpack_require__(117);
+var EnterLeaveEventPlugin = __webpack_require__(118);
+var HTMLDOMPropertyConfig = __webpack_require__(120);
+var ReactComponentBrowserEnvironment = __webpack_require__(122);
+var ReactDOMComponent = __webpack_require__(125);
 var ReactDOMComponentTree = __webpack_require__(5);
-var ReactDOMEmptyComponent = __webpack_require__(124);
-var ReactDOMTreeTraversal = __webpack_require__(134);
-var ReactDOMTextComponent = __webpack_require__(132);
-var ReactDefaultBatchingStrategy = __webpack_require__(137);
-var ReactEventListener = __webpack_require__(141);
-var ReactInjection = __webpack_require__(143);
-var ReactReconcileTransaction = __webpack_require__(149);
-var SVGDOMPropertyConfig = __webpack_require__(154);
-var SelectEventPlugin = __webpack_require__(155);
-var SimpleEventPlugin = __webpack_require__(156);
+var ReactDOMEmptyComponent = __webpack_require__(127);
+var ReactDOMTreeTraversal = __webpack_require__(137);
+var ReactDOMTextComponent = __webpack_require__(135);
+var ReactDefaultBatchingStrategy = __webpack_require__(140);
+var ReactEventListener = __webpack_require__(144);
+var ReactInjection = __webpack_require__(146);
+var ReactReconcileTransaction = __webpack_require__(152);
+var SVGDOMPropertyConfig = __webpack_require__(157);
+var SelectEventPlugin = __webpack_require__(158);
+var SimpleEventPlugin = __webpack_require__(159);
 
 var alreadyInjected = false;
 
@@ -18432,7 +18498,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 139 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18455,7 +18521,7 @@ var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol['for'] && Symbol
 module.exports = REACT_ELEMENT_TYPE;
 
 /***/ }),
-/* 140 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18490,7 +18556,7 @@ var ReactEventEmitterMixin = {
 module.exports = ReactEventEmitterMixin;
 
 /***/ }),
-/* 141 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18508,12 +18574,12 @@ var _assign = __webpack_require__(4);
 
 var EventListener = __webpack_require__(50);
 var ExecutionEnvironment = __webpack_require__(6);
-var PooledClass = __webpack_require__(14);
+var PooledClass = __webpack_require__(15);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(10);
 
 var getEventTarget = __webpack_require__(45);
-var getUnboundedScrollPosition = __webpack_require__(98);
+var getUnboundedScrollPosition = __webpack_require__(101);
 
 /**
  * Find the deepest React component completely containing the root of the
@@ -18648,7 +18714,7 @@ var ReactEventListener = {
 module.exports = ReactEventListener;
 
 /***/ }),
-/* 142 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18685,7 +18751,7 @@ var ReactHostOperationHistoryHook = {
 module.exports = ReactHostOperationHistoryHook;
 
 /***/ }),
-/* 143 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18722,7 +18788,7 @@ var ReactInjection = {
 module.exports = ReactInjection;
 
 /***/ }),
-/* 144 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18763,7 +18829,7 @@ module.exports = ReactInvalidSetStateWarningHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 145 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18777,7 +18843,7 @@ module.exports = ReactInvalidSetStateWarningHook;
 
 
 
-var adler32 = __webpack_require__(167);
+var adler32 = __webpack_require__(170);
 
 var TAG_END = /\/?>/;
 var COMMENT_START = /^<\!\-\-/;
@@ -18816,7 +18882,7 @@ var ReactMarkupChecksum = {
 module.exports = ReactMarkupChecksum;
 
 /***/ }),
-/* 146 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18837,11 +18903,11 @@ var ReactInstanceMap = __webpack_require__(23);
 var ReactInstrumentation = __webpack_require__(8);
 
 var ReactCurrentOwner = __webpack_require__(11);
-var ReactReconciler = __webpack_require__(17);
-var ReactChildReconciler = __webpack_require__(118);
+var ReactReconciler = __webpack_require__(18);
+var ReactChildReconciler = __webpack_require__(121);
 
 var emptyFunction = __webpack_require__(9);
-var flattenChildren = __webpack_require__(171);
+var flattenChildren = __webpack_require__(174);
 var invariant = __webpack_require__(1);
 
 /**
@@ -19266,7 +19332,7 @@ module.exports = ReactMultiChild;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 147 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19363,7 +19429,7 @@ module.exports = ReactOwner;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 148 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19392,7 +19458,7 @@ module.exports = ReactPropTypeLocationNames;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 149 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19409,7 +19475,7 @@ module.exports = ReactPropTypeLocationNames;
 var _assign = __webpack_require__(4);
 
 var CallbackQueue = __webpack_require__(56);
-var PooledClass = __webpack_require__(14);
+var PooledClass = __webpack_require__(15);
 var ReactBrowserEventEmitter = __webpack_require__(27);
 var ReactInputSelection = __webpack_require__(63);
 var ReactInstrumentation = __webpack_require__(8);
@@ -19574,7 +19640,7 @@ module.exports = ReactReconcileTransaction;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 150 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19589,7 +19655,7 @@ module.exports = ReactReconcileTransaction;
 
 
 
-var ReactOwner = __webpack_require__(147);
+var ReactOwner = __webpack_require__(150);
 
 var ReactRef = {};
 
@@ -19666,7 +19732,7 @@ ReactRef.detachRefs = function (instance, element) {
 module.exports = ReactRef;
 
 /***/ }),
-/* 151 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19682,10 +19748,10 @@ module.exports = ReactRef;
 
 var _assign = __webpack_require__(4);
 
-var PooledClass = __webpack_require__(14);
+var PooledClass = __webpack_require__(15);
 var Transaction = __webpack_require__(29);
 var ReactInstrumentation = __webpack_require__(8);
-var ReactServerUpdateQueue = __webpack_require__(152);
+var ReactServerUpdateQueue = __webpack_require__(155);
 
 /**
  * Executed within the scope of the `Transaction` instance. Consider these as
@@ -19760,7 +19826,7 @@ module.exports = ReactServerRenderingTransaction;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 152 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19903,7 +19969,7 @@ module.exports = ReactServerUpdateQueue;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 153 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19920,7 +19986,7 @@ module.exports = ReactServerUpdateQueue;
 module.exports = '15.6.2';
 
 /***/ }),
-/* 154 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20225,7 +20291,7 @@ Object.keys(ATTRS).forEach(function (key) {
 module.exports = SVGDOMPropertyConfig;
 
 /***/ }),
-/* 155 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20416,7 +20482,7 @@ var SelectEventPlugin = {
 module.exports = SelectEventPlugin;
 
 /***/ }),
-/* 156 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20436,17 +20502,17 @@ var _prodInvariant = __webpack_require__(3);
 var EventListener = __webpack_require__(50);
 var EventPropagators = __webpack_require__(22);
 var ReactDOMComponentTree = __webpack_require__(5);
-var SyntheticAnimationEvent = __webpack_require__(157);
-var SyntheticClipboardEvent = __webpack_require__(158);
+var SyntheticAnimationEvent = __webpack_require__(160);
+var SyntheticClipboardEvent = __webpack_require__(161);
 var SyntheticEvent = __webpack_require__(12);
-var SyntheticFocusEvent = __webpack_require__(161);
-var SyntheticKeyboardEvent = __webpack_require__(163);
+var SyntheticFocusEvent = __webpack_require__(164);
+var SyntheticKeyboardEvent = __webpack_require__(166);
 var SyntheticMouseEvent = __webpack_require__(28);
-var SyntheticDragEvent = __webpack_require__(160);
-var SyntheticTouchEvent = __webpack_require__(164);
-var SyntheticTransitionEvent = __webpack_require__(165);
+var SyntheticDragEvent = __webpack_require__(163);
+var SyntheticTouchEvent = __webpack_require__(167);
+var SyntheticTransitionEvent = __webpack_require__(168);
 var SyntheticUIEvent = __webpack_require__(24);
-var SyntheticWheelEvent = __webpack_require__(166);
+var SyntheticWheelEvent = __webpack_require__(169);
 
 var emptyFunction = __webpack_require__(9);
 var getEventCharCode = __webpack_require__(43);
@@ -20646,7 +20712,7 @@ module.exports = SimpleEventPlugin;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 157 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20688,7 +20754,7 @@ SyntheticEvent.augmentClass(SyntheticAnimationEvent, AnimationEventInterface);
 module.exports = SyntheticAnimationEvent;
 
 /***/ }),
-/* 158 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20729,7 +20795,7 @@ SyntheticEvent.augmentClass(SyntheticClipboardEvent, ClipboardEventInterface);
 module.exports = SyntheticClipboardEvent;
 
 /***/ }),
-/* 159 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20768,7 +20834,7 @@ SyntheticEvent.augmentClass(SyntheticCompositionEvent, CompositionEventInterface
 module.exports = SyntheticCompositionEvent;
 
 /***/ }),
-/* 160 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20807,7 +20873,7 @@ SyntheticMouseEvent.augmentClass(SyntheticDragEvent, DragEventInterface);
 module.exports = SyntheticDragEvent;
 
 /***/ }),
-/* 161 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20846,7 +20912,7 @@ SyntheticUIEvent.augmentClass(SyntheticFocusEvent, FocusEventInterface);
 module.exports = SyntheticFocusEvent;
 
 /***/ }),
-/* 162 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20886,7 +20952,7 @@ SyntheticEvent.augmentClass(SyntheticInputEvent, InputEventInterface);
 module.exports = SyntheticInputEvent;
 
 /***/ }),
-/* 163 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20903,7 +20969,7 @@ module.exports = SyntheticInputEvent;
 var SyntheticUIEvent = __webpack_require__(24);
 
 var getEventCharCode = __webpack_require__(43);
-var getEventKey = __webpack_require__(172);
+var getEventKey = __webpack_require__(175);
 var getEventModifierState = __webpack_require__(44);
 
 /**
@@ -20973,7 +21039,7 @@ SyntheticUIEvent.augmentClass(SyntheticKeyboardEvent, KeyboardEventInterface);
 module.exports = SyntheticKeyboardEvent;
 
 /***/ }),
-/* 164 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21021,7 +21087,7 @@ SyntheticUIEvent.augmentClass(SyntheticTouchEvent, TouchEventInterface);
 module.exports = SyntheticTouchEvent;
 
 /***/ }),
-/* 165 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21063,7 +21129,7 @@ SyntheticEvent.augmentClass(SyntheticTransitionEvent, TransitionEventInterface);
 module.exports = SyntheticTransitionEvent;
 
 /***/ }),
-/* 166 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21117,7 +21183,7 @@ SyntheticMouseEvent.augmentClass(SyntheticWheelEvent, WheelEventInterface);
 module.exports = SyntheticWheelEvent;
 
 /***/ }),
-/* 167 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21164,7 +21230,7 @@ function adler32(data) {
 module.exports = adler32;
 
 /***/ }),
-/* 168 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21180,7 +21246,7 @@ module.exports = adler32;
 
 var _prodInvariant = __webpack_require__(3);
 
-var ReactPropTypeLocationNames = __webpack_require__(148);
+var ReactPropTypeLocationNames = __webpack_require__(151);
 var ReactPropTypesSecret = __webpack_require__(66);
 
 var invariant = __webpack_require__(1);
@@ -21255,7 +21321,7 @@ module.exports = checkReactTypeSpec;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 169 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21338,7 +21404,7 @@ module.exports = dangerousStyleValue;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 170 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21402,7 +21468,7 @@ module.exports = findDOMNode;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 171 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21482,7 +21548,7 @@ module.exports = flattenChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 172 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21597,7 +21663,7 @@ function getEventKey(nativeEvent) {
 module.exports = getEventKey;
 
 /***/ }),
-/* 173 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21641,7 +21707,7 @@ function getIteratorFn(maybeIterable) {
 module.exports = getIteratorFn;
 
 /***/ }),
-/* 174 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21718,7 +21784,7 @@ function getNodeForCharacterOffset(root, offset) {
 module.exports = getNodeForCharacterOffset;
 
 /***/ }),
-/* 175 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21822,7 +21888,7 @@ function getVendorPrefixedEventName(eventName) {
 module.exports = getVendorPrefixedEventName;
 
 /***/ }),
-/* 176 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21851,7 +21917,7 @@ function quoteAttributeValueForBrowser(value) {
 module.exports = quoteAttributeValueForBrowser;
 
 /***/ }),
-/* 177 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21870,7 +21936,7 @@ var ReactMount = __webpack_require__(64);
 module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ }),
-/* 178 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21932,7 +21998,7 @@ var KeyEscapeUtils = {
 module.exports = KeyEscapeUtils;
 
 /***/ }),
-/* 179 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21947,7 +22013,7 @@ module.exports = KeyEscapeUtils;
 
 
 
-var _prodInvariant = __webpack_require__(19);
+var _prodInvariant = __webpack_require__(20);
 
 var invariant = __webpack_require__(1);
 
@@ -22048,7 +22114,7 @@ module.exports = PooledClass;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 180 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22062,11 +22128,11 @@ module.exports = PooledClass;
 
 
 
-var PooledClass = __webpack_require__(179);
-var ReactElement = __webpack_require__(15);
+var PooledClass = __webpack_require__(182);
+var ReactElement = __webpack_require__(16);
 
 var emptyFunction = __webpack_require__(9);
-var traverseAllChildren = __webpack_require__(190);
+var traverseAllChildren = __webpack_require__(193);
 
 var twoArgumentPooler = PooledClass.twoArgumentPooler;
 var fourArgumentPooler = PooledClass.fourArgumentPooler;
@@ -22242,7 +22308,7 @@ var ReactChildren = {
 module.exports = ReactChildren;
 
 /***/ }),
-/* 181 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22256,7 +22322,7 @@ module.exports = ReactChildren;
 
 
 
-var ReactElement = __webpack_require__(15);
+var ReactElement = __webpack_require__(16);
 
 /**
  * Create a factory that creates HTML tag elements.
@@ -22415,7 +22481,7 @@ module.exports = ReactDOMFactories;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 182 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22444,7 +22510,7 @@ module.exports = ReactPropTypeLocationNames;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 183 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22458,7 +22524,7 @@ module.exports = ReactPropTypeLocationNames;
 
 
 
-var _require = __webpack_require__(15),
+var _require = __webpack_require__(16),
     isValidElement = _require.isValidElement;
 
 var factory = __webpack_require__(53);
@@ -22466,7 +22532,7 @@ var factory = __webpack_require__(53);
 module.exports = factory(isValidElement);
 
 /***/ }),
-/* 184 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22486,7 +22552,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 module.exports = ReactPropTypesSecret;
 
 /***/ }),
-/* 185 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22503,7 +22569,7 @@ module.exports = ReactPropTypesSecret;
 module.exports = '15.6.2';
 
 /***/ }),
-/* 186 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22517,10 +22583,10 @@ module.exports = '15.6.2';
 
 
 
-var _prodInvariant = __webpack_require__(19);
+var _prodInvariant = __webpack_require__(20);
 
-var ReactPropTypeLocationNames = __webpack_require__(182);
-var ReactPropTypesSecret = __webpack_require__(184);
+var ReactPropTypeLocationNames = __webpack_require__(185);
+var ReactPropTypesSecret = __webpack_require__(187);
 
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
@@ -22594,7 +22660,7 @@ module.exports = checkReactTypeSpec;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 187 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22611,16 +22677,16 @@ module.exports = checkReactTypeSpec;
 var _require = __webpack_require__(77),
     Component = _require.Component;
 
-var _require2 = __webpack_require__(15),
+var _require2 = __webpack_require__(16),
     isValidElement = _require2.isValidElement;
 
 var ReactNoopUpdateQueue = __webpack_require__(80);
-var factory = __webpack_require__(91);
+var factory = __webpack_require__(94);
 
 module.exports = factory(Component, isValidElement, ReactNoopUpdateQueue);
 
 /***/ }),
-/* 188 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22644,7 +22710,7 @@ function getNextDebugID() {
 module.exports = getNextDebugID;
 
 /***/ }),
-/* 189 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22657,9 +22723,9 @@ module.exports = getNextDebugID;
  */
 
 
-var _prodInvariant = __webpack_require__(19);
+var _prodInvariant = __webpack_require__(20);
 
-var ReactElement = __webpack_require__(15);
+var ReactElement = __webpack_require__(16);
 
 var invariant = __webpack_require__(1);
 
@@ -22686,7 +22752,7 @@ module.exports = onlyChild;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 190 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22700,14 +22766,14 @@ module.exports = onlyChild;
 
 
 
-var _prodInvariant = __webpack_require__(19);
+var _prodInvariant = __webpack_require__(20);
 
 var ReactCurrentOwner = __webpack_require__(11);
 var REACT_ELEMENT_TYPE = __webpack_require__(78);
 
 var getIteratorFn = __webpack_require__(81);
 var invariant = __webpack_require__(1);
-var KeyEscapeUtils = __webpack_require__(178);
+var KeyEscapeUtils = __webpack_require__(181);
 var warning = __webpack_require__(2);
 
 var SEPARATOR = '.';
@@ -22864,74 +22930,6 @@ function traverseAllChildren(children, callback, traverseContext) {
 
 module.exports = traverseAllChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 191 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(20);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Header = function Header() {
-  return _react2.default.createElement(
-    "ul",
-    { id: "header" },
-    _react2.default.createElement(
-      "li",
-      { id: "header-logo" },
-      _react2.default.createElement(
-        "span",
-        null,
-        _react2.default.createElement("img", { id: "logo-image", src: "logo.png" }),
-        "Empower"
-      )
-    ),
-    _react2.default.createElement(
-      "li",
-      { id: "greetings" },
-      "Hi Stephen!"
-    )
-  );
-};
-
-exports.default = Header;
-
-/***/ }),
-/* 192 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(20);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Instructions = function Instructions() {
-  return _react2.default.createElement(
-    'p',
-    null,
-    'Instructions... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
-  );
-};
-
-exports.default = Instructions;
 
 /***/ })
 /******/ ]);
