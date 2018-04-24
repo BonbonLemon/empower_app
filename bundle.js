@@ -9639,10 +9639,10 @@ exports.default = App;
 
 /***/ }),
 /* 83 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
 "use strict";
-
+throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/home/roosterlegs/Desktop/Empower_App/frontend/store.js'\n    at Error (native)");
 
 /***/ }),
 /* 84 */
